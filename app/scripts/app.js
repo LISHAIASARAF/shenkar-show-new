@@ -12,237 +12,236 @@ angular
         'ui.router',
         'ui.bootstrap',
         'angular-loading-bar',
-
-
+        'ngCookies'
     ])
     .config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
         function ($stateProvider, $urlRouterProvider, $httpProvider) {
-        //
-        // $ocLazyLoadProvider.config({
-        //     debug: false,
-        //     events: true,
-        // });
+            //
+            // $ocLazyLoadProvider.config({
+            //     debug: false,
+            //     events: true,
+            // });
 
 
-        $urlRouterProvider.otherwise('/dashboard/home');
-        //$httpProvider.defaults.withCredentials = true;
-        $httpProvider.defaults.headers.post['Content-Type'] = 'application/json; charset=utf-8';
+            $urlRouterProvider.otherwise('/dashboard/home');
+            $httpProvider.defaults.withCredentials = true;
+            $httpProvider.defaults.headers.post['Content-Type'] = 'application/json; charset=utf-8';
 
-        $stateProvider
-            .state('dashboard', {
-                url: '/dashboard',
-                templateUrl: 'views/dashboard/main.html',
-            })
-            .state('dashboard.home', {
-                url: '/home',
-                controller: 'MainCtrl',
-                templateUrl: 'views/dashboard/home.html',
-            })
-            .state('dashboard.form', {
-                templateUrl: 'views/form.html',
-                url: '/form'
-            })
-            .state('dashboard.blank', {
-                templateUrl: 'views/pages/blank.html',
-                url: '/blank'
-            })
-            .state('login', {
-                templateUrl: 'views/pages/login.html',
-                url: '/login',
-                controller: 'AuthCtrl',
-
-
-            })
-            .state('dashboard.users', {
-                templateUrl: 'views/dashboard/users/list.html',
-                url: '/users',
-                controller: 'UsersCtrl',
+            $stateProvider
+                .state('dashboard', {
+                    url: '/dashboard',
+                    templateUrl: 'views/dashboard/main.html',
+                })
+                .state('dashboard.home', {
+                    url: '/home',
+                    controller: 'MainCtrl',
+                    templateUrl: 'views/dashboard/home.html',
+                })
+                .state('dashboard.form', {
+                    templateUrl: 'views/form.html',
+                    url: '/form'
+                })
+                .state('dashboard.blank', {
+                    templateUrl: 'views/pages/blank.html',
+                    url: '/blank'
+                })
+                .state('login', {
+                    templateUrl: 'views/pages/login.html',
+                    url: '/login',
+                    controller: 'AuthCtrl',
 
 
-            })
-            .state('dashboard.departments', {
-                templateUrl: 'views/dashboard/departments/list.html',
-                url: '/departments',
-                controller: 'DepartmentsCtrl',
+                })
+                .state('dashboard.users', {
+                    templateUrl: 'views/dashboard/users/list.html',
+                    url: '/users',
+                    controller: 'UsersCtrl',
 
 
-            })
-            .state('dashboard.institutes', {
-                templateUrl: 'views/dashboard/institutes/list.html',
-                url: '/users',
-                controller: 'InstitutesCtrl',
+                })
+                .state('dashboard.departments', {
+                    templateUrl: 'views/dashboard/departments/list.html',
+                    url: '/departments',
+                    controller: 'DepartmentsCtrl',
 
 
-            })
-            .state('dashboard.projects', {
-                templateUrl: 'views/dashboard/projects/list.html',
-                url: '/projects',
-                controller: 'ProjectsCtrl',
+                })
+                .state('dashboard.institutes', {
+                    templateUrl: 'views/dashboard/institutes/list.html',
+                    url: '/users',
+                    controller: 'InstitutesCtrl',
 
 
-            })
+                })
+                .state('dashboard.projects', {
+                    templateUrl: 'views/dashboard/projects/list.html',
+                    url: '/projects',
+                    controller: 'ProjectsCtrl',
 
 
-        // $stateProvider
-        //     .state('dashboard', {
-        //         url: '/dashboard',
-        //         templateUrl: 'views/dashboard/main.html',
-        //         resolve: {
-        //             loadMyDirectives: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load(
-        //                     {
-        //                         name: 'sbAdminApp',
-        //                         files: [
-        //                             'scripts/directives/header/header.js',
-        //                             'scripts/directives/header/header-notification/header-notification.js',
-        //                             'scripts/directives/sidebar/sidebar.js',
-        //                             'scripts/directives/sidebar/sidebar-search/sidebar-search.js'
-        //                         ]
-        //                     }),
-        //                     $ocLazyLoad.load(
-        //                         {
-        //                             name: 'toggle-switch',
-        //                             files: ["bower_components/angular-toggle-switch/angular-toggle-switch.min.js",
-        //                                 "bower_components/angular-toggle-switch/angular-toggle-switch.css"
-        //                             ]
-        //                         }),
-        //                     $ocLazyLoad.load(
-        //                         {
-        //                             name: 'ngAnimate',
-        //                             files: ['bower_components/angular-animate/angular-animate.js']
-        //                         })
-        //                 $ocLazyLoad.load(
-        //                     {
-        //                         name: 'ngCookies',
-        //                         files: ['bower_components/angular-cookies/angular-cookies.js']
-        //                     })
-        //                 $ocLazyLoad.load(
-        //                     {
-        //                         name: 'ngResource',
-        //                         files: ['bower_components/angular-resource/angular-resource.js']
-        //                     })
-        //                 $ocLazyLoad.load(
-        //                     {
-        //                         name: 'ngSanitize',
-        //                         files: ['bower_components/angular-sanitize/angular-sanitize.js']
-        //                     })
-        //                 $ocLazyLoad.load(
-        //                     {
-        //                         name: 'ngTouch',
-        //                         files: ['bower_components/angular-touch/angular-touch.js']
-        //                     })
-        //             }
-        //         }
-        //     })
-        //     .state('dashboard.home', {
-        //         url: '/home',
-        //         controller: 'MainCtrl',
-        //         templateUrl: 'views/dashboard/home.html',
-        //         resolve: {
-        //             loadMyFiles: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load({
-        //                     name: 'sbAdminApp',
-        //                     files: [
-        //                         'scripts/controllers/main.js',
-        //                         'scripts/directives/timeline/timeline.js',
-        //                         'scripts/directives/notifications/notifications.js',
-        //                         'scripts/directives/chat/chat.js',
-        //                         'scripts/directives/dashboard/stats/stats.js'
-        //                     ]
-        //                 })
-        //             }
-        //         }
-        //     })
-        //     .state('dashboard.form', {
-        //         templateUrl: 'views/form.html',
-        //         url: '/form'
-        //     })
-        //     .state('dashboard.blank', {
-        //         templateUrl: 'views/pages/blank.html',
-        //         url: '/blank'
-        //     })
-        //     .state('login', {
-        //         templateUrl: 'views/pages/login.html',
-        //         url: '/login',
-        //         controller: 'AuthCtrl',
-        //         resolve: {
-        //             loadMyFiles: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load({
-        //                     name: 'sbAdminApp',
-        //                     files: [
-        //                         'scripts/controllers/auth.js',
-        //                         'scripts/services/Authentication.service.js'
-        //                     ]
-        //                 })
-        //             }
-        //         }
-        //
-        //     })
-        //     .state('dashboard.users', {
-        //         templateUrl: 'views/dashboard/users/list.html',
-        //         url: '/users',
-        //         controller: 'UsersCtrl',
-        //         resolve: {
-        //             loadMyFiles: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load({
-        //                     name: 'sbAdminApp',
-        //                     files: [
-        //                         'scripts/controllers/users.js'
-        //                     ]
-        //                 })
-        //             }
-        //         }
-        //
-        //     })
-        //     .state('dashboard.departments', {
-        //         templateUrl: 'views/dashboard/departments/list.html',
-        //         url: '/departments',
-        //         controller: 'DepartmentsCtrl',
-        //         resolve: {
-        //             loadMyFiles: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load({
-        //                     name: 'sbAdminApp',
-        //                     files: [
-        //                         'scripts/controllers/departments.js',
-        //                         //'scripts/services/Authentication.service.js'
-        //                     ]
-        //                 })
-        //             }
-        //         }
-        //
-        //     })
-        //     .state('dashboard.institutes', {
-        //         templateUrl: 'views/dashboard/institutes/list.html',
-        //         url: '/users',
-        //         controller: 'InstitutesCtrl',
-        //         resolve: {
-        //             loadMyFiles: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load({
-        //                     name: 'sbAdminApp',
-        //                     files: [
-        //                         'scripts/controllers/institutes.js'
-        //                     ]
-        //                 })
-        //             }
-        //         }
-        //
-        //     })
-        //     .state('dashboard.projects', {
-        //         templateUrl: 'views/dashboard/projects/list.html',
-        //         url: '/projects',
-        //         controller: 'ProjectsCtrl',
-        //         resolve: {
-        //             loadMyFiles: function ($ocLazyLoad) {
-        //                 return $ocLazyLoad.load({
-        //                     name: 'sbAdminApp',
-        //                     files: [
-        //                         'scripts/controllers/projects.js'
-        //                     ]
-        //                 })
-        //             }
-        //         }
-        //
-        //     })
+                })
+
+
+            // $stateProvider
+            //     .state('dashboard', {
+            //         url: '/dashboard',
+            //         templateUrl: 'views/dashboard/main.html',
+            //         resolve: {
+            //             loadMyDirectives: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load(
+            //                     {
+            //                         name: 'sbAdminApp',
+            //                         files: [
+            //                             'scripts/directives/header/header.js',
+            //                             'scripts/directives/header/header-notification/header-notification.js',
+            //                             'scripts/directives/sidebar/sidebar.js',
+            //                             'scripts/directives/sidebar/sidebar-search/sidebar-search.js'
+            //                         ]
+            //                     }),
+            //                     $ocLazyLoad.load(
+            //                         {
+            //                             name: 'toggle-switch',
+            //                             files: ["bower_components/angular-toggle-switch/angular-toggle-switch.min.js",
+            //                                 "bower_components/angular-toggle-switch/angular-toggle-switch.css"
+            //                             ]
+            //                         }),
+            //                     $ocLazyLoad.load(
+            //                         {
+            //                             name: 'ngAnimate',
+            //                             files: ['bower_components/angular-animate/angular-animate.js']
+            //                         })
+            //                 $ocLazyLoad.load(
+            //                     {
+            //                         name: 'ngCookies',
+            //                         files: ['bower_components/angular-cookies/angular-cookies.js']
+            //                     })
+            //                 $ocLazyLoad.load(
+            //                     {
+            //                         name: 'ngResource',
+            //                         files: ['bower_components/angular-resource/angular-resource.js']
+            //                     })
+            //                 $ocLazyLoad.load(
+            //                     {
+            //                         name: 'ngSanitize',
+            //                         files: ['bower_components/angular-sanitize/angular-sanitize.js']
+            //                     })
+            //                 $ocLazyLoad.load(
+            //                     {
+            //                         name: 'ngTouch',
+            //                         files: ['bower_components/angular-touch/angular-touch.js']
+            //                     })
+            //             }
+            //         }
+            //     })
+            //     .state('dashboard.home', {
+            //         url: '/home',
+            //         controller: 'MainCtrl',
+            //         templateUrl: 'views/dashboard/home.html',
+            //         resolve: {
+            //             loadMyFiles: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load({
+            //                     name: 'sbAdminApp',
+            //                     files: [
+            //                         'scripts/controllers/main.js',
+            //                         'scripts/directives/timeline/timeline.js',
+            //                         'scripts/directives/notifications/notifications.js',
+            //                         'scripts/directives/chat/chat.js',
+            //                         'scripts/directives/dashboard/stats/stats.js'
+            //                     ]
+            //                 })
+            //             }
+            //         }
+            //     })
+            //     .state('dashboard.form', {
+            //         templateUrl: 'views/form.html',
+            //         url: '/form'
+            //     })
+            //     .state('dashboard.blank', {
+            //         templateUrl: 'views/pages/blank.html',
+            //         url: '/blank'
+            //     })
+            //     .state('login', {
+            //         templateUrl: 'views/pages/login.html',
+            //         url: '/login',
+            //         controller: 'AuthCtrl',
+            //         resolve: {
+            //             loadMyFiles: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load({
+            //                     name: 'sbAdminApp',
+            //                     files: [
+            //                         'scripts/controllers/auth.js',
+            //                         'scripts/services/Authentication.service.js'
+            //                     ]
+            //                 })
+            //             }
+            //         }
+            //
+            //     })
+            //     .state('dashboard.users', {
+            //         templateUrl: 'views/dashboard/users/list.html',
+            //         url: '/users',
+            //         controller: 'UsersCtrl',
+            //         resolve: {
+            //             loadMyFiles: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load({
+            //                     name: 'sbAdminApp',
+            //                     files: [
+            //                         'scripts/controllers/users.js'
+            //                     ]
+            //                 })
+            //             }
+            //         }
+            //
+            //     })
+            //     .state('dashboard.departments', {
+            //         templateUrl: 'views/dashboard/departments/list.html',
+            //         url: '/departments',
+            //         controller: 'DepartmentsCtrl',
+            //         resolve: {
+            //             loadMyFiles: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load({
+            //                     name: 'sbAdminApp',
+            //                     files: [
+            //                         'scripts/controllers/departments.js',
+            //                         //'scripts/services/Authentication.service.js'
+            //                     ]
+            //                 })
+            //             }
+            //         }
+            //
+            //     })
+            //     .state('dashboard.institutes', {
+            //         templateUrl: 'views/dashboard/institutes/list.html',
+            //         url: '/users',
+            //         controller: 'InstitutesCtrl',
+            //         resolve: {
+            //             loadMyFiles: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load({
+            //                     name: 'sbAdminApp',
+            //                     files: [
+            //                         'scripts/controllers/institutes.js'
+            //                     ]
+            //                 })
+            //             }
+            //         }
+            //
+            //     })
+            //     .state('dashboard.projects', {
+            //         templateUrl: 'views/dashboard/projects/list.html',
+            //         url: '/projects',
+            //         controller: 'ProjectsCtrl',
+            //         resolve: {
+            //             loadMyFiles: function ($ocLazyLoad) {
+            //                 return $ocLazyLoad.load({
+            //                     name: 'sbAdminApp',
+            //                     files: [
+            //                         'scripts/controllers/projects.js'
+            //                     ]
+            //                 })
+            //             }
+            //         }
+            //
+            //     })
             // .state('dashboard.chart', {
             //     templateUrl: 'views/chart.html',
             //     url: '/chart',
@@ -291,6 +290,6 @@ angular
             //     templateUrl: 'views/ui-elements/grid.html',
             //     url: '/grid'
             // })
-    }]);
+        }]);
 
     

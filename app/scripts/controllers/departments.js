@@ -19,9 +19,9 @@ angular.module('sbAdminApp')
 
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.get('https://shenkar-show.herokuapp.com/department/users',{ withCredentials: true}).then(function (resp) {
+            $http.get('https://shenkar-show.herokuapp.com/institute/users',{ withCredentials: true}).then(function (resp) {
                 $scope.users = resp.data;
-                $http.get('scripts/departments.json').then(function (resp) {
+                $http.get('https://shenkar-show.herokuapp.com/institute/departments').then(function (resp) {
 
 
                     $scope.departments = resp.data;

@@ -25,7 +25,7 @@ angular
 
 
         $urlRouterProvider.otherwise('/dashboard/home');
-        $httpProvider.defaults.withCredentials = true;
+        //$httpProvider.defaults.withCredentials = true;
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/json; charset=utf-8';
 
         $stateProvider

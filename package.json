@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^3.21.2",
-    "gzippo": "^0.2.0"
+    "gzippo": "^0.2.0",
+    "winston": "^2.3.1"
   }
 }

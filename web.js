@@ -5,7 +5,7 @@ winston.remove(winston.transports.Console);
 winston.add(winston.transports.Console, {colorize: true});
 
 var app = express();
-app.use(express.static(__dirname + '/app/scripts'));
+app.use(express.static(__dirname + '/app'));
 app.use(function(req, res) {
     logger.warn('unknown endpoint: ' + req.originalUrl);
     res.status(404).end();

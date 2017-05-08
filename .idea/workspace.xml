@@ -2,7 +2,517 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/dist/angular-chart.js.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/Chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/00-Getting-Started.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/01-Line-Chart.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/02-Bar-Chart.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/03-Radar-Chart.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/04-Polar-Area-Chart.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/05-Pie-Doughnut-Chart.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/06-Advanced.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/docs/07-Notes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/doughnut.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/line-customTooltips.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/pie-customTooltips.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/pie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/polar-area.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/samples/radar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/src/Chart.Bar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/src/Chart.Core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/src/Chart.Doughnut.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/src/Chart.Line.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/src/Chart.PolarArea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/Chart.js/src/Chart.Radar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-animate/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-animate/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-animate/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-animate/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-animate/angular-animate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-animate/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-bootstrap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-bootstrap/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-bootstrap/ui-bootstrap-tpls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-bootstrap/ui-bootstrap-tpls.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-bootstrap/ui-bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-bootstrap/ui-bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/angular-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/angular-chart.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/dist/angular-chart.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/dist/angular-chart.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/dist/angular-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/dist/angular-chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/dist/angular-chart.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/charts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/charts.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/smoothscroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/stacked-bars.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/examples/ticks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-chart.js/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-cookies/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-cookies/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-cookies/angular-cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-cookies/angular-cookies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-cookies/angular-cookies.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-cookies/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/build/loading-bar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/build/loading-bar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/build/loading-bar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/build/loading-bar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/src/loading-bar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-loading-bar/src/loading-bar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-mocks/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-mocks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-mocks/angular-mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-mocks/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-resource/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-resource/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-resource/angular-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-resource/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-resource/angular-resource.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-resource/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-route/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-route/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-route/angular-route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-route/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-route/angular-route.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-route/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-sanitize/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-sanitize/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-sanitize/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-sanitize/angular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-sanitize/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-scenario/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-scenario/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-scenario/angular-scenario.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-scenario/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-scenario/jstd-scenario-adapter-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-scenario/jstd-scenario-adapter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/angular-toggle-switch-bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/angular-toggle-switch.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/angular-toggle-switch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/angular-toggle-switch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-toggle-switch/test/angular-toggle-switch.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-touch/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-touch/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-touch/angular-touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-touch/angular-touch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-touch/angular-touch.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-touch/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/release/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/release/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/resolve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/stateDirectives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/stateFilters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/templateFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/urlMatcherFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/urlRouter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/viewDirective.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular-ui-router/src/viewScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/Gemfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/ISSUE_TEMPLATE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/dist/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/change-version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/configBridge.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/npm-shrinkwrap.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/grunt/sauce_browsers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/.jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/js/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/.csscomb.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/.csslintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/background-variant.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/border-radius.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/center-block.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/clearfix.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/gradients.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/grid-framework.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/hide-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/image.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/nav-divider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/opacity.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/progress-bar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/reset-filter.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/reset-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/resize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/responsive-visibility.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/size.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/tab-focus.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/table-row.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/text-emphasis.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/text-overflow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/responsive-embed.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/nuget/MyGet.ps1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/nuget/bootstrap.less.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/nuget/bootstrap.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/bootstrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/CHANGES" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/CONTRIBUTORS.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/es5-sham.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/es5-sham.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/es5-sham.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/es5-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/es5-shim.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/es5-shim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/es5-shim/shims.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/css/font-awesome.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/dist/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/dist/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/dist/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/external/sizzle/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/external/sizzle/dist/sizzle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/external/sizzle/dist/sizzle.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/jsonp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/load.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/parseJSON.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/parseXML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/var/location.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/var/nonce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/var/rquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/ajax/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/attributes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/attributes/attr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/attributes/classes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/attributes/prop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/attributes/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/attributes/val.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/core/access.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/core/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/core/parseHTML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/core/ready.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/core/var/rsingleTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/addGetHookIf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/adjustCSS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/curCSS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/defaultDisplay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/showHide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/var/cssExpand.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/var/getStyles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/var/isHidden.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/var/rmargin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/var/rnumnonpx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/css/var/swap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/data/Data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/data/var/acceptData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/data/var/dataPriv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/data/var/dataUser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/dimensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/effects/Tween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/effects/animatedSelector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/event/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/event/alias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/event/focusin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/event/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/event/trigger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/exports/amd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/exports/global.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/intro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/_evalUrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/buildFragment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/getAll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/setGlobalEval.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/var/rscriptType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/var/rtagName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/manipulation/wrapMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/offset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/outro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/queue/delay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/selector-native.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/selector-sizzle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/traversing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/traversing/findFilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/traversing/var/dir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/traversing/var/siblings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/arr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/class2type.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/concat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/document.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/documentElement.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/hasOwn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/indexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/pnum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/push.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/rcssNum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/rnotwhite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/slice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/var/toString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/jquery/src/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/lib/json3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/json3/lib/json3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/dist/metisMenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/dist/metisMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/dist/metisMenu.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/dist/metisMenu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/src/metisMenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/metisMenu/src/metisMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/dist/ocLazyLoad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/dist/ocLazyLoad.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/js/AppCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/js/gridModule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/partials/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/complexExample/partials/modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/css/ng-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/lazymodule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/ng-grid-2.0.11.debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/js/testmodule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/requireJSExample/partials/grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/simpleExample/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/oclazyload/examples/simpleExample/js/testApp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/plugins/toastr/toastr.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,28 +533,38 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/plugins/angular/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -69,6 +589,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>/app/scripts/</find>
+      <find>/scripts</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/app/scripts/plugins</replace>
+      <replace>/scripts/</replace>
+      <replace>scripts</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,6 +609,7 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/web.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -91,7 +623,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="76" />
+    <option name="y" value="13" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
   </component>
@@ -133,6 +666,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shenkar-show-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shenkar-show-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -155,6 +702,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shenkar-show-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shenkar-show-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -174,6 +743,11 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\shenkar-show-web\app\scripts\plugins" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -277,25 +851,24 @@
       <option name="presentableId" value="Default" />
       <updated>1494266917143</updated>
       <workItem from="1494266918544" duration="156000" />
-      <workItem from="1494267525946" duration="2802000" />
+      <workItem from="1494267525946" duration="3435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2958000" />
+    <option name="totallyTimeSpent" value="3591000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="0" />
-    <editor active="true" />
+    <frame x="76" y="13" width="1280" height="732" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920887" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24879228" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43890676" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24040067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -345,13 +918,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/web.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/plugins/angular/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -359,10 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>

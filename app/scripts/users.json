@@ -1,0 +1,24 @@
+[
+  {
+    "_id" :"1",
+    "role":  "1",
+    "userName": "aaa",
+    "name": "yosi",
+    "password": "123",
+    "email": "e@e.com",
+    "department": "1",
+    "institute": "1",
+    "project": "1"
+  },
+  {
+    "_id" :"2",
+    "role":  "2",
+    "userName": "bbb",
+    "name": "moshe",
+    "password": "123",
+    "email": "m@m.com",
+    "department": "2",
+    "institute": "1",
+    "project": "2"
+  }
+]

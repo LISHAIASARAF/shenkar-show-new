@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "1",
+    "name": "test35",
+    "institute": "87",
+    "manager": "1",
+    "description": "update",
+    "logo": "",
+    "__v": "0",
+    "images": [
+      "",
+      ""
+    ],
+    "projects": []
+  },
+  {
+    "_id": "2",
+    "name": "test355",
+    "institute": "87",
+    "manager": "2",
+    "description": "ccacsa",
+    "logo": "1491161834222.png",
+    "__v": "0",
+    "images": [],
+    "projects": []
+  }
+]

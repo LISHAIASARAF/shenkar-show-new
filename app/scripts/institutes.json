@@ -1,0 +1,29 @@
+[
+  {
+    "_id" :"1",
+    "manager": "1",
+    "name":"שנקר",
+    "logo":"",
+    "images":[],
+    "maps":"",
+    "routes ":"",
+    "headerBackgroundColor":"blue",
+    "headerFontColor":"",
+    "footerBackgroundColor":"",
+    "footerFontColor":""
+  },
+  {
+    "_id" :"2",
+    "manager": "2",
+    "name":"תל חי",
+    "logo":"",
+    "images":[],
+    "maps":"",
+    "routes ":"",
+    "headerBackgroundColor":"blue",
+    "headerFontColor":"",
+    "footerBackgroundColor":"",
+    "footerFontColor":""
+  }
+
+]

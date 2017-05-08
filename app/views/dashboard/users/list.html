@@ -1,0 +1,234 @@
+<div class="" ng-init="init()">
+
+    <h1 class="page-header" style="position: relative;">
+        משתמשים
+        <button class="btn btn-success" style="position: absolute;left: 0;top: 10px;" data-toggle="modal" data-target="#new">
+            צור חדש
+            <i class="fa fa-plus"></i>
+        </button>
+    </h1>
+
+    <div class="">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-users fa-fw"></i>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+
+                            <table id="mytable" class="table table-bordred table-striped">
+
+                                <thead>
+
+                                <th>מזהה</th>
+                                <th>תפקיד</th>
+                                <th>שם משתמש</th>
+                                <th>שם</th>
+                                <th>סיסמא</th>
+                                <th>אימייל</th>
+                                <th>מחלקה</th>
+                                <th>מוסד</th>
+                                </thead>
+                                <tbody>
+
+                                <tr ng-repeat="d in users track by $index">
+
+                                    <td>{{d._id}}</td>
+                                    <td>{{getRoleName(d.role)}}</td>
+                                    <td>{{d.userName}}</td>
+                                    <td>{{d.name}}</td>
+                                    <td>{{d.password}}</td>
+                                    <td>{{d.email}}</td>
+                                    <td>{{getDepartmentName(d.department)}}</td>
+
+                                    <td>{{getInstituteName(d.institute)}}</td>
+                                    <td>
+                                        <p style="display: inline;" data-placement="top" data-toggle="tooltip"
+                                           title="Edit">
+                                            <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                                    ng-click="setEdit(d._id)"
+                                                    data-target="#edit"><span class="glyphicon glyphicon-pencil"></span>
+                                            </button>
+                                        </p>
+                                        <p style="display: inline;" data-placement="top" data-toggle="tooltip"
+                                           title="Delete">
+                                            <button class="btn btn-danger btn-xs" data-title="Delete"
+                                                    data-toggle="modal" ng-click="setEdit(d._id)"
+                                                    data-target="#delete"><span
+                                                    class="glyphicon glyphicon-trash"></span>
+                                            </button>
+                                        </p>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+
+                            </table>
+
+                            <div class="clearfix"></div>
+                            <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                            </button>
+                                            <h4 class="modal-title custom_align" id="Heading">עריכת פרטים של
+                                                {{selected.name}}</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="">תפקיד</label>
+                                                <select class="form-control" ng-options="u._id as u.name for u in roles"
+                                                        ng-model="selected.role">
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">שם משתמש</label>
+                                                <input class="form-control " type="text" ng-model="selected.userName">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">שם </label>
+                                                <input class="form-control " type="text" ng-model="selected.name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">סיסמא</label>
+                                                <input class="form-control " type="text" ng-model="selected.password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">אימייל</label>
+                                                <input class="form-control " type="text" ng-model="selected.email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">מחלקה</label>
+                                                <select class="form-control"
+                                                        ng-options="u._id as u.name for u in departments"
+                                                        ng-model="selected.department">
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">מוסד</label>
+                                                <select class="form-control" ng-options="u._id as u.name for u in institutes"
+                                                        ng-model="selected.institute">
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" ng-click="update()" class="btn btn-warning btn-lg" style="width: 100%;">
+                                                <span class="glyphicon glyphicon-ok-sign"></span> עדכון
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+
+                            <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                            </button>
+                                            <h4 class="modal-title custom_align" id="Heading">מחיקת נתונים </h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="alert alert-danger"><span
+                                                    class="glyphicon glyphicon-warning-sign"></span> האם למחוק את
+                                                {{selected.name}} ?
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-success" ng-click="delete()"><span
+                                                    class="glyphicon glyphicon-ok-sign"></span> כן
+                                            </button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal"><span
+                                                    class="glyphicon glyphicon-remove"></span> ביטול
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+
+                            <div class="modal fade" id="new" tabindex="-1" role="dialog" aria-labelledby="new"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                            </button>
+                                            <h4 class="modal-title custom_align" id="Heading">יצירת משתמש חדש</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="">תפקיד</label>
+                                                <select class="form-control" ng-options="u._id as u.name for u in roles"
+                                                        ng-model="new.role">
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">שם משתמש</label>
+                                                <input class="form-control " type="text" ng-model="new.userName">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">שם </label>
+                                                <input class="form-control " type="text" ng-model="new.name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">סיסמא</label>
+                                                <input class="form-control " type="text" ng-model="new.password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">אימייל</label>
+                                                <input class="form-control " type="text" ng-model="new.email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">מחלקה</label>
+                                                <select class="form-control"
+                                                        ng-options="u._id as u.name for u in departments"
+                                                        ng-model="new.department">
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">מוסד</label>
+                                                <select class="form-control" ng-options="u._id as u.name for u in institutes"
+                                                        ng-model="new.institute">
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" ng-click="create()" class="btn btn-primary btn-lg" style="width: 100%;">
+                                                <span class="glyphicon glyphicon-ok-sign"></span> שמור
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

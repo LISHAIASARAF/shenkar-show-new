@@ -7,21 +7,6 @@ angular.module('sbAdminApp')
         $scope.dtFrom = '';
         $scope.dtTo = '';
 
-        $scope.dateFilter = function (item) {
-            var itemDate = Date.parse(item.date);
-            switch (itemDate) {
-                case (!$scope.dtFrom && !$scope.dtTo):
-                    return item;
-                    break;
-                case (!$scope.dtFrom && !$scope.dtTo):
-                    return item;
-                    break;
-                case (!$scope.dtFrom && !$scope.dtTo):
-                    return item;
-                    break;
-            }
-        }
-
         $scope.login = function () {
 
             $http.post(

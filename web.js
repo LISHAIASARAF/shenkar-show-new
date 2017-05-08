@@ -1,8 +1,16 @@
-var gzippo = require('gzippo');
+var logger = winston = require('winston');
 var express = require('express');
-var app = express();
 
-app.use(express.logger('dev'));
-//app.use(gzippo.staticGzip("" + __dirname + "/dist"));
-app.use(gzippo.staticGzip("" + __dirname + "/app"));
-app.listen(process.env.PORT || 5000);
+winston.remove(winston.transports.Console);
+winston.add(winston.transports.Console, {colorize: true});
+
+var app = express();
+app.use(express.static(__dirname + '/app'));
+app.use(function(req, res) {
+    logger.warn('unknown endpoint: ' + req.originalUrl);
+    res.status(404).end();
+});
+
+var server = app.listen(process.env.PORT || 4567, function () {
+    logger.info('opsonatus up & running on port %d!', server.address().port);
+});

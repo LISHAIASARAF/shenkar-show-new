@@ -11,7 +11,8 @@ angular
     .module('sbAdminApp', [
         'ui.router',
         'ui.bootstrap',
-        'angular-loading-bar'
+        'angular-loading-bar',
+        'ngCookies'
     ])
     .config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
         function ($stateProvider, $urlRouterProvider, $httpProvider) {

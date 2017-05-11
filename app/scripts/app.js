@@ -21,7 +21,7 @@ angular
             //     debug: false,
             //     events: true,
             // });
-
+            $httpProvider.defaults.withCredentials = true;
 
             $urlRouterProvider.otherwise('/dashboard/home');
            // $httpProvider.defaults.withCredentials = true;

@@ -19,6 +19,7 @@ angular.module('sbAdminApp')
                 .then(
                     function (res) {
                         var a = res.data;
+                        alert (res.id);
                         $cookieStore.put("shenkarShowUserId", res.id);
                         Authentication.setUser(res.data);
                         $state.go('dashboard.departments')

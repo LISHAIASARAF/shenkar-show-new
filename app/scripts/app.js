@@ -16,6 +16,8 @@ angular
     ])
     .config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
         function ($stateProvider, $urlRouterProvider, $httpProvider) {
+
+
             //
             // $ocLazyLoadProvider.config({
             //     debug: false,

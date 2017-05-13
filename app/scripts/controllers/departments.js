@@ -56,7 +56,7 @@ angular.module('sbAdminApp')
         $scope.setEdit = function (id) {
             $scope.selected = null;
             $scope.departments.forEach(function (d) {
-                if (d._id == id) {
+                if (d.id == id) {
                     $scope.selected = angular.copy(d);
                 }
             });
@@ -88,7 +88,7 @@ angular.module('sbAdminApp')
         }
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.delete('https://shenkar-show.herokuapp.com/department/'+$scope.selected._id).then(function (resp) {
+            $http.delete('https://shenkar-show.herokuapp.com/department/'+$scope.selected.id).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
                 $scope.init();
 

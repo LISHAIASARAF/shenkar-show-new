@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sbAdminApp')
-    .controller('AuthCtrl', function ($scope, $position, $http, Authentication, $state, $cookieStore, $cookies) {
+    .controller('AuthCtrl', function ($scope, $position, $http, Authentication, $state, $cookieStore, $rootScope) {
         $scope.userName = '';
         $scope.password = '';
         $scope.dtFrom = '';
@@ -19,8 +19,9 @@ angular.module('sbAdminApp')
                 .then(
                     function (res) {
 
-                        console.log (res);
-                        console.log (res.data.id);
+                        console.log(res);
+                        console.log(res.data.id);
+                        $rootScope.user = res.data;
                         $cookieStore.put("shenkarShowUserId", res.data.id);
                         Authentication.setUser(res.data);
                         $state.go('dashboard.departments')

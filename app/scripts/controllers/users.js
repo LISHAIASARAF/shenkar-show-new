@@ -7,21 +7,23 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('UsersCtrl', function ($scope, $position, $http, $q) {
+    .controller('UsersCtrl', function ($scope, $position, $http, $q, $rootScope, $state) {
         $scope.roles = ['department manager', 'institute manager', 'student'];
         $scope.init = function () {
             getAllData();
+        };
+
+        if (!$rootScope.user) {
+            $state.go('login');
+        }
+
+        $scope.new = {
+            institute: $rootScope.user.institute
 
         };
 
-
-        $scope.new = {
-            role: '1',
-            department: '1'
-        }
-
         function getDepartments() {
-            return $http.get('scripts/departments.json');
+            return $http.get('https://shenkar-show.herokuapp.com/institute/departments');
         }
 
         function getUsers() {
@@ -41,14 +43,14 @@ angular.module('sbAdminApp')
         function getAllData() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $q.all([
-                // getDepartments(),
+                getDepartments(),
                 // getRoles(),
                 getUsers(),
                 // getInstitues()
             ]).then(function (res) {
-                //  $scope.departments = res[0].data;
+                $scope.departments = res[0].data;
                 //$scope.roles = res[1].data;
-                $scope.users = res[0].data;
+                $scope.users = res[1].data;
 
             });
             // $http.get('scripts/departments.json').then(function (resp) {
@@ -91,7 +93,7 @@ angular.module('sbAdminApp')
             });
 
             return name;
-        }
+        };
 
         $scope.setEdit = function (id) {
             $scope.selected = null;
@@ -104,7 +106,7 @@ angular.module('sbAdminApp')
             if (!$scope.selected) {
                 return false;
             }
-        }
+        };
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
@@ -117,7 +119,8 @@ angular.module('sbAdminApp')
                 toastr.error('בעיה בשמירת הנתונים');
 
             });
-        }
+        };
+
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.delete('https://shenkar-show.herokuapp.com/users/' + $scope.selected._id).then(function (resp) {
@@ -125,7 +128,8 @@ angular.module('sbAdminApp')
                 $scope.init();
 
             });
-        }
+        };
+
         $scope.create = function () {
             $http.post('https://shenkar-show.herokuapp.com/users', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');

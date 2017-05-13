@@ -14,6 +14,7 @@ angular.module('sbAdminApp')
 
         };
 
+
         $scope.new = {
             role: '1',
             department: '1'

@@ -106,14 +106,14 @@
                                             <div class="form-group">
                                                 <label for="">מחלקה</label>
                                                 <select class="form-control"
-                                                        ng-options="u._id as u.name for u in departments"
+                                                        ng-options="u.id as u.name for u in departments"
                                                         ng-model="selected.department.id">
 
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="">מוסד</label>
-                                                <select class="form-control" ng-options="u._id as u.name for u in institutes"
+                                                <select class="form-control" ng-options="u.id as u.name for u in institutes"
                                                         ng-model="selected.institute.id">
                                                 </select>
                                             </div>

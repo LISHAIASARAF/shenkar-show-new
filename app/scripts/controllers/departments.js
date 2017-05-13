@@ -11,11 +11,11 @@ angular.module('sbAdminApp')
         $scope.departments = []
         $scope.new={
             manager:'1'
-        }
+        };
+
         $scope.init = function () {
             getDepartmentsMangers();
-
-        }
+        };
 
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'

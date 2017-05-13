@@ -24,7 +24,7 @@ angular.module('sbAdminApp')
         }
 
         function getUsers() {
-            return $http.get('scripts/users.json');
+            return $http.get('https://shenkar-show.herokuapp.com/institute/users');
         }
 
         function getRoles() {
@@ -40,14 +40,14 @@ angular.module('sbAdminApp')
         function getAllData() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $q.all([
-                getDepartments(),
-                getRoles(),
+               // getDepartments(),
+               // getRoles(),
                 getUsers(),
-                getInstitues()
+               // getInstitues()
             ]).then(function (res) {
-                $scope.departments = res[0].data;
-                $scope.roles = res[1].data;
-                $scope.users = res[2].data;
+              //  $scope.departments = res[0].data;
+                //$scope.roles = res[1].data;
+                $scope.users = res[0].data;
 
             });
             // $http.get('scripts/departments.json').then(function (resp) {

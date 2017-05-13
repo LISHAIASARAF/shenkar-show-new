@@ -110,7 +110,8 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.put('https://shenkar-show.herokuapp.com/users', $scope.selected).then(function (resp) {
+            $scope.selected.department= $scope.selected.department.id;
+            $http.post('https://shenkar-show.herokuapp.com/users', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/users.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/users/list.html" afterPath="$PROJECT_DIR$/app/views/dashboard/users/list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -75,8 +74,8 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/users/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+            <state relative-caret-position="187">
+              <caret line="116" column="87" lean-forward="false" selection-start-line="116" selection-start-column="87" selection-end-line="116" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -485,12 +484,12 @@
       <updated>1494266917143</updated>
       <workItem from="1494266918544" duration="156000" />
       <workItem from="1494267525946" duration="6147000" />
-      <workItem from="1494277365682" duration="16353000" />
+      <workItem from="1494277365682" duration="16591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22656000" />
+    <option name="totallyTimeSpent" value="22894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="38" width="1346" height="652" extended-state="0" />
@@ -764,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/users/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="187">
+          <caret line="116" column="87" lean-forward="false" selection-start-line="116" selection-start-column="87" selection-end-line="116" selection-end-column="87" />
           <folding />
         </state>
       </provider>

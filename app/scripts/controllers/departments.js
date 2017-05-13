@@ -10,7 +10,7 @@ angular.module('sbAdminApp')
     .controller('DepartmentsCtrl', function ($scope, $position, $http, $cookies) {
         $scope.departments = []
         $scope.new={
-            manager:'1'
+
         };
 
         $scope.init = function () {
@@ -68,7 +68,7 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.put('https://shenkar-show.herokuapp.com/department',$scope.selected).then(function (resp) {
+            $http.put('https://shenkar-show.herokuapp.com/institute/updateDepartment',$scope.selected).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
@@ -77,7 +77,7 @@ angular.module('sbAdminApp')
         }
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/department',$scope.new).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment',$scope.new).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');

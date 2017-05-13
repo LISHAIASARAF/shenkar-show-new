@@ -35,15 +35,15 @@
 
                                 <tr ng-repeat="d in users track by $index">
 
-                                    <td>{{d._id}}</td>
-                                    <td>{{getRoleName(d.role)}}</td>
+                                    <td>{{d.id}}</td>
+                                    <td>{{d.role}}</td>
                                     <td>{{d.userName}}</td>
                                     <td>{{d.name}}</td>
                                     <td>{{d.password}}</td>
                                     <td>{{d.email}}</td>
-                                    <td>{{getDepartmentName(d.department)}}</td>
+                                    <td>{{d.department.name}}</td>
 
-                                    <td>{{getInstituteName(d.institute)}}</td>
+                                    <td>{{d.institute.name}}</td>
                                     <td>
                                         <p style="display: inline;" data-placement="top" data-toggle="tooltip"
                                            title="Edit">

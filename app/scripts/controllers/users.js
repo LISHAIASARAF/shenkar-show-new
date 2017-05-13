@@ -8,7 +8,7 @@
  */
 angular.module('sbAdminApp')
     .controller('UsersCtrl', function ($scope, $position, $http, $q) {
-
+        $scope.roles = ['department manager', 'institute manager', 'student'];
         $scope.init = function () {
             getAllData();
 
@@ -40,12 +40,12 @@ angular.module('sbAdminApp')
         function getAllData() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $q.all([
-               // getDepartments(),
-               // getRoles(),
+                // getDepartments(),
+                // getRoles(),
                 getUsers(),
-               // getInstitues()
+                // getInstitues()
             ]).then(function (res) {
-              //  $scope.departments = res[0].data;
+                //  $scope.departments = res[0].data;
                 //$scope.roles = res[1].data;
                 $scope.users = res[0].data;
 
@@ -81,7 +81,7 @@ angular.module('sbAdminApp')
 
             return name;
         };
-        $scope.getInstituteName=function(id){
+        $scope.getInstituteName = function (id) {
             var name = '';
             $scope.institutes.forEach(function (d) {
                 if (d._id == id) {

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/users.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/users/list.html" afterPath="$PROJECT_DIR$/app/views/dashboard/users/list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/users/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="120" column="46" lean-forward="true" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+            <state relative-caret-position="-351">
+              <caret line="174" column="64" lean-forward="true" selection-start-line="174" selection-start-column="64" selection-end-line="174" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -130,6 +130,7 @@
       <find>bowe</find>
       <find>ang</find>
       <find>_id</find>
+      <find>optio</find>
     </findStrings>
     <replaceStrings>
       <replace>/app/scripts/plugins</replace>
@@ -153,8 +154,8 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/departments.js" />
         <option value="$PROJECT_DIR$/app/scripts/users.json" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/users/list.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/users.js" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/users/list.html" />
       </list>
     </option>
   </component>
@@ -475,12 +476,12 @@
       <updated>1494266917143</updated>
       <workItem from="1494266918544" duration="156000" />
       <workItem from="1494267525946" duration="6147000" />
-      <workItem from="1494277365682" duration="19394000" />
+      <workItem from="1494277365682" duration="20224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25697000" />
+    <option name="totallyTimeSpent" value="26527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="38" width="1346" height="652" extended-state="0" />
@@ -752,18 +753,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/users/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="120" column="46" lean-forward="true" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="135" column="69" lean-forward="false" selection-start-line="135" selection-start-column="69" selection-end-line="135" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/users/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="174" column="64" lean-forward="true" selection-start-line="174" selection-start-column="64" selection-end-line="174" selection-end-column="64" />
           <folding />
         </state>
       </provider>

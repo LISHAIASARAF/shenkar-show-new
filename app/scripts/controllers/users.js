@@ -30,7 +30,7 @@ angular.module('sbAdminApp')
 
         function getUsers() {
             if ($scope.me.role == 'department manager') {
-                return $http.get('https://shenkar-show.herokuapp.com/institute/users');
+                return $http.get('https://shenkar-show.herokuapp.com/department/users');
             } else if ($scope.me.role == 'institute manager') {
                 return $http.get('https://shenkar-show.herokuapp.com/institute/users');
             }

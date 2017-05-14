@@ -89,7 +89,7 @@ angular.module('sbAdminApp')
             }
 
 
-            $http.put('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');

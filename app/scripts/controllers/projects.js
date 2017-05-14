@@ -75,6 +75,8 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             $scope.selected.department = $rootScope.user.department;
+            $scope.selected.studentNames = $scope.selected.studentNames.split(',');
+            $scope.selected.studentEmails = $scope.selected.studentEmails.split(',');
             $http.put('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
@@ -84,7 +86,9 @@ angular.module('sbAdminApp')
         }
 
         $scope.create = function () {
-
+            $scope.new.department = $rootScope.new.department;
+            $scope.new.studentNames = $scope.new.studentNames.split(',');
+            $scope.new.studentEmails = $scope.new.studentEmails.split(',');
             $http.post('https://shenkar-show.herokuapp.com/projects/create', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();

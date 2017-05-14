@@ -93,7 +93,7 @@
                                                 <label for=""> מחלקה</label>
                                                 <select class="form-control"
                                                         ng-options="u.id as u.name for u in departments"
-                                                        ng-model="selected.department">
+                                                        ng-model="selected.department.id">
                                                 </select>
                                             </div>
                                             <div class="form-group">
@@ -105,7 +105,7 @@
                                                 <label for=""> מיקום</label>
                                                 <select class="form-control"
                                                         ng-options="u.id as u.name for u in locations"
-                                                        ng-model="selected.location">
+                                                        ng-model="selected.location.id">
                                                 </select>
                                             </div>
                                             <div class="form-group">
@@ -149,7 +149,7 @@
                                                 <label for=""> מחלקה</label>
                                                 <select class="form-control"
                                                         ng-options="u.id as u.name for u in departments"
-                                                        ng-model="new.department">
+                                                        ng-model="new.department.id">
                                                 </select>
                                             </div>
                                             <div class="form-group">
@@ -161,7 +161,7 @@
                                                 <label for=""> מיקום</label>
                                                 <select class="form-control"
                                                         ng-options="u.id as u.name for u in locations"
-                                                        ng-model="new.location">
+                                                        ng-model="new.location.id">
                                                 </select>
                                             </div>
                                             <div class="form-group">

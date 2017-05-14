@@ -19,7 +19,7 @@ angular.module('sbAdminApp')
 
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.get('https://shenkar-show.herokuapp.com/institute/createUser').then(function (resp) {
+            $http.get('https://shenkar-show.herokuapp.com/admin/institute').then(function (resp) {
                 $scope.institutes = resp.data;
             });
             // $http.get('https://shenkar-show.herokuapp.com/institute/createUser').then(function (resp) {

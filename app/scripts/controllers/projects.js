@@ -88,7 +88,7 @@ angular.module('sbAdminApp')
         };
 
         $scope.create = function () {
-            $scope.new.departmentId = $rootScope.new.department;
+            $scope.new.departmentId = $scope.new.department;
 
             $http.post('https://shenkar-show.herokuapp.com/projects/create', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');

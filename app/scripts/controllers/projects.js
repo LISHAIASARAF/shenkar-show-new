@@ -84,7 +84,7 @@ angular.module('sbAdminApp')
         $scope.setEdit = function (id) {
             $scope.selected = null;
             $scope.projects.forEach(function (d) {
-                if (d._id == id) {
+                if (d.id == id) {
                     $scope.selected = angular.copy(d);
                 }
             });

@@ -24,7 +24,7 @@ angular.module('sbAdminApp')
                         $rootScope.user = res.data;
                         $cookieStore.put("shenkarShowUserId", res.data.id);
                         Authentication.setUser(res.data);
-                        $state.go('dashboard.departments')
+                        $state.go('dashboard.home')
                     },
                     function (err) {
 

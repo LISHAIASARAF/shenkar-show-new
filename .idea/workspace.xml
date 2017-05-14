@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/institutes.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/institutes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/projects.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/users.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/auth.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,6 +21,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="departments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -33,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="13">
@@ -51,16 +59,6 @@
               <folding>
                 <marker date="1494804867466" expanded="true" signature="1108:1278" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/projects/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="139" column="107" lean-forward="false" selection-start-line="139" selection-start-column="107" selection-end-line="139" selection-end-column="107" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -147,9 +145,9 @@
       <find>optio</find>
       <find>primaryTextColor</find>
       <find>ui-sref=&quot;dashboard.institutes&quot;</find>
-      <find>getAllData</find>
       <find>$scope.selected.studentEmails</find>
       <find>$state.go('home');</find>
+      <find>getAllData</find>
     </findStrings>
     <replaceStrings>
       <replace>/app/scripts/plugins</replace>
@@ -170,7 +168,6 @@
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/departments.json" />
         <option value="$PROJECT_DIR$/app/views/dashboard/departments/list.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
         <option value="$PROJECT_DIR$/app/scripts/users.json" />
         <option value="$PROJECT_DIR$/app/views/dashboard/institutes/list.html" />
         <option value="$PROJECT_DIR$/app/views/dashboard/projects/list.html" />
@@ -179,6 +176,7 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/projects.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/institutes.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/users.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/auth.js" />
       </list>
     </option>
   </component>
@@ -470,12 +468,12 @@
       <workItem from="1494266918544" duration="156000" />
       <workItem from="1494267525946" duration="6147000" />
       <workItem from="1494277365682" duration="20963000" />
-      <workItem from="1494784080290" duration="19172000" />
+      <workItem from="1494784080290" duration="19413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46438000" />
+    <option name="totallyTimeSpent" value="46679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -741,14 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="112" lean-forward="false" selection-start-line="3" selection-start-column="112" selection-end-line="3" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/departments.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -874,6 +864,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding />
         </state>
       </provider>

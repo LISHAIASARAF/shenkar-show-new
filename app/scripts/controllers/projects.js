@@ -77,6 +77,8 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             $scope.selected.departmentId = $rootScope.user.department;
+            $scope.selected.location = $rootScope.location.id;
+
 
             if( typeof $scope.selected.studentNames === 'string' ) {
                 $scope.selected.studentNames = $scope.selected.studentNames.split(',');

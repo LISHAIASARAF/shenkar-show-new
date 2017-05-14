@@ -7,15 +7,15 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('ProjectsCtrl', function ($scope, $position, $http, $q) {
+    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope) {
         $scope.departments = []
+
         $scope.new = {
-            manager: '1'
-        }
+            department: $rootScope.user.department
+        };
+
         $scope.init = function () {
             getProjects();
-            getDepartments();
-            getInstitutes();
             getLocations();
 
         };
@@ -42,16 +42,16 @@ angular.module('sbAdminApp')
         }
 
         function getLocations() {
-            $http.get('https://shenkar-show.herokuapp.com/institute/locations').then(function (resp) {
+            $http.get('https://shenkar-show.herokuapp.com/department/locations').then(function (resp) {
                 $scope.locations = resp.data;
             });
         }
 
-        function getInstitutes() {
-            $http.get('scripts/institutes.json').then(function (resp) {
-                $scope.institutes = resp.data;
-            });
-        }
+        // function getInstitutes() {
+        //     $http.get('scripts/institutes.json').then(function (resp) {
+        //         $scope.institutes = resp.data;
+        //     });
+        // }
 
         function getDepartments() {
             return $http.get('https://shenkar-show.herokuapp.com/institute/departments').then(function (resp) {
@@ -59,27 +59,6 @@ angular.module('sbAdminApp')
             });
         }
 
-        $scope.getDepartmentName = function (id) {
-            var name = '';
-            $scope.departments.forEach(function (d) {
-                if (d._id == id) {
-                    name = d.name;
-                }
-            });
-
-            return name;
-        };
-
-        $scope.getInstituteName = function (id) {
-            var name = '';
-            $scope.institutes.forEach(function (d) {
-                if (d._id == id) {
-                    name = d.name;
-                }
-            });
-
-            return name;
-        };
 
         $scope.setEdit = function (id) {
             $scope.selected = null;
@@ -95,6 +74,7 @@ angular.module('sbAdminApp')
         }
 
         $scope.update = function () {
+            $scope.selected.department = $rootScope.user.department;
             $http.put('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();

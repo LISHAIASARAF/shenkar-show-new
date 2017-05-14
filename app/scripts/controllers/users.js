@@ -19,7 +19,7 @@ angular.module('sbAdminApp')
             $scope.me = $rootScope.user;
             if ($scope.me.role == 'student') {
                 alert('אין לך הרשאה');
-                $state.go('login');
+                $state.go('dashboard.home');
             }
 
             if ($scope.me.role == 'admin') {

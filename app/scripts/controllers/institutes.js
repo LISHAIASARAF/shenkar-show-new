@@ -18,7 +18,7 @@ angular.module('sbAdminApp')
 
                 if ($scope.me.role != 'admin') {
                     alert('אין לך הרשאה');
-                    $state.go('login');
+                    $state.go('dashboard.home');
                 }
             }
             getDepartmentsMangers();

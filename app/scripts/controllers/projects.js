@@ -73,21 +73,11 @@ angular.module('sbAdminApp')
                 return false;
             }
 
-        }
+        };
 
         $scope.update = function () {
             $scope.selected.departmentId = $rootScope.user.department;
             $scope.selected.location = $scope.selected.location.id;
-
-
-            if( typeof $scope.selected.studentNames === 'string' ) {
-                $scope.selected.studentNames = $scope.selected.studentNames.split(',');
-            }
-
-            if( typeof $scope.selected.studentEmails === 'string' ) {
-                $scope.selected.studentEmails = $scope.selected.studentEmails.split(',');
-            }
-
 
             $http.post('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
@@ -95,12 +85,11 @@ angular.module('sbAdminApp')
                 $('#edit').modal('hide');
 
             });
-        }
+        };
 
         $scope.create = function () {
             $scope.new.departmentId = $rootScope.new.department;
-            $scope.new.studentNames = $scope.new.studentNames.split(',');
-            $scope.new.studentEmails = $scope.new.studentEmails.split(',');
+
             $http.post('https://shenkar-show.herokuapp.com/projects/create', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();

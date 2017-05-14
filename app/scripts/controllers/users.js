@@ -15,6 +15,8 @@ angular.module('sbAdminApp')
 
         if (!$rootScope.user) {
             $state.go('login');
+        } else {
+            $scope.me = $rootScope.user;
         }
 
         $scope.new = {
@@ -40,18 +42,20 @@ angular.module('sbAdminApp')
             });
         }
 
+        function getProjects() {
+            return $http.get('https://shenkar-show.herokuapp.com/department/projects');
+        }
+
         function getAllData() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $q.all([
                 getDepartments(),
-                // getRoles(),
                 getUsers(),
-                // getInstitues()
+                getProjects()
             ]).then(function (res) {
                 $scope.departments = res[0].data;
-                //$scope.roles = res[1].data;
                 $scope.users = res[1].data;
-
+                $scope.projects = res[2].data;
             });
             // $http.get('scripts/departments.json').then(function (resp) {
             //     $scope.departments = resp.data;
@@ -110,8 +114,8 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $scope.selected.department= $scope.selected.department.id;
-            $scope.selected.institute= $scope.selected.institute.id;
+            $scope.selected.department = $scope.selected.department.id;
+            $scope.selected.institute = $scope.selected.institute.id;
             $http.post('https://shenkar-show.herokuapp.com/institute/updateUser', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
@@ -134,9 +138,9 @@ angular.module('sbAdminApp')
 
         $scope.create = function () {
             $http.post('https://shenkar-show.herokuapp.com/institute/createUser', $scope.new).then(function (resp) {
-            if(resp.data.indexOf('user already exists')>-1){
-                toastr.error('המשתמש כבר קיים');
-            }
+                if (resp.data.indexOf('user already exists') > -1) {
+                    toastr.error('המשתמש כבר קיים');
+                }
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');

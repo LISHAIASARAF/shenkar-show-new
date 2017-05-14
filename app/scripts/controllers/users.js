@@ -17,11 +17,22 @@ angular.module('sbAdminApp')
             $state.go('login');
         } else {
             $scope.me = $rootScope.user;
+            if ($scope.me.role == 'student') {
+                alert('אין לך הרשאה');
+                $state.go('login');
+            }
+
+            if ($scope.me.role == 'admin') {
+                $scope.roles = ['institute manager'];
+            } else if ($scope.me.role == 'institute manager') {
+                $scope.roles = ['department manager'];
+            } else if ($scope.me.role == 'department manager') {
+                $scope.roles = ['student'];
+            }
         }
 
         $scope.new = {
             institute: $rootScope.user.institute
-
         };
 
         function getDepartments() {
@@ -36,15 +47,6 @@ angular.module('sbAdminApp')
             }
         }
 
-        function getRoles() {
-            return $http.get('scripts/roles.json');
-        }
-
-        function getInstitues() {
-            $http.get('scripts/institutes.json').then(function (resp) {
-                $scope.institutes = resp.data;
-            });
-        }
 
         function getProjects() {
             return $http.get('https://shenkar-show.herokuapp.com/department/projects');

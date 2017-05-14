@@ -7,15 +7,22 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('InstitutesCtrl', function ($scope, $position, $http, $cookies) {
+    .controller('InstitutesCtrl', function ($scope, $position, $http, $cookies, $rootScope, $state) {
         $scope.departments = [];
-        $scope.new={
-
-        }
+        $scope.new = {};
         $scope.init = function () {
-            getDepartmentsMangers();
+            if (!$rootScope.user) {
+                $state.go('login');
+            } else {
+                $scope.me = $rootScope.user;
 
-        }
+                if ($scope.me.role != 'admin') {
+                    alert('אין לך הרשאה');
+                    $state.go('login');
+                }
+            }
+            getDepartmentsMangers();
+        };
 
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'
@@ -57,7 +64,7 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/admin/updateInstitute',$scope.selected).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/admin/updateInstitute', $scope.selected).then(function (resp) {
                 toastr.info('המוסד עודכן בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
@@ -67,19 +74,19 @@ angular.module('sbAdminApp')
 
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute',$scope.new).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute', $scope.new).then(function (resp) {
                 toastr.info('המוסד עודכן בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');
 
-            },function(err){
+            }, function (err) {
 
             });
         };
 
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.delete('https://shenkar-show.herokuapp.com/institutes/'+$scope.selected.id).then(function (resp) {
+            $http.delete('https://shenkar-show.herokuapp.com/institutes/' + $scope.selected.id).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
                 $scope.init();
 

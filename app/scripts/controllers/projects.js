@@ -54,7 +54,7 @@ angular.module('sbAdminApp')
         }
 
         function getDepartments() {
-            return $http.get('scripts/departments.json').then(function (resp) {
+            return $http.get('https://shenkar-show.herokuapp.com/institute/departments').then(function (resp) {
                 $scope.departments = resp.data;
             });
         }

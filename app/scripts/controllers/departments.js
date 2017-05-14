@@ -14,8 +14,7 @@ angular.module('sbAdminApp')
         }
         $scope.new = {
             institute: $rootScope.user.institute
-        }
-        ;
+        };
 
         $scope.init = function () {
             getDepartmentsMangers();

@@ -81,30 +81,46 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                                             </button>
-                                            <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+                                            <h4 class="modal-title custom_align" id="Heading">עדכון פרוייקט</h4>
                                         </div>
                                         <div class="modal-body">
                                             <div class="form-group">
-                                                <label for="">שם מחלקה</label>
-                                                <input class="form-control " type="text" ng-model="selected.name">
+                                                <label for=""> שם</label>
+                                                <input type="text" ng-model="selected.department" class="form-control">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="">מנהל</label>
-                                                <select class="form-control" ng-options="u._id as u.name for u in users"
-                                                        ng-model="selected.manager">
 
+                                            <div class="form-group">
+                                                <label for=""> מחלקה</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in departments"
+                                                        ng-model="selected.department">
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <textarea rows="2" class="form-control"
-                                                          placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
-
-
+                                                <label for=""> תיאור</label>
+                                                <input type="text" class="form-control" ng-model="selected.description">
                                             </div>
+
+                                            <div class="form-group">
+                                                <label for=""> מיקום</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in locations"
+                                                        ng-model="selected.location">
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""> אימיילים הסטודנטים</label>
+                                                <input type="text" class="form-control" ng-model="selected.studentEmails">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""> שמות הסטודנטים</label>
+                                                <input type="text" class="form-control" ng-model="selected.studentNames">
+                                            </div>
+
                                         </div>
                                         <div class="modal-footer ">
-                                            <button type="button" class="btn btn-warning btn-lg" style="width: 100%;">
-                                                <span class="glyphicon glyphicon-ok-sign"></span> Update
+                                            <button type="button" ng-click="update()" class="btn btn-warning btn-lg" style="width: 100%;">
+                                                <span class="glyphicon glyphicon-ok-sign"></span> עדכון
                                             </button>
                                         </div>
                                     </div>
@@ -125,16 +141,38 @@
                                         </div>
                                         <div class="modal-body">
                                             <div class="form-group">
-                                                <label for="">שם מחלקה</label>
-                                                <input class="form-control " type="text" ng-model="new.name">
+                                                <label for=""> שם</label>
+                                                <input type="text" ng-model="new.department" class="form-control">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="">מנהל</label>
-                                                <select class="form-control" ng-options="u._id as u.name for u in users"
-                                                        ng-model="new.manager">
 
+                                            <div class="form-group">
+                                                <label for=""> מחלקה</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in departments"
+                                                        ng-model="new.department">
                                                 </select>
                                             </div>
+                                            <div class="form-group">
+                                                <label for=""> תיאור</label>
+                                                <input type="text" class="form-control" ng-model="new.description">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for=""> מיקום</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in locations"
+                                                        ng-model="new.location">
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""> אימיילים הסטודנטים</label>
+                                                <input type="text" class="form-control" ng-model="new.studentEmails">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""> שמות הסטודנטים</label>
+                                                <input type="text" class="form-control" ng-model="new.studentNames">
+                                            </div>
+
                                         </div>
                                         <div class="modal-footer ">
                                             <button type="button" class="btn btn-primary btn-lg" style="width: 100%;"

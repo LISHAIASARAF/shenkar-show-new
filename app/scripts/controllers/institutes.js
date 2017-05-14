@@ -10,7 +10,7 @@ angular.module('sbAdminApp')
     .controller('InstitutesCtrl', function ($scope, $position, $http, $q) {
         $scope.departments = [];
         $scope.new={
-            manager:'1'
+
         }
         $scope.init = function () {
             getDepartmentsMangers();
@@ -44,7 +44,7 @@ angular.module('sbAdminApp')
         $scope.setEdit = function (id) {
             $scope.selected = null;
             $scope.institutes.forEach(function (d) {
-                if (d._id == id) {
+                if (d.id == id) {
                     $scope.selected = angular.copy(d);
                 }
             });
@@ -56,33 +56,33 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.put('https://shenkar-show.herokuapp.com/institutes',$scope.selected).then(function (resp) {
-                toastr.info('המחלקה עודכנה בהצלחה');
+            $http.post('http://shenkar-show-dev.herokuapp.com/admin/updateInstitute',$scope.selected).then(function (resp) {
+                toastr.info('המוסד עודכן בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
 
             });
-        }
+        };
 
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/institutes',$scope.new).then(function (resp) {
-                toastr.info('המחלקה עודכנה בהצלחה');
+            $http.post('http://shenkar-show-dev.herokuapp.com/admin/createInstitute',$scope.new).then(function (resp) {
+                toastr.info('המוסד עודכן בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');
 
             },function(err){
 
             });
-        }
+        };
 
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.delete('https://shenkar-show.herokuapp.com/institutes/'+$scope.selected._id).then(function (resp) {
+            $http.delete('https://shenkar-show.herokuapp.com/institutes/'+$scope.selected.id).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
                 $scope.init();
 
             });
-        }
+        };
 
     });

@@ -21,15 +21,20 @@ angular.module('sbAdminApp')
         };
 
 
-        // _id : {type: Number, required:true, index:1, unique:true, autoIncrement:true},
-        // departmentId: {type: Number, ref: 'department'},
-        // name: String,
-        // description: String,
-        // imageUrl: String,
-        // videoUrl: String,
-        // soundUrl: String,
-        // location: {type: Number, ref: 'location'},
-        // institute: {type: Number, ref: 'institute'},
+        // {
+        //
+        //     _id : {type: Number, required:true, index:1, unique:true, autoIncrement:true},
+        //     departmentId: {type: Number, ref: 'department'},
+        //     name: String,
+        //         description: String,
+        //     imageUrl: [String],
+        //     videoUrl: String,
+        //     soundUrl: String,
+        //     location: {type: Number, ref: 'location'},
+        //     institute: {type: Number, ref: 'institute'},
+        //     studentNames: [String],
+        //         studentEmails: [String]
+        // },
         function getProjects() {
             $http.get('scripts/allProjects').then(function (resp) {
                 $scope.projects = resp.data;

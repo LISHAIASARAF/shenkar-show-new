@@ -29,7 +29,11 @@ angular.module('sbAdminApp')
         }
 
         function getUsers() {
-            return $http.get('https://shenkar-show.herokuapp.com/institute/users');
+            if ($scope.me.role == 'department manager') {
+                return $http.get('https://shenkar-show.herokuapp.com/institute/users');
+            } else if ($scope.me.role == 'institute manager') {
+                return $http.get('https://shenkar-show.herokuapp.com/institute/users');
+            }
         }
 
         function getRoles() {

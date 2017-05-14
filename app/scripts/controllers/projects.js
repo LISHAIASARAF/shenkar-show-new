@@ -62,6 +62,7 @@ angular.module('sbAdminApp')
 
         $scope.setEdit = function (id) {
             $scope.selected = null;
+
             $scope.projects.forEach(function (d) {
                 if (d.id == id) {
                     $scope.selected = angular.copy(d);
@@ -71,12 +72,21 @@ angular.module('sbAdminApp')
             if (!$scope.selected) {
                 return false;
             }
+
         }
 
         $scope.update = function () {
             $scope.selected.departmentId = $rootScope.user.department;
-            $scope.selected.studentNames = $scope.selected.studentNames.split(',');
-            $scope.selected.studentEmails = $scope.selected.studentEmails.split(',');
+
+            if( typeof $scope.selected.studentNames === 'string' ) {
+                $scope.selected.studentNames = $scope.selected.studentNames.split(',');
+            }
+
+            if( typeof $scope.selected.studentEmails === 'string' ) {
+                $scope.selected.studentEmails = $scope.selected.studentEmails.split(',');
+            }
+
+
             $http.put('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();

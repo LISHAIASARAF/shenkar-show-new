@@ -2,10 +2,12 @@
 
     <h1 class="page-header" style="position: relative;">
         פרוייקטים
-        <button class="btn btn-success" style="position: absolute;left: 0;top: 10px;" data-toggle="modal" data-target="#new">
+        <button class="btn btn-success" style="position: absolute;left: 0;top: 10px;" data-toggle="modal"
+                data-target="#new">
             צור חדש
             <i class="fa fa-plus"></i>
-        </button></h1>
+        </button>
+    </h1>
 
     <div class="">
         <div class="row">
@@ -26,33 +28,38 @@
                                 <th>שם</th>
                                 <th>תאור</th>
                                 <th>תמונה</th>
+                                <th>וידאו</th>
                                 <th>מקום</th>
                                 <th>מוסד</th>
+                                <th>סטודנטים</th>
+                                <th>אמיילים</th>
                                 </thead>
                                 <tbody>
 
                                 <tr ng-repeat="d in projects track by $index">
 
                                     <td>{{d._id}}</td>
-                                    <td>{{getDepartmentName(d.departmentId)}}</td>
+                                    <td>{{d.department.name}}</td>
                                     <td>{{d.name}}</td>
                                     <td>{{d.description}}</td>
-                                    <td><img ng-src="{{d.imageUrl}}" alt=""> </td>
-
-                                    <td>getLocationName{{d.location}}</td>
-                                    <td>{{getInstituteName(d.institute)}}</td>
+                                    <td><img ng-src="{{d.imageUrl}}" alt=""></td>
+                                    <td></td>
+                                    <td>getLocationName{{d.location.name}}</td>
+                                    <td>{{getInstituteName(d.institute.name)}}</td>
+                                    <td>{{d.studentNames}}</td>
+                                    <td>{{d.studentEmails}}</td>
                                     <td>
                                         <p style="display: inline;" data-placement="top" data-toggle="tooltip"
                                            title="Edit">
                                             <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                                    ng-click="setEdit(d._id)"
+                                                    ng-click="setEdit(d.id)"
                                                     data-target="#edit"><span class="glyphicon glyphicon-pencil"></span>
                                             </button>
                                         </p>
                                         <p style="display: inline;" data-placement="top" data-toggle="tooltip"
                                            title="Delete">
                                             <button class="btn btn-danger btn-xs" data-title="Delete"
-                                                    data-toggle="modal" ng-click="setEdit(d._id)"
+                                                    data-toggle="modal" ng-click="delete(d.id)"
                                                     data-target="#delete"><span
                                                     class="glyphicon glyphicon-trash"></span>
                                             </button>
@@ -130,7 +137,8 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer ">
-                                            <button type="button" class="btn btn-primary btn-lg" style="width: 100%;" ng-click="create()">
+                                            <button type="button" class="btn btn-primary btn-lg" style="width: 100%;"
+                                                    ng-click="create()">
                                                 <span class="glyphicon glyphicon-ok-sign"></span> שמור
                                             </button>
                                         </div>

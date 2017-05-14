@@ -36,7 +36,7 @@ angular.module('sbAdminApp')
         //         studentEmails: [String]
         // },
         function getProjects() {
-            $http.get('scripts/allProjects').then(function (resp) {
+            $http.get('https://shenkar-show.herokuapp.com/department/projects').then(function (resp) {
                 $scope.projects = resp.data;
             });
         }

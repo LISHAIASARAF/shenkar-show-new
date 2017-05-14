@@ -42,7 +42,7 @@ angular.module('sbAdminApp')
         function getUsers() {
             if ($scope.me.role == 'department manager') {
                 return $http.get('https://shenkar-show.herokuapp.com/department/users');
-            } else if ($scope.me.role == 'institute manager') {
+            } else if ($scope.me.role == 'institute manager' || $scope.me.role == 'admin') {
                 return $http.get('https://shenkar-show.herokuapp.com/institute/users');
             }
         }

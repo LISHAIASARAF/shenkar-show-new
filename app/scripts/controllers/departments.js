@@ -11,6 +11,12 @@ angular.module('sbAdminApp')
         $scope.departments = [];
         if (!$rootScope.user) {
             $state.go('login');
+        }else {
+            $scope.me = $rootScope.user;
+            if ($scope.me.role != 'institute manager') {
+                alert('אין לך הרשאה');
+                $state.go('home');
+            }
         }
         $scope.new = {
             institute: $rootScope.user.institute

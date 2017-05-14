@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope) {
+    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope,$state) {
         $scope.departments = []
 
         $scope.new = {
@@ -17,8 +17,17 @@ angular.module('sbAdminApp')
         $scope.init = function () {
             getProjects();
             getLocations();
-
         };
+
+        if (!$rootScope.user) {
+            $state.go('login');
+        } else {
+            $scope.me = $rootScope.user;
+            if ($scope.me.role != 'department manager',$scope.me.role != 'student') {
+                alert('אין לך הרשאה');
+                $state.go('home');
+            }
+        }
 
 
         // {

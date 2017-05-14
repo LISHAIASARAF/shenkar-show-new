@@ -134,6 +134,9 @@ angular.module('sbAdminApp')
 
         $scope.create = function () {
             $http.post('https://shenkar-show.herokuapp.com/institute/createUser', $scope.new).then(function (resp) {
+            if(resp.data.indexOf('user already exists')>-1){
+                toastr.error('המשתמש כבר קיים');
+            }
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');

@@ -56,7 +56,7 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('http://shenkar-show-dev.herokuapp.com/admin/updateInstitute',$scope.selected).then(function (resp) {
+            $http.post('https://shenkar-show-dev.herokuapp.com/admin/updateInstitute',$scope.selected).then(function (resp) {
                 toastr.info('המוסד עודכן בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
@@ -66,7 +66,7 @@ angular.module('sbAdminApp')
 
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('http://shenkar-show-dev.herokuapp.com/admin/createInstitute',$scope.new).then(function (resp) {
+            $http.post('https://shenkar-show-dev.herokuapp.com/admin/createInstitute',$scope.new).then(function (resp) {
                 toastr.info('המוסד עודכן בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');

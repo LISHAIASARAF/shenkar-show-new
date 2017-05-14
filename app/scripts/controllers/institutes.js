@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('InstitutesCtrl', function ($scope, $position, $http, $q) {
+    .controller('InstitutesCtrl', function ($scope, $position, $http, $cookies) {
         $scope.departments = [];
         $scope.new={
 
@@ -19,6 +19,7 @@ angular.module('sbAdminApp')
 
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'
+            $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $http.get('https://shenkar-show.herokuapp.com/admin/institutes').then(function (resp) {
                 $scope.institutes = resp.data;
             });

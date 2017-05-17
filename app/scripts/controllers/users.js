@@ -135,7 +135,10 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $scope.selected.department = $scope.selected.department.id;
+            if($scope.selected.department){
+                $scope.selected.department = $scope.selected.department.id;
+            }
+
             $scope.selected.institute = $scope.selected.institute.id;
 
             var url = '';

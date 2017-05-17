@@ -44,11 +44,11 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="146" column="79" lean-forward="false" selection-start-line="146" selection-start-column="79" selection-end-line="146" selection-end-column="79" />
+            <state relative-caret-position="64">
+              <caret line="138" column="75" lean-forward="false" selection-start-line="138" selection-start-column="75" selection-end-line="138" selection-end-column="75" />
               <folding>
-                <element signature="e#5985#6475#0" expanded="false" />
-                <element signature="e#6520#7013#0" expanded="false" />
+                <element signature="e#6048#6538#0" expanded="false" />
+                <element signature="e#6583#7076#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -512,12 +512,12 @@
       <workItem from="1494267525946" duration="6147000" />
       <workItem from="1494277365682" duration="20963000" />
       <workItem from="1494784080290" duration="20867000" />
-      <workItem from="1494999911436" duration="3571000" />
+      <workItem from="1494999911436" duration="3753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51704000" />
+    <option name="totallyTimeSpent" value="51886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -689,8 +689,8 @@
         <state relative-caret-position="2329">
           <caret line="137" column="45" lean-forward="false" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
           <folding>
-            <element signature="e#5985#6475#0" expanded="false" />
-            <element signature="e#6520#7013#0" expanded="false" />
+            <element signature="e#6048#6538#0" expanded="false" />
+            <element signature="e#6583#7076#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,11 +960,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="146" column="79" lean-forward="false" selection-start-line="146" selection-start-column="79" selection-end-line="146" selection-end-column="79" />
+        <state relative-caret-position="64">
+          <caret line="138" column="75" lean-forward="false" selection-start-line="138" selection-start-column="75" selection-end-line="138" selection-end-column="75" />
           <folding>
-            <element signature="e#5985#6475#0" expanded="false" />
-            <element signature="e#6520#7013#0" expanded="false" />
+            <element signature="e#6048#6538#0" expanded="false" />
+            <element signature="e#6583#7076#0" expanded="false" />
           </folding>
         </state>
       </provider>

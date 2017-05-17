@@ -11,9 +11,10 @@ angular.module('sbAdminApp')
         return {
             templateUrl: 'scripts/directives/header/header.html',
             restrict: 'E',
+            scope:{},
             replace: true,
-            controller: function () {
-                $scope.user = $rootScope.user;
+            controller: function (scope) {
+                scope.user = $rootScope.user;
             }
         }
     });

@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('UsersCtrl', function ($scope, $position, $http, $q, $rootScope, $state,$cookies) {
+    .controller('UsersCtrl', function ($scope, $position, $http, $q, $rootScope, $state, $cookies) {
         $scope.roles = ['department manager', 'institute manager', 'student'];
         $scope.init = function () {
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
@@ -32,9 +32,14 @@ angular.module('sbAdminApp')
             }
         }
 
-        $scope.new = {
-            institute: $rootScope.user.institute
-        };
+        if ($rootScope.user.institute) {
+            $scope.new = {
+                institute: $rootScope.user.institute
+            };
+        }
+        else {
+            $scope.new = {};
+        }
 
         function getDepartments() {
             return $http.get('https://shenkar-show.herokuapp.com/institute/departments');
@@ -56,16 +61,22 @@ angular.module('sbAdminApp')
             return $http.get('https://shenkar-show.herokuapp.com/department/projects');
         }
 
+        function getInstitutes() {
+            $http.get('https://shenkar-show.herokuapp.com/admin/institutes')
+        }
+
         function getAllData() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $q.all([
                 getDepartments(),
                 getUsers(),
-                getProjects()
+                getProjects(),
+                getInstitutes()
             ]).then(function (res) {
                 $scope.departments = res[0].data;
                 $scope.users = res[1].data;
                 $scope.projects = res[2].data;
+                $scope.institutes=res[3].data;
             });
             // $http.get('scripts/departments.json').then(function (resp) {
             //     $scope.departments = resp.data;

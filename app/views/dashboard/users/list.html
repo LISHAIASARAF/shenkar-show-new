@@ -122,6 +122,14 @@
 
                                                 </select>
                                             </div>
+                                            <div class="form-group" ng-show="me.role=='admin'">
+                                                <label for="">מוסדות</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in institutes"
+                                                        ng-model="selected.institute.id">
+
+                                                </select>
+                                            </div>
                                             <!--<div class="form-group">-->
                                                 <!--<label for="">מוסד</label>-->
                                                 <!--<select class="form-control" ng-options="u.id as u.name for u in institutes"-->
@@ -222,12 +230,13 @@
 
                                                 </select>
                                             </div>
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">מוסד</label>-->
-                                                <!--<select class="form-control" ng-options="u._id as u.name for u in institutes"-->
-                                                        <!--ng-model="new.institute">-->
-                                                <!--</select>-->
-                                            <!--</div>-->
+                                            <div class="form-group" ng-show="me.role=='admin'">
+                                                <label for="">מוסדות</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in institutes"
+                                                        ng-model="new.institute">
+                                                </select>
+                                            </div>
 
                                         </div>
                                         <div class="modal-footer ">

@@ -47,7 +47,7 @@ angular.module('sbAdminApp')
 
         function getUsers() {
             if ($scope.me.role == 'admin') {
-                return $http.get('http://shenkar-show.herokuapp.com/admin/users');
+                return $http.get('https://shenkar-show.herokuapp.com/admin/users');
             }
             else if ($scope.me.role == 'department manager') {
                 return $http.get('https://shenkar-show.herokuapp.com/department/users');
@@ -170,7 +170,7 @@ angular.module('sbAdminApp')
 
 
         function createInstituteManager() {
-            $http.post('http://shenkar-show.herokuapp.com/admin/createUser ', $scope.new).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/admin/createUser ', $scope.new).then(function (resp) {
                 if (resp.data.indexOf('user already exists') > -1) {
                     toastr.error('המשתמש כבר קיים');
                 }

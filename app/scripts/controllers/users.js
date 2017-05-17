@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('UsersCtrl', function ($scope, $position, $http, $q, $rootScope, $state) {
+    .controller('UsersCtrl', function ($scope, $position, $http, $q, $rootScope, $state,$cookies) {
         $scope.roles = ['department manager', 'institute manager', 'student'];
         $scope.init = function () {
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;

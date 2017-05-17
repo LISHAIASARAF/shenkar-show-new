@@ -137,7 +137,19 @@ angular.module('sbAdminApp')
             //'https://shenkar-show.herokuapp.com/department/users'
             $scope.selected.department = $scope.selected.department.id;
             $scope.selected.institute = $scope.selected.institute.id;
-            $http.post('https://shenkar-show.herokuapp.com/institute/updateUser', $scope.selected).then(function (resp) {
+
+            var url = '';
+
+            if ($scope.me.role == 'admin') {
+                url = 'https://shenkar-show.herokuapp.com/admin/updateUser';
+            }
+            else if ($scope.me.role == 'department manager') {
+                url = 'https://shenkar-show.herokuapp.com/department/updateUser';
+            } else if ($scope.me.role == 'institute manager') {
+                url = 'https://shenkar-show.herokuapp.com/institute/updateUser';
+            }
+
+            $http.post(url, $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');

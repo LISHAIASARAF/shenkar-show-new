@@ -40,7 +40,10 @@ angular.module('sbAdminApp')
         }
 
         function getUsers() {
-            if ($scope.me.role == 'department manager') {
+            if ($scope.me.role == 'admin') {
+                return $http.get('http://shenkar-show.herokuapp.com/admin/users');
+            }
+            else if ($scope.me.role == 'department manager') {
                 return $http.get('https://shenkar-show.herokuapp.com/department/users');
             } else if ($scope.me.role == 'institute manager' || $scope.me.role == 'admin') {
                 return $http.get('https://shenkar-show.herokuapp.com/institute/users');
@@ -143,6 +146,33 @@ angular.module('sbAdminApp')
         };
 
         $scope.create = function () {
+            if ($scope.me.role == 'admin') {
+                createInstituteManager();
+            }
+            else if ($scope.me.role == 'department manager') {
+                createStudent();
+            } else if ($scope.me.role == 'institute manager') {
+                createDepartmentManager()
+            }
+        };
+
+
+        function createInstituteManager() {
+            $http.post('http://shenkar-show.herokuapp.com/admin/createUser ', $scope.new).then(function (resp) {
+                if (resp.data.indexOf('user already exists') > -1) {
+                    toastr.error('המשתמש כבר קיים');
+                }
+                toastr.info('הנתונים נשמרו בהצלחה');
+                $scope.init();
+                $('#new').modal('hide');
+
+            }, function () {
+                toastr.error('בעיה בשמירת הנתונים');
+
+            });
+        }
+
+        function createDepartmentManager() {
             $http.post('https://shenkar-show.herokuapp.com/institute/createUser', $scope.new).then(function (resp) {
                 if (resp.data.indexOf('user already exists') > -1) {
                     toastr.error('המשתמש כבר קיים');
@@ -155,7 +185,21 @@ angular.module('sbAdminApp')
                 toastr.error('בעיה בשמירת הנתונים');
 
             });
+        }
 
+        function createStudent() {
+            $http.post('https://shenkar-show.herokuapp.com/department/createUser', $scope.new).then(function (resp) {
+                if (resp.data.indexOf('user already exists') > -1) {
+                    toastr.error('המשתמש כבר קיים');
+                }
+                toastr.info('הנתונים נשמרו בהצלחה');
+                $scope.init();
+                $('#new').modal('hide');
+
+            }, function () {
+                toastr.error('בעיה בשמירת הנתונים');
+
+            });
         }
 
     });

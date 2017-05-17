@@ -115,8 +115,13 @@
                                                 <input class="form-control " type="text"
                                                        ng-model="new.locationDescription">
                                             </div>
+                                            <div class="form-group">
+                                                <label for="">תמונה רגילה</label>
+                                                <input class="form-control " type="file"
+                                                       ng-model="new.imageUrl">
+                                            </div>
                                         </div>
-                                        <div class="modal-footer ">
+                                        <div class="modal-footer">
                                             <button type="button" class="btn btn-primary btn-lg" style="width: 100%;"
                                                     ng-click="create()">
                                                 <span class="glyphicon glyphicon-ok-sign"></span> שמור
@@ -138,7 +143,6 @@
                                             <h4 class="modal-title custom_align" id="Heading">מחיקת מחלקה </h4>
                                         </div>
                                         <div class="modal-body">
-
                                             <div class="alert alert-danger"><span
                                                     class="glyphicon glyphicon-warning-sign"></span> האם למחוק את המחלקה
                                                 {{selected.name}} ?

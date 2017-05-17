@@ -62,7 +62,7 @@ angular.module('sbAdminApp')
         }
 
         function getInstitutes() {
-            $http.get('https://shenkar-show.herokuapp.com/admin/institutes')
+            return $http.get('https://shenkar-show.herokuapp.com/admin/institutes')
         }
 
         function getAllData() {
@@ -76,7 +76,7 @@ angular.module('sbAdminApp')
                 $scope.departments = res[0].data;
                 $scope.users = res[1].data;
                 $scope.projects = res[2].data;
-                $scope.institutes=res[3].data;
+                $scope.institutes = res[3].data;
             });
             // $http.get('scripts/departments.json').then(function (resp) {
             //     $scope.departments = resp.data;

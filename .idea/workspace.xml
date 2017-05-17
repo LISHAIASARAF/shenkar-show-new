@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/users.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/users.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,11 +44,10 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            <state relative-caret-position="61">
+              <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
               <folding>
-                <element signature="e#5561#6050#0" expanded="false" />
-                <element signature="e#6095#6588#0" expanded="false" />
+                <element signature="e#6105#6598#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -510,12 +510,12 @@
       <workItem from="1494267525946" duration="6147000" />
       <workItem from="1494277365682" duration="20963000" />
       <workItem from="1494784080290" duration="20867000" />
-      <workItem from="1494999911436" duration="2537000" />
+      <workItem from="1494999911436" duration="2914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50670000" />
+    <option name="totallyTimeSpent" value="51047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -687,8 +687,7 @@
         <state relative-caret-position="2329">
           <caret line="137" column="45" lean-forward="false" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
           <folding>
-            <element signature="e#5561#6050#0" expanded="false" />
-            <element signature="e#6095#6588#0" expanded="false" />
+            <element signature="e#6105#6598#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -958,11 +957,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="61">
+          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding>
-            <element signature="e#5561#6050#0" expanded="false" />
-            <element signature="e#6095#6588#0" expanded="false" />
+            <element signature="e#6105#6598#0" expanded="false" />
           </folding>
         </state>
       </provider>

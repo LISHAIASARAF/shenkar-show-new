@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sbAdminApp')
-    .controller('AuthCtrl', function ($scope, $position, $http, Authentication, $state, $cookieStore, $rootScope) {
+    .controller('AuthCtrl', function ($scope, $position, $http, Authentication, $state, $cookieStore, $rootScope,$cookies) {
         $scope.userName = '';
         $scope.password = '';
         $scope.dtFrom = '';
@@ -12,7 +12,7 @@ angular.module('sbAdminApp')
         $scope.reNewPassword;
 
         $scope.login = function () {
-
+            $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $http.post(
                 'https://shenkar-show.herokuapp.com/users/auth',
                 {

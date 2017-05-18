@@ -86,6 +86,13 @@ angular.module('sbAdminApp')
         }
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
+            var payload = new FormData();
+            payload.append("name", $scope.new.name);
+            payload.append("locationDescription", $scope.new.locationDescription);
+            payload.append("imageUrl", $scope.new.imageUrl);
+            // payload.append("name", $scope.new.name);
+            // payload.append("name", $scope.new.name);
+
 
             $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment', $scope.new).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
@@ -105,19 +112,18 @@ angular.module('sbAdminApp')
             });
         }
 
-    }).directive("fileread", [function () {
+    }).directive('fileModel', ['$parse', function ($parse) {
     return {
-        scope: {
-            fileread: "="
-        },
-        link: function (scope, element, attributes) {
-            element.bind("change", function (changeEvent) {
+        restrict: 'A',
+        link: function (scope, element, attrs) {
+            var model = $parse(attrs.fileModel);
+            var modelSetter = model.assign;
+
+            element.bind('change', function () {
                 scope.$apply(function () {
-                    scope.fileread = changeEvent.target.files[0];
-                    // or all selected files:
-                    // scope.fileread = changeEvent.target.files;
+                    modelSetter(scope, element[0].files[0]);
                 });
             });
         }
-    }
+    };
 }]);

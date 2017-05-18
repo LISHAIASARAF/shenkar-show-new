@@ -145,7 +145,8 @@ angular.module('sbAdminApp')
         };
 
         $scope.create = function () {
-            $scope.new.departmentId = $scope.new.department;
+
+            $scope.new.institute = $scope.new.institute;
 
             $http.post('https://shenkar-show.herokuapp.com/institute/createRoute', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');

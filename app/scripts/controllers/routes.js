@@ -30,7 +30,7 @@ angular.module('sbAdminApp')
                 names.push(name);
             });
 
-            return names;
+            return names.join(',');
         };
 
         $scope.toggleSelectionEdit = function toggleSelection(p_id) {

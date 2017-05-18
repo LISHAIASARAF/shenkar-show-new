@@ -1,5 +1,5 @@
 angular.module('sbAdminApp')
-    .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state,$cookies) {
+    .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state, $cookies) {
 
         $scope.init = function () {
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
@@ -46,11 +46,14 @@ angular.module('sbAdminApp')
         };
 
         function getProjectName(p_id) {
+            var name = '';
             $scope.projects.forEach(function (p) {
                 if (p.id == p_id) {
-                    return p.name;
+                    name = p.name;
                 }
             });
+
+            return name;
         }
 
     });

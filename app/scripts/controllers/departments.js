@@ -81,6 +81,7 @@ angular.module('sbAdminApp')
             payload.append("imageUrl", $scope.selected.imageUrl);
             payload.append("largeImageUrl", $scope.selected.largeImageUrl);
             payload.append("institute", $rootScope.user.institute);
+            payload.append("id", $rootScope.selected.id);
 
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/institute/updateDepartment',

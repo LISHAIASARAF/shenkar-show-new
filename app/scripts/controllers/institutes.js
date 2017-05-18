@@ -73,6 +73,9 @@ angular.module('sbAdminApp')
         };
 
         $scope.create = function () {
+
+            // logoUrl: String,
+            // aboutImageUrl: String
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute', $scope.new).then(function (resp) {
                 toastr.info('המוסד עודכן בהצלחה');

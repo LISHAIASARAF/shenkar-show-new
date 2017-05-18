@@ -7,6 +7,10 @@ angular.module('sbAdminApp')
         $scope.dtFrom = '';
         $scope.dtTo = '';
 
+        $scope.oldPassword;
+        $scope.newPassword;
+        $scope.reNewPassword;
+
         $scope.login = function () {
 
             $http.post(
@@ -32,5 +36,25 @@ angular.module('sbAdminApp')
                 );
 
         }
+
+        $scope.resetPassword = function () {
+            var reset = {
+                oldPassword: $scope.oldPassword,
+                newPassword: $scope.newPassword,
+                reNewPassword: $scope.reNewPassword,
+            };
+
+            $http.post(
+                'http://shenkar-show.herokuapp.com/updatePassword',
+                reset
+            ).then(
+                function (res) {
+                    toastr.info('הסיסמא שונתה בהצלחה');
+                },
+                function (err) {
+
+                }
+            );
+        };
 
     });

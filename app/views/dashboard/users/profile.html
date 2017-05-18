@@ -13,13 +13,19 @@
                     <form role="form">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="שם משתמש" name="userName" ng-model="userName"   autofocus>
+                                <label>סיסמא ישנה</label>
+                                <input class="form-control" name="oldPassword" ng-model="oldPassword"   autofocus>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="סיסמא" name="password" type="password" ng-model="password" value="">
+                                <label>סיסמא חדשה</label>
+                                <input class="form-control" name="newPassword" ng-model="newPassword"   autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label>אימות סיסמא</label>
+                                <input class="form-control" name="reNewPassword" ng-model="reNewPassword"   autofocus>
                             </div>
 
-                            <a  class="btn btn-lg btn-success btn-block" ng-click="login()">כניסה</a>
+                            <a  class="btn btn-lg btn-success btn-block" ng-click="resetPassword()">איפוס סיסמא</a>
                         </fieldset>
                     </form>
                 </div>

@@ -80,6 +80,7 @@ angular.module('sbAdminApp')
             payload.append("locationDescription", $scope.selected.locationDescription);
             payload.append("imageUrl", $scope.selected.imageUrl);
             payload.append("largeImageUrl", $scope.selected.largeImageUrl);
+            payload.append("institute", $rootScope.user.institute);
 
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/institute/updateDepartment',
@@ -91,10 +92,8 @@ angular.module('sbAdminApp')
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
-
             });
-
-        }
+        };
 
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
@@ -103,16 +102,13 @@ angular.module('sbAdminApp')
             payload.append("locationDescription", $scope.new.locationDescription);
             payload.append("imageUrl", $scope.new.imageUrl);
             payload.append("largeImageUrl", $scope.new.largeImageUrl);
-            // payload.append("name", $scope.new.name);
-            // payload.append("name", $scope.new.name);
+            payload.append("institute", $rootScope.user.institute);
+
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/institute/createDepartment',
                 method: 'POST',
                 data: payload,
-                //assign content-type as undefined, the browser
-                //will assign the correct boundary for us
                 headers: { 'Content-Type': undefined},
-                //prevents serializing payload.  don't do it.
                 transformRequest: angular.identity
             }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
@@ -123,15 +119,7 @@ angular.module('sbAdminApp')
 
             });
 
-            // $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment', payload).then(function (resp) {
-            //     toastr.info('המחלקה עודכנה בהצלחה');
-            //     $scope.init();
-            //     $('#new').modal('hide');
-            //
-            // }, function (err) {
-            //
-            // });
-        }
+        };
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.delete('https://shenkar-show.herokuapp.com/department/' + $scope.selected.id).then(function (resp) {

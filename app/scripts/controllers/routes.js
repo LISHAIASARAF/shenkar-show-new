@@ -2,7 +2,7 @@ angular.module('sbAdminApp')
     .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state) {
 
         $scope.init = function () {
-
+            $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $q.all([
                 getAllRoutes(),
                 getAllProjects()

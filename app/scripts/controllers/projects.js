@@ -88,7 +88,7 @@ angular.module('sbAdminApp')
             var payload = new FormData();
             payload.append("name", $scope.selected.name);
             payload.append("description", $scope.selected.description);
-            payload.append("location", $scope.selected.location);
+            payload.append("location", $scope.selected.location.id);
             payload.append("studentEmails", $scope.selected.studentEmails);
             payload.append("studentNames", $scope.selected.studentNames);
             payload.append("imageUrl", $scope.selected.imageUrl);

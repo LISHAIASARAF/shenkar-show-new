@@ -34,14 +34,14 @@ angular.module('sbAdminApp')
         };
 
         $scope.toggleSelectionEdit = function toggleSelection(p_id) {
-            var idx = $scope.selected.projects.indexOf(p_id);
+            var idx = $scope.selected.projectIds.indexOf(p_id);
             // Is currently selected
             if (idx > -1) {
-                $scope.selected.projects.splice(idx, 1);
+                $scope.selected.projectIds.splice(idx, 1);
             }
             // Is newly selected
             else {
-                $scope.selected.projects.push(p_id);
+                $scope.selected.projectIds.push(p_id);
             }
         };
 

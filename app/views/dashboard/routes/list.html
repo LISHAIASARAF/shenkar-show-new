@@ -1,7 +1,7 @@
 <div ng-init="init()">
     <h1 class="page-header">מסלולים</h1>
     <div class="row">
-        <table>
+        <table class="table">
             <tr>
                 <th>שם</th>
                 <th>פרוייקטים</th>
@@ -52,7 +52,7 @@
                             <input type="checkbox"
                                    name="selectedProjects"
                                    value="{{project.name}}"
-                                   ng-checked="selected.projects.indexOf(project.id) > -1"
+                                   ng-checked="selected.projectIds.indexOf(project.id) > -1"
                                    ng-click="toggleSelectionEdit(project.id)"
                             > {{project.name}}
                         </label>
@@ -91,7 +91,7 @@
                             <input type="checkbox"
                                    name="selectedProjects"
                                    value="{{project.name}}"
-                                   ng-checked="new.projects.indexOf(project.id) > -1"
+                                   ng-checked="new.projectIds.indexOf(project.id) > -1"
                                    ng-click="toggleSelectionEdit(project.id)"
                             > {{project.name}}
                         </label>

@@ -14,7 +14,7 @@
                     <p style="display: inline;" data-placement="top" data-toggle="tooltip"
                        title="Edit">
                         <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                ng-click="setEdit(d.id)"
+                                ng-click="setEdit(r.id)"
                                 data-target="#edit"><span class="glyphicon glyphicon-pencil"></span>
                         </button>
                     </p>
@@ -46,7 +46,7 @@
                         <label for="">שם</label>
                         <input class="form-control " type="text" ng-model="selected.name">
                     </div>
-                    <div class="form-group">
+                    <div class="clearfix">
                         <label for="">שם</label>
                         <label class="col-xs-12" ng-repeat="project in projects track by $index">
                             <input type="checkbox"
@@ -85,14 +85,14 @@
                         <label for="">שם</label>
                         <input class="form-control " type="text" ng-model="new.name">
                     </div>
-                    <div class="form-group">
+                    <div class="clearfix">
                         <label for="">שם</label>
-                        <label ng-repeat="project in projects track by $index">
+                        <label ng-repeat="project in projects track by $index" class="col-xs-12">
                             <input type="checkbox"
                                    name="selectedProjects"
                                    value="{{project.name}}"
                                    ng-checked="new.projectIds.indexOf(project.id) > -1"
-                                   ng-click="toggleSelectionEdit(project.id)"
+                                   ng-click="toggleSelectionNew(project.id)"
                             > {{project.name}}
                         </label>
                     </div>

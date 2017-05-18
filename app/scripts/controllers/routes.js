@@ -1,8 +1,49 @@
 angular.module('sbAdminApp')
     .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state, $cookies) {
 
-        $scope.selection=[];
+        // var routes = [{
+        //     name: "test 2",
+        //     institute: 1,
+        //     projectIds: [
+        //         1,
+        //         2,
+        //         10,
+        //         13,
+        //         11
+        //     ],
+        //     id: 2
+        // }];
+        //
+        // var projs = [{
+        //     name: "פרויקט 11",
+        //     institute: 1,
+        //     imageUrl: [],
+        //     id: 1
+        // },
+        //     {
+        //         name: "פרויקט 22",
+        //         institute: 1,
+        //         imageUrl: [],
+        //         id: 2
+        //     },
+        //     {
+        //
+        //         name: "פרויקט 33",
+        //         institute: 1,
+        //         imageUrl: [],
+        //         id: 3
+        //     },
+        //     {
+        //         name: "פרויקט 44",
+        //         institute: 1,
+        //         imageUrl: [],
+        //         id: 4
+        //     }];
+
+        $scope.selection = [];
         $scope.init = function () {
+            // $scope.routes = routes;//res[0].data;
+            // $scope.projects = projs;//res[1].data;
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $q.all([
                 getAllRoutes(),
@@ -21,11 +62,9 @@ angular.module('sbAdminApp')
         }
 
         $scope.isChecked = function (id) {
-
-
             var ischecked = $scope.selection.indexOf(id) > -1;
             return ischecked;
-        }
+        };
 
         function getAllProjects() {
             return $http.get('https://shenkar-show.herokuapp.com/institute/projects');
@@ -43,8 +82,9 @@ angular.module('sbAdminApp')
                 return false;
             }
 
-            $scope.selection=$scope.selected.projectIds;
+            $scope.selection = $scope.selected.projectIds;
         }
+
         $scope.getProjectsName = function (route) {
             var names = [];
             route.projectIds.forEach(function (p) {
@@ -67,6 +107,23 @@ angular.module('sbAdminApp')
             }
         };
 
+
+        $scope.toggleSelectionNew = function toggleSelection(p_id) {
+            if (!$scope.new.projectIds) {
+                $scope.new.projectIds = [];
+            }
+
+            var idx = $scope.new.projectIds.indexOf(p_id);
+            // Is currently selected
+            if (idx > -1) {
+                $scope.new.projectIds.splice(idx, 1);
+            }
+            // Is newly selected
+            else {
+                $scope.new.projectIds.push(p_id);
+            }
+        };
+
         function getProjectName(p_id) {
             var name = '';
             $scope.projects.forEach(function (p) {
@@ -77,5 +134,36 @@ angular.module('sbAdminApp')
 
             return name;
         }
+
+        $scope.update = function () {
+            $http.post('https://shenkar-show.herokuapp.com/institute/updateRoute', $scope.selected).then(function (resp) {
+                toastr.info('הנתונים נשמרו בהצלחה');
+                $scope.init();
+                $('#edit').modal('hide');
+
+            });
+        };
+
+        $scope.create = function () {
+            $scope.new.departmentId = $scope.new.department;
+
+            $http.post('https://shenkar-show.herokuapp.com/institute/createRoute', $scope.new).then(function (resp) {
+                toastr.info('הנתונים נשמרו בהצלחה');
+                $scope.init();
+                $('#new').modal('hide');
+
+            }, function (err) {
+
+            });
+        };
+
+        $scope.delete = function () {
+            //'https://shenkar-show.herokuapp.com/department/users'
+            $http.post('https://shenkar-show.herokuapp.com/institute/deleteRoute', $scope.selected.id).then(function (resp) {
+                toastr.info('נמחק בהצלחה');
+                $scope.init();
+
+            });
+        };
 
     });

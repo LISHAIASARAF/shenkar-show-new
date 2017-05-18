@@ -45,7 +45,7 @@ angular.module('sbAdminApp')
             };
 
             $http.post(
-                'http://shenkar-show.herokuapp.com/updatePassword',
+                'https://shenkar-show.herokuapp.com/updatePassword',
                 reset
             ).then(
                 function (res) {

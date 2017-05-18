@@ -52,7 +52,7 @@
                             <input type="checkbox"
                                    name="selectedProjects"
                                    value="{{project.name}}"
-                                   ng-checked="selected.projectIds.indexOf(project.id) > -1"
+                                   ng-checked="isChecked(project.id)"
                                    ng-click="toggleSelectionEdit(project.id)"
                             > {{project.name}}
                         </label>

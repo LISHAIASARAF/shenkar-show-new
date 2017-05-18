@@ -19,9 +19,14 @@ angular.module('sbAdminApp')
             // });
         }
 
+        $scope.isChecked = function (id) {
+            var ischecked = $scope.selected.projectIds.indexOf(id) > -1;
+            return ischecked;
+        }
         function getAllProjects() {
             return $http.get('https://shenkar-show.herokuapp.com/institute/projects');
         }
+
         $scope.setEdit = function (id) {
             $scope.selected = null;
             $scope.routes.forEach(function (d) {

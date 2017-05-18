@@ -70,7 +70,7 @@ angular.module('sbAdminApp')
 
 
         $scope.toggleSelectionNew = function toggleSelection(p_id) {
-            if (!$scope.new && !$scope.new.projectIds) {
+            if (!$scope.new || !$scope.new.projectIds) {
 
                 $scope.new.projectIds = [];
             }

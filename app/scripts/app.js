@@ -82,6 +82,11 @@ angular
 
 
                 })
+                .state('dashboard.routes', {
+                    templateUrl: 'views/dashboard/routes/list.html',
+                    url: '/routes',
+                    controller: 'RoutesCtrl',
+                })
 
 
             // $stateProvider

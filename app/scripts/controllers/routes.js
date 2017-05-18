@@ -1,49 +1,10 @@
 angular.module('sbAdminApp')
     .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state, $cookies) {
 
-        // var routes = [{
-        //     name: "test 2",
-        //     institute: 1,
-        //     projectIds: [
-        //         1,
-        //         2,
-        //         10,
-        //         13,
-        //         11
-        //     ],
-        //     id: 2
-        // }];
-        //
-        // var projs = [{
-        //     name: "פרויקט 11",
-        //     institute: 1,
-        //     imageUrl: [],
-        //     id: 1
-        // },
-        //     {
-        //         name: "פרויקט 22",
-        //         institute: 1,
-        //         imageUrl: [],
-        //         id: 2
-        //     },
-        //     {
-        //
-        //         name: "פרויקט 33",
-        //         institute: 1,
-        //         imageUrl: [],
-        //         id: 3
-        //     },
-        //     {
-        //         name: "פרויקט 44",
-        //         institute: 1,
-        //         imageUrl: [],
-        //         id: 4
-        //     }];
 
         $scope.selection = [];
         $scope.init = function () {
-            // $scope.routes = routes;//res[0].data;
-            // $scope.projects = projs;//res[1].data;
+
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $q.all([
                 getAllRoutes(),
@@ -146,7 +107,7 @@ angular.module('sbAdminApp')
 
         $scope.create = function () {
 
-            $scope.new.institute = $scope.new.institute;
+            $scope.new.institute = $rootScope.user.institute;
 
             $http.post('https://shenkar-show.herokuapp.com/institute/createRoute', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');

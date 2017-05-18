@@ -19,9 +19,10 @@ angular.module('sbAdminApp')
             // });
         }
 
-        $scope.isChecked = function (route,id) {
+        $scope.isChecked = function (id) {
 
-            var ischecked = route.projectIds.indexOf(id) > -1;
+            if (!$scope.selected)return;
+            var ischecked = $scope.selected.projectIds.indexOf(id) > -1;
             return ischecked;
         }
 

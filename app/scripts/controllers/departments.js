@@ -84,6 +84,7 @@ angular.module('sbAdminApp')
 
             });
         }
+
         $scope.create = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
             var payload = new FormData();
@@ -119,8 +120,8 @@ angular.module('sbAdminApp')
             var model = $parse(attrs.fileModel);
             var modelSetter = model.assign;
 
-            element.bind('change', function () {
-                scope.$apply(function () {
+            element.bind('change', function(){
+                scope.$apply(function(){
                     modelSetter(scope, element[0].files[0]);
                 });
             });

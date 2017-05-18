@@ -32,8 +32,6 @@ angular.module('sbAdminApp')
             $http.get('https://shenkar-show.herokuapp.com/institute/users').then(function (resp) {
                 $scope.users = resp.data;
                 $http.get('https://shenkar-show.herokuapp.com/institute/departments').then(function (resp) {
-
-
                     $scope.departments = resp.data;
 
                 });
@@ -77,12 +75,25 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/institute/updateDepartment', $scope.selected).then(function (resp) {
+            var payload = new FormData();
+            payload.append("name", $scope.selected.name);
+            payload.append("locationDescription", $scope.selected.locationDescription);
+            payload.append("imageUrl", $scope.selected.imageUrl);
+            payload.append("largeImageUrl", $scope.selected.largeImageUrl);
+
+            return $http({
+                url: 'https://shenkar-show.herokuapp.com/institute/updateDepartment',
+                method: 'POST',
+                data: payload,
+                headers: { 'Content-Type': undefined},
+                transformRequest: angular.identity
+            }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
 
             });
+
         }
 
         $scope.create = function () {
@@ -91,6 +102,7 @@ angular.module('sbAdminApp')
             payload.append("name", $scope.new.name);
             payload.append("locationDescription", $scope.new.locationDescription);
             payload.append("imageUrl", $scope.new.imageUrl);
+            payload.append("largeImageUrl", $scope.new.largeImageUrl);
             // payload.append("name", $scope.new.name);
             // payload.append("name", $scope.new.name);
             return $http({

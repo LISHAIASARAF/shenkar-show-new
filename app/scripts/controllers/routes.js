@@ -29,8 +29,8 @@ angular.module('sbAdminApp')
                 var name = getProjectName(p);
                 names.push(name);
             });
-
-            return names.join(',');
+            names = names.join(',');
+            return names;
         };
 
         $scope.toggleSelectionEdit = function toggleSelection(p_id) {

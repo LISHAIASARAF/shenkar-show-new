@@ -115,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
-              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -556,12 +556,12 @@
       <workItem from="1494267525946" duration="6147000" />
       <workItem from="1494277365682" duration="20963000" />
       <workItem from="1494784080290" duration="20867000" />
-      <workItem from="1494999911436" duration="18576000" />
+      <workItem from="1494999911436" duration="18644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66709000" />
+    <option name="totallyTimeSpent" value="66777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1032,7 +1032,7 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -23,7 +23,7 @@ angular.module('sbAdminApp')
             $state.go('login');
         } else {
             $scope.me = $rootScope.user;
-            if ($scope.me.role != 'department manager' || $scope.me.role != 'student') {
+            if ($scope.me.role != 'department manager' && $scope.me.role != 'student') {
                 alert('אין לך הרשאה');
                 $state.go('dashboard.home');
             }

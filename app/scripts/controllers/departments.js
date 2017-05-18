@@ -95,7 +95,7 @@ angular.module('sbAdminApp')
             // payload.append("name", $scope.new.name);
 
 
-            $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment', $scope.new).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment', payload).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');

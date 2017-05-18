@@ -1,7 +1,7 @@
 angular.module('sbAdminApp')
     .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state, $cookies) {
 
-
+        $scope.new = {};
         $scope.selection = [];
         $scope.init = function () {
 
@@ -70,7 +70,8 @@ angular.module('sbAdminApp')
 
 
         $scope.toggleSelectionNew = function toggleSelection(p_id) {
-            if (!$scope.new.projectIds) {
+            if (!$scope.new && !$scope.new.projectIds) {
+
                 $scope.new.projectIds = [];
             }
 

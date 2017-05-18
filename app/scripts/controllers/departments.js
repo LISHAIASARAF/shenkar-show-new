@@ -93,9 +93,16 @@ angular.module('sbAdminApp')
             payload.append("imageUrl", $scope.new.imageUrl);
             // payload.append("name", $scope.new.name);
             // payload.append("name", $scope.new.name);
-
-
-            $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment', payload).then(function (resp) {
+            return $http({
+                url: 'https://shenkar-show.herokuapp.com/institute/createDepartment',
+                method: 'POST',
+                data: payload,
+                //assign content-type as undefined, the browser
+                //will assign the correct boundary for us
+                headers: { 'Content-Type': undefined},
+                //prevents serializing payload.  don't do it.
+                transformRequest: angular.identity
+            }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
                 $('#new').modal('hide');
@@ -103,6 +110,15 @@ angular.module('sbAdminApp')
             }, function (err) {
 
             });
+
+            // $http.post('https://shenkar-show.herokuapp.com/institute/createDepartment', payload).then(function (resp) {
+            //     toastr.info('המחלקה עודכנה בהצלחה');
+            //     $scope.init();
+            //     $('#new').modal('hide');
+            //
+            // }, function (err) {
+            //
+            // });
         }
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'

@@ -87,6 +87,12 @@ angular
                     url: '/routes',
                     controller: 'RoutesCtrl',
                 })
+                .state('dashboard.profile', {
+                    templateUrl: 'views/dashboard/users/profile.html',
+                    url: '/profile',
+                    controller: 'AuthCtrl',
+                })
+
 
 
             // $stateProvider

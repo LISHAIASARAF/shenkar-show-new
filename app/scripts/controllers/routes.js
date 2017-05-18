@@ -20,7 +20,7 @@ angular.module('sbAdminApp')
         }
 
         function getAllProjects() {
-            return $http.get('https://shenkar-show.herokuapp.com/department/projects');
+            return $http.get('https://shenkar-show.herokuapp.com/institute/projects');
         }
 
         $scope.getProjectsName = function (route) {

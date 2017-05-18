@@ -22,7 +22,18 @@ angular.module('sbAdminApp')
         function getAllProjects() {
             return $http.get('https://shenkar-show.herokuapp.com/institute/projects');
         }
+        $scope.setEdit = function (id) {
+            $scope.selected = null;
+            $scope.routes.forEach(function (d) {
+                if (d.id == id) {
+                    $scope.selected = angular.copy(d);
+                }
+            });
 
+            if (!$scope.selected) {
+                return false;
+            }
+        }
         $scope.getProjectsName = function (route) {
             var names = [];
             route.projectIds.forEach(function (p) {

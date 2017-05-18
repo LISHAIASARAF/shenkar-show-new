@@ -25,7 +25,7 @@ angular.module('sbAdminApp')
 
         $scope.getProjectsName = function (route) {
             var names = [];
-            route.projects.forEach(function (p) {
+            route.projectIds.forEach(function (p) {
                 var name = getProjectName(p);
                 names.push(name);
             });

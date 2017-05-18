@@ -22,7 +22,7 @@ angular.module('sbAdminApp')
             )
                 .then(
                     function (res) {
-                        if (!res.data) {
+                        if (res.data=='false') {
                             toastr.error('שם משתמש או סיסמא לא נכונים');
                             return false;
                         }

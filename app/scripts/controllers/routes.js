@@ -1,6 +1,7 @@
 angular.module('sbAdminApp')
     .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state, $cookies) {
 
+        $scope.selection=[];
         $scope.init = function () {
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $q.all([
@@ -21,8 +22,8 @@ angular.module('sbAdminApp')
 
         $scope.isChecked = function (id) {
 
-            if (!$scope.selected)return;
-            var ischecked = $scope.selected.projectIds.indexOf(id) > -1;
+
+            var ischecked = $scope.selection.indexOf(id) > -1;
             return ischecked;
         }
 
@@ -41,6 +42,8 @@ angular.module('sbAdminApp')
             if (!$scope.selected) {
                 return false;
             }
+
+            $scope.selection=$scope.selected.projectIds;
         }
         $scope.getProjectsName = function (route) {
             var names = [];

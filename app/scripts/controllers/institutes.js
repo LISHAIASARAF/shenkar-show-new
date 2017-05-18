@@ -63,28 +63,70 @@ angular.module('sbAdminApp')
         }
 
         $scope.update = function () {
-            //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/admin/updateInstitute', $scope.selected).then(function (resp) {
-                toastr.info('המוסד עודכן בהצלחה');
+            var payload = new FormData();
+            payload.append("name", $scope.selected.name);
+            payload.append("aboutText", $scope.selected.aboutText);
+            payload.append("lineColor", $scope.selected.lineColor);
+            payload.append("mainTextColor", $scope.selected.mainTextColor);
+            payload.append("primaryColor", $rootScope.selected.primaryColor);
+            payload.append("secondaryColor", $rootScope.selected.secondaryColor);
+            payload.append("logoUrl", $rootScope.selected.logoUrl);
+            payload.append("aboutImageUrl", $rootScope.selected.aboutImageUrl);
+
+
+            return $http({
+                url: 'https://shenkar-show.herokuapp.com/admin/updateInstitute',
+                method: 'POST',
+                data: payload,
+                headers: {'Content-Type': undefined},
+                transformRequest: angular.identity
+            }).then(function (resp) {
+                toastr.info(' נתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
-
             });
+            // $http.post('https://shenkar-show.herokuapp.com/admin/updateInstitute', $scope.selected).then(function (resp) {
+            //     toastr.info('המוסד עודכן בהצלחה');
+            //     $scope.init();
+            //     $('#edit').modal('hide');
+            //
+            // });
         };
 
         $scope.create = function () {
+            var payload = new FormData();
+            payload.append("name", $scope.new.name);
+            payload.append("aboutText", $scope.new.aboutText);
+            payload.append("lineColor", $scope.new.lineColor);
+            payload.append("mainTextColor", $scope.new.mainTextColor);
+            payload.append("primaryColor", $rootScope.new.primaryColor);
+            payload.append("secondaryColor", $rootScope.new.secondaryColor);
+            payload.append("logoUrl", $rootScope.new.logoUrl);
+            payload.append("aboutImageUrl", $rootScope.new.aboutImageUrl);
 
-            // logoUrl: String,
-            // aboutImageUrl: String
-            //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute', $scope.new).then(function (resp) {
-                toastr.info('המוסד עודכן בהצלחה');
+
+            return $http({
+                url: 'https://shenkar-show.herokuapp.com/admin/createInstitute',
+                method: 'POST',
+                data: payload,
+                headers: {'Content-Type': undefined},
+                transformRequest: angular.identity
+            }).then(function (resp) {
+                toastr.info(' נתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#new').modal('hide');
-
-            }, function (err) {
-
+                $('#edit').modal('hide');
             });
+
+
+
+            // $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute', $scope.new).then(function (resp) {
+            //     toastr.info('המוסד עודכן בהצלחה');
+            //     $scope.init();
+            //     $('#new').modal('hide');
+            //
+            // }, function (err) {
+            //
+            // });
         };
 
         $scope.delete = function () {

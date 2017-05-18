@@ -68,10 +68,12 @@ angular.module('sbAdminApp')
             payload.append("aboutText", $scope.selected.aboutText);
             payload.append("lineColor", $scope.selected.lineColor);
             payload.append("mainTextColor", $scope.selected.mainTextColor);
-            payload.append("primaryColor", $rootScope.selected.primaryColor);
-            payload.append("secondaryColor", $rootScope.selected.secondaryColor);
-            payload.append("logoUrl", $rootScope.selected.logoUrl);
-            payload.append("aboutImageUrl", $rootScope.selected.aboutImageUrl);
+            payload.append("primaryColor", $scope.selected.primaryColor);
+            payload.append("secondaryColor", $scope.selected.secondaryColor);
+            payload.append("logoUrl", $scope.selected.logoUrl);
+            payload.append("aboutImageUrl", $scope.selected.aboutImageUrl);
+            payload.append("institute", $rootScope.user.institute);
+            payload.append("id", $scope.selected.id);
 
 
             return $http({
@@ -99,10 +101,10 @@ angular.module('sbAdminApp')
             payload.append("aboutText", $scope.new.aboutText);
             payload.append("lineColor", $scope.new.lineColor);
             payload.append("mainTextColor", $scope.new.mainTextColor);
-            payload.append("primaryColor", $rootScope.new.primaryColor);
-            payload.append("secondaryColor", $rootScope.new.secondaryColor);
-            payload.append("logoUrl", $rootScope.new.logoUrl);
-            payload.append("aboutImageUrl", $rootScope.new.aboutImageUrl);
+            payload.append("primaryColor", $scope.new.primaryColor);
+            payload.append("secondaryColor", $scope.new.secondaryColor);
+            payload.append("logoUrl", $scope.new.logoUrl);
+            payload.append("aboutImageUrl", $scope.new.aboutImageUrl);
 
 
             return $http({

@@ -85,6 +85,30 @@ angular.module('sbAdminApp')
         };
 
         $scope.update = function () {
+            var payload = new FormData();
+            payload.append("name", $scope.selected.name);
+            payload.append("description", $scope.selected.description);
+            payload.append("location", $scope.selected.location);
+            payload.append("studentEmails", $scope.selected.studentEmails);
+            payload.append("studentNames", $scope.selected.studentNames);
+            payload.append("imageUrl", $scope.selected.imageUrl);
+            payload.append("videoUrl", $scope.selected.videoUrl);
+            payload.append("soundUrl", $scope.selected.soundUrl);
+            payload.append("institute", $rootScope.user.institute);
+            payload.append("id", $scope.selected.id);
+
+
+            return $http({
+                url: 'https://shenkar-show.herokuapp.com/projects/create',
+                method: 'POST',
+                data: payload,
+                headers: {'Content-Type': undefined},
+                transformRequest: angular.identity
+            }).then(function (resp) {
+                toastr.info(' נתונים נשמרו בהצלחה');
+                $scope.init();
+                $('#edit').modal('hide');
+            });
             $scope.selected.departmentId = $rootScope.user.department;
             $scope.selected.location = $scope.selected.location.id;
 
@@ -97,16 +121,44 @@ angular.module('sbAdminApp')
         };
 
         $scope.create = function () {
-            $scope.new.departmentId = $scope.new.department;
+            // imageUrl: [String],
+            //     videoUrl: String,
+            //     soundUrl: String,
 
-            $http.post('https://shenkar-show.herokuapp.com/projects/create', $scope.new).then(function (resp) {
-                toastr.info('הנתונים נשמרו בהצלחה');
+            var payload = new FormData();
+            payload.append("name", $scope.new.name);
+            payload.append("description", $scope.new.description);
+            payload.append("location", $scope.new.location);
+            payload.append("studentEmails", $scope.new.studentEmails);
+            payload.append("studentNames", $scope.new.studentNames);
+            payload.append("imageUrl", $scope.new.imageUrl);
+            payload.append("videoUrl", $scope.new.videoUrl);
+            payload.append("soundUrl", $scope.new.soundUrl);
+
+
+            return $http({
+                url: 'https://shenkar-show.herokuapp.com/projects/create',
+                method: 'POST',
+                data: payload,
+                headers: {'Content-Type': undefined},
+                transformRequest: angular.identity
+            }).then(function (resp) {
+                toastr.info(' נתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#new').modal('hide');
-
-            }, function (err) {
-
+                $('#edit').modal('hide');
             });
+
+
+            // $scope.new.departmentId = $scope.new.department;
+            //
+            // $http.post('https://shenkar-show.herokuapp.com/projects/create', $scope.new).then(function (resp) {
+            //     toastr.info('הנתונים נשמרו בהצלחה');
+            //     $scope.init();
+            //     $('#new').modal('hide');
+            //
+            // }, function (err) {
+            //
+            // });
         }
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'

@@ -64,15 +64,15 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             var payload = new FormData();
-            payload.append("name", $scope.selected.name);
-            payload.append("aboutText", $scope.selected.aboutText);
-            payload.append("lineColor", $scope.selected.lineColor);
-            payload.append("mainTextColor", $scope.selected.mainTextColor);
-            payload.append("primaryColor", $scope.selected.primaryColor);
-            payload.append("secondaryColor", $scope.selected.secondaryColor);
-            payload.append("logoUrl", $scope.selected.logoUrl);
-            payload.append("aboutImageUrl", $scope.selected.aboutImageUrl);
-            payload.append("institute", $rootScope.user.institute);
+            payload.append("name", $scope.selected.name||'');
+            payload.append("aboutText", $scope.selected.aboutText||'');
+            payload.append("lineColor", $scope.selected.lineColor||'');
+            payload.append("mainTextColor", $scope.selected.mainTextColor||'');
+            payload.append("primaryColor", $scope.selected.primaryColor||'');
+            payload.append("secondaryColor", $scope.selected.secondaryColor||'');
+            payload.append("logoUrl", $scope.selected.logoUrl||'');
+            payload.append("aboutImageUrl", $scope.selected.aboutImageUrl||'');
+
             payload.append("id", $scope.selected.id);
 
 

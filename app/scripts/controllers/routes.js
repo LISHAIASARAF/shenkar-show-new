@@ -1,5 +1,5 @@
 angular.module('sbAdminApp')
-    .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state) {
+    .controller('RoutesCtrl', function ($scope, $http, $q, $rootScope, $state,$cookies) {
 
         $scope.init = function () {
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;

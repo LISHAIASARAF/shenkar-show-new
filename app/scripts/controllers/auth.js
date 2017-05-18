@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sbAdminApp')
-    .controller('AuthCtrl', function ($scope, $position, $http, Authentication, $state, $cookieStore, $rootScope,$cookies) {
+    .controller('AuthCtrl', function ($scope, $position, $http, Authentication, $state, $cookieStore, $rootScope, $cookies) {
         $scope.userName = '';
         $scope.password = '';
         $scope.dtFrom = '';
@@ -22,7 +22,10 @@ angular.module('sbAdminApp')
             )
                 .then(
                     function (res) {
-
+                        if (!res.data) {
+                            toastr.error('שם משתמש או סיסמא לא נכונים');
+                            return false;
+                        }
                         console.log(res);
                         console.log(res.data.id);
                         $rootScope.user = res.data;

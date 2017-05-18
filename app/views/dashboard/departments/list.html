@@ -82,7 +82,17 @@
                                                 <input class="form-control " type="text"
                                                        ng-model="selected.locationDescription">
                                             </div>
+                                            <div class="form-group">
+                                                <label for="">תמונה רגילה</label>
+                                                <input class="form-control " type="file"
+                                                       file-model="selected.imageUrl">
+                                            </div>
 
+                                            <div class="form-group">
+                                                <label for="">תמונה רגילה</label>
+                                                <input class="form-control " type="file"
+                                                       file-model="selected.largeImageUrl">
+                                            </div>
                                         </div>
                                         <div class="modal-footer ">
                                             <button ng-click="update()" type="button" class="btn btn-warning btn-lg"
@@ -120,6 +130,12 @@
                                                 <label for="">תמונה רגילה</label>
                                                 <input class="form-control " type="file"
                                                        file-model="new.imageUrl">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="">תמונה רגילה</label>
+                                                <input class="form-control " type="file"
+                                                       file-model="new.largeImageUrl">
                                             </div>
                                         </div>
                                         <div class="modal-footer">

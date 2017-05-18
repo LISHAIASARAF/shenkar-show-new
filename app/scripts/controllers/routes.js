@@ -3,6 +3,15 @@ angular.module('sbAdminApp')
 
         $scope.new = {};
         $scope.selection = [];
+        if (!$rootScope.user) {
+            $state.go('login');
+        } else {
+            $scope.me = $rootScope.user;
+            if ($scope.me.role != 'institute manager') {
+                alert('אין לך הרשאה');
+                $state.go('dashboard.home');
+            }
+        }
         $scope.init = function () {
 
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;

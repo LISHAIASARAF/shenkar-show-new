@@ -129,7 +129,7 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            if($scope.selected.department){
+            if ($scope.selected.department) {
                 $scope.selected.department = $scope.selected.department.id;
             }
 
@@ -209,6 +209,7 @@ angular.module('sbAdminApp')
         }
 
         function createStudent() {
+            $scope.new.department = $rootScope.user.department;
             $http.post('https://shenkar-show.herokuapp.com/department/createUser', $scope.new).then(function (resp) {
                 if (resp.data.indexOf('user already exists') > -1) {
                     toastr.error('המשתמש כבר קיים');

@@ -91,10 +91,15 @@ angular.module('sbAdminApp')
             payload.append("location", $scope.selected.location.id);
             payload.append("studentEmails", $scope.selected.studentEmails);
             payload.append("studentNames", $scope.selected.studentNames);
-            payload.append("imageUrl", $scope.selected.imageUrl);
+            payload.append("imageUrl1", $scope.new.imageUrl1);
+            payload.append("imageUrl2", $scope.new.imageUrl2);
+            payload.append("imageUrl3", $scope.new.imageUrl3);
+            payload.append("imageUrl4", $scope.new.imageUrl4);
+            payload.append("imageUrl5", $scope.new.imageUrl5);
             payload.append("videoUrl", $scope.selected.videoUrl);
             payload.append("soundUrl", $scope.selected.soundUrl);
             payload.append("institute", $rootScope.user.institute);
+            payload.append("departmentId", $rootScope.user.department);
             payload.append("id", $scope.selected.id);
 
 
@@ -131,9 +136,15 @@ angular.module('sbAdminApp')
             payload.append("location", $scope.new.location);
             payload.append("studentEmails", $scope.new.studentEmails);
             payload.append("studentNames", $scope.new.studentNames);
-            payload.append("imageUrl", $scope.new.imageUrl);
+            payload.append("imageUrl1", $scope.new.imageUrl1);
+            payload.append("imageUrl2", $scope.new.imageUrl2);
+            payload.append("imageUrl3", $scope.new.imageUrl3);
+            payload.append("imageUrl4", $scope.new.imageUrl4);
+            payload.append("imageUrl5", $scope.new.imageUrl5);
             payload.append("videoUrl", $scope.new.videoUrl);
             payload.append("soundUrl", $scope.new.soundUrl);
+            payload.append("institute", $rootScope.user.institute);
+            payload.append("departmentId", $rootScope.user.department);
 
 
             return $http({
@@ -160,6 +171,7 @@ angular.module('sbAdminApp')
             //
             // });
         }
+
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.post('https://shenkar-show.herokuapp.com/projects/delete', $scope.selected).then(function (resp) {

@@ -21,10 +21,10 @@ angular.module('sbAdminApp')
                     $state.go('dashboard.home');
                 }
             }
-            getDepartmentsMangers();
+            getInstitues();
         };
 
-        function getDepartmentsMangers() {
+        function getInstitues() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $http.get('https://shenkar-show.herokuapp.com/admin/institutes').then(function (resp) {

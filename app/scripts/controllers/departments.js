@@ -9,11 +9,12 @@
 angular.module('sbAdminApp')
     .controller('DepartmentsCtrl', function ($scope, $position, $http, $cookies, $rootScope, $state) {
         $scope.departments = [];
+        $scope.departments = [];
         if (!$rootScope.user) {
             $state.go('login');
         } else {
             $scope.me = $rootScope.user;
-            if ($scope.me.role != 'institute manager') {
+            if ($scope.me.role != 'institute manager' && $scope.me.role != 'department manager') {
                 alert('אין לך הרשאה');
                 $state.go('dashboard.home');
             }
@@ -31,7 +32,18 @@ angular.module('sbAdminApp')
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
             $http.get('https://shenkar-show.herokuapp.com/institute/users').then(function (resp) {
                 $scope.users = resp.data;
-                $http.get('https://shenkar-show.herokuapp.com/institute/departments').then(function (resp) {
+
+
+                var url = '';
+
+                if ($scope.me.role == 'department manager') {
+
+                    url = 'http://shenkar-show.herokuapp.com/department';
+                }
+                else if ($scope.me.role == 'institute manager') {
+                    url = 'https://shenkar-show.herokuapp.com/institute/updateDepartment';
+                }
+                $http.get(url).then(function (resp) {
                     $scope.departments = resp.data;
 
                 });
@@ -82,9 +94,16 @@ angular.module('sbAdminApp')
             payload.append("largeImageUrl", $scope.selected.largeImageUrl);
             payload.append("institute", $rootScope.user.institute);
             payload.append("id", $scope.selected.id);
+            var url = '';
 
+            if ($scope.me.role == 'department manager') {
+                url = 'http://shenkar-show.herokuapp.com/departments/update';
+            }
+            else if ($scope.me.role == 'institute manager') {
+                url = 'https://shenkar-show.herokuapp.com/institute/updateDepartment';
+            }
             return $http({
-                url: 'https://shenkar-show.herokuapp.com/institute/updateDepartment',
+                url: url,
                 method: 'POST',
                 data: payload,
                 headers: {'Content-Type': undefined},
@@ -123,6 +142,15 @@ angular.module('sbAdminApp')
         };
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
+            https://shenkar-show.herokuapp.com/institute/deleteDepartment {id: number, institute: number }
+                $http.post('https://shenkar-show.herokuapp.com/institute/deleteDepartment', {
+                    id: $scope.selected.id,
+                    institute: $rootScope.user.institute
+                }).then(function (resp) {
+                    toastr.info('נמחק בהצלחה');
+                    $scope.init();
+
+                });
             $http.delete('https://shenkar-show.herokuapp.com/department/' + $scope.selected.id).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
                 $scope.init();

@@ -16,7 +16,7 @@ angular.module('sbAdminApp')
             } else {
                 $scope.me = $rootScope.user;
 
-                if ($scope.me.role != 'admin') {
+                if ($scope.me.role != 'admin' && $scope.me.role != 'institute manager') {
                     alert('אין לך הרשאה');
                     $state.go('dashboard.home');
                 }
@@ -25,16 +25,24 @@ angular.module('sbAdminApp')
         };
 
         function getInstitues() {
+
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
-            $http.get('https://shenkar-show.herokuapp.com/admin/institutes').then(function (resp) {
+
+
+            var url = '';
+
+            if ($scope.me.role == 'admin') {
+                url = 'https://shenkar-show.herokuapp.com/admin/institutes';
+            }
+            else if ($scope.me.role == 'institute manager') {
+                url = 'https://shenkar-show.herokuapp.com/institutes';
+            }
+
+
+            $http.get(url).then(function (resp) {
                 $scope.institutes = resp.data;
             });
-            // $http.get('https://shenkar-show.herokuapp.com/institute/createUser').then(function (resp) {
-            //     $scope.users = resp.data;
-            //
-            // });
-
         }
 
 
@@ -64,20 +72,28 @@ angular.module('sbAdminApp')
 
         $scope.update = function () {
             var payload = new FormData();
-            payload.append("name", $scope.selected.name||'');
-            payload.append("aboutText", $scope.selected.aboutText||'');
-            payload.append("lineColor", $scope.selected.lineColor||'');
-            payload.append("mainTextColor", $scope.selected.mainTextColor||'');
-            payload.append("primaryColor", $scope.selected.primaryColor||'');
-            payload.append("secondaryColor", $scope.selected.secondaryColor||'');
-            payload.append("logoUrl", $scope.selected.logoUrl||'');
-            payload.append("aboutImageUrl", $scope.selected.aboutImageUrl||'');
+            payload.append("name", $scope.selected.name || '');
+            payload.append("aboutText", $scope.selected.aboutText || '');
+            payload.append("lineColor", $scope.selected.lineColor || '');
+            payload.append("mainTextColor", $scope.selected.mainTextColor || '');
+            payload.append("primaryColor", $scope.selected.primaryColor || '');
+            payload.append("secondaryColor", $scope.selected.secondaryColor || '');
+            payload.append("logoUrl", $scope.selected.logoUrl || '');
+            payload.append("aboutImageUrl", $scope.selected.aboutImageUrl || '');
 
             payload.append("id", $scope.selected.id);
 
+            var url = '';
+
+            if ($scope.me.role == 'admin') {
+                url = 'https://shenkar-show.herokuapp.com/admin/updateInstitute';
+            }
+            else if ($scope.me.role == 'institute manager') {
+                url = 'https://shenkar-show.herokuapp.com/institutes/update';
+            }
 
             return $http({
-                url: 'https://shenkar-show.herokuapp.com/admin/updateInstitute',
+                url: url,
                 method: 'POST',
                 data: payload,
                 headers: {'Content-Type': undefined},
@@ -120,7 +136,6 @@ angular.module('sbAdminApp')
             });
 
 
-
             // $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute', $scope.new).then(function (resp) {
             //     toastr.info('המוסד עודכן בהצלחה');
             //     $scope.init();
@@ -133,7 +148,7 @@ angular.module('sbAdminApp')
 
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.delete('https://shenkar-show.herokuapp.com/institutes/' + $scope.selected.id).then(function (resp) {
+            $http.post('http://shenkar-show.herokuapp.com/admin/deleteInstitute', {id: $scope.selected.id}).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
                 $scope.init();
 

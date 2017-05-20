@@ -43,7 +43,8 @@
                                     <td>{{d.name}}</td>
                                     <td>{{d.description}}</td>
                                     <td>
-                                        <img ng-repeat="image in d.imageUrl" ng-src="{{image}}" style="width: 30px;height:30px ;" alt="">
+                                        <img ng-repeat="image in d.imageUrl" ng-src="{{image}}"
+                                             style="width: 30px;height:30px ;" alt="">
 
                                     </td>
                                     <td>
@@ -106,7 +107,7 @@
                                                 <input type="text" class="form-control" ng-model="selected.description">
                                             </div>
 
-                                            <div class="form-group">
+                                            <div class="form-group" ng-hide="me.role=='student'">
                                                 <label for=""> מיקום</label>
                                                 <select class="form-control"
                                                         ng-options="u.id as u.description for u in locations"
@@ -119,9 +120,9 @@
                                                        ng-model="selected.studentEmails">
                                             </div>
                                             <!--<div class="form-group">-->
-                                                <!--<label for=""> שמות הסטודנטים</label>-->
-                                                <!--<input type="text" class="form-control"-->
-                                                       <!--ng-model="selected.studentNames">-->
+                                            <!--<label for=""> שמות הסטודנטים</label>-->
+                                            <!--<input type="text" class="form-control"-->
+                                            <!--ng-model="selected.studentNames">-->
                                             <!--</div>-->
                                             <div class="form-group">
                                                 <label for="">תמונה1 </label>
@@ -195,7 +196,7 @@
                                                 <input type="text" class="form-control" ng-model="new.description">
                                             </div>
 
-                                            <div class="form-group">
+                                            <div class="form-group" ng-hide="me.role=='student'">
                                                 <label for=""> מיקום</label>
                                                 <select class="form-control"
                                                         ng-options="u.id as u.description for u in locations"
@@ -207,8 +208,8 @@
                                                 <input type="text" class="form-control" ng-model="new.studentEmails">
                                             </div>
                                             <!--<div class="form-group">-->
-                                                <!--<label for=""> שמות הסטודנטים</label>-->
-                                                <!--<input type="text" class="form-control" ng-model="new.studentNames">-->
+                                            <!--<label for=""> שמות הסטודנטים</label>-->
+                                            <!--<input type="text" class="form-control" ng-model="new.studentNames">-->
                                             <!--</div>-->
 
                                             <div class="form-group">

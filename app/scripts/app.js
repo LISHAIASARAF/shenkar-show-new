@@ -70,7 +70,7 @@ angular
                 })
                 .state('dashboard.institutes', {
                     templateUrl: 'views/dashboard/institutes/list.html',
-                    url: '/users',
+                    url: '/institutes',
                     controller: 'InstitutesCtrl',
 
 

@@ -159,7 +159,17 @@ angular.module('sbAdminApp')
 
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.delete('https://shenkar-show.herokuapp.com/users/' + $scope.selected._id).then(function (resp) {
+            var url = '';
+
+            if ($scope.me.role == 'admin') {
+                url = 'https://shenkar-show.herokuapp.com/admin/deleteUser';
+            }
+            else if ($scope.me.role == 'department manager') {
+                url = 'https://shenkar-show.herokuapp.com/department/deleteUser';
+            } else if ($scope.me.role == 'institute manager') {
+                url = 'https://shenkar-show.herokuapp.com/institute/deleteUser';
+            }
+            $http.post(url, {id: $scope.selected._id, institue: $rootScope.user.institute}).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
                 $scope.init();
 

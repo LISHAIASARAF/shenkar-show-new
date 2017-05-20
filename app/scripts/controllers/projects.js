@@ -190,7 +190,11 @@ angular.module('sbAdminApp')
 
             $scope.delete = function () {
                 //'https://shenkar-show.herokuapp.com/department/users'
-                $http.post('https://shenkar-show.herokuapp.com/projects/delete', $scope.selected).then(function (resp) {
+                $http.post('https://shenkar-show.herokuapp.com/department/deleteProject', {
+                    id: $scope.selected.id,
+                    department: $rootScope.user.department,
+                    institute: $rootScope.user.institute
+                }).then(function (resp) {
                     toastr.info('נמחק בהצלחה');
                     $scope.init();
 

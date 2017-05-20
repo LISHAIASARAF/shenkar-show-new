@@ -43,11 +43,8 @@
                                     <td>{{d.name}}</td>
                                     <td>{{d.description}}</td>
                                     <td>
-                                        <img ng-src="{{d.imageUrl1}}" style="width: 30px;height:30px ;" alt="">
-                                        <img ng-src="{{d.imageUrl2}}" alt="" style="width: 30px;height:30px ;">
-                                        <img ng-src="{{d.imageUrl3}}" alt="" style="width: 30px;height:30px ;">
-                                        <img ng-src="{{d.imageUrl4}}" alt="" style="width: 30px;height:30px ;">
-                                        <img ng-src="{{d.imageUrl5}}" alt="" style="width: 30px;height:30px ;">
+                                        <img ng-repeat="image in d.imageUrl" ng-src="{{image}}" style="width: 30px;height:30px ;" alt="">
+
                                     </td>
                                     <td>
                                         {{d.videoUrl}}

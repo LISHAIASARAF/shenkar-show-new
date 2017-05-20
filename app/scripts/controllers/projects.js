@@ -114,6 +114,7 @@ angular.module('sbAdminApp')
                 payload.append("soundUrl", $scope.selected.soundUrl);
                 payload.append("institute", $rootScope.user.institute);
                 payload.append("departmentId", $rootScope.user.department);
+                payload.append("department", $rootScope.user.department);
                 payload.append("id", $scope.selected.id);
 
 
@@ -159,6 +160,7 @@ angular.module('sbAdminApp')
                 payload.append("soundUrl", $scope.new.soundUrl);
                 payload.append("institute", $rootScope.user.institute);
                 payload.append("departmentId", $rootScope.user.department);
+                payload.append("department", $rootScope.user.department);
 
 
                 return $http({

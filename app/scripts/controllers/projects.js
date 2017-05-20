@@ -90,7 +90,7 @@ angular.module('sbAdminApp')
             payload.append("description", $scope.selected.description);
             payload.append("location", $scope.selected.location.id);
             payload.append("studentEmails", $scope.selected.studentEmails);
-            payload.append("studentNames", $scope.selected.studentNames);
+
             payload.append("imageUrl1", $scope.selected.imageUrl1);
             payload.append("imageUrl2", $scope.selected.imageUrl2);
             payload.append("imageUrl3", $scope.selected.imageUrl3);
@@ -135,7 +135,7 @@ angular.module('sbAdminApp')
             payload.append("description", $scope.new.description);
             payload.append("location", $scope.new.location);
             payload.append("studentEmails", $scope.new.studentEmails);
-            payload.append("studentNames", $scope.new.studentNames);
+
             payload.append("imageUrl1", $scope.new.imageUrl1);
             payload.append("imageUrl2", $scope.new.imageUrl2);
             payload.append("imageUrl3", $scope.new.imageUrl3);

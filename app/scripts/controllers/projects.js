@@ -91,11 +91,11 @@ angular.module('sbAdminApp')
             payload.append("location", $scope.selected.location.id);
             payload.append("studentEmails", $scope.selected.studentEmails);
             payload.append("studentNames", $scope.selected.studentNames);
-            payload.append("imageUrl1", $scope.new.imageUrl1);
-            payload.append("imageUrl2", $scope.new.imageUrl2);
-            payload.append("imageUrl3", $scope.new.imageUrl3);
-            payload.append("imageUrl4", $scope.new.imageUrl4);
-            payload.append("imageUrl5", $scope.new.imageUrl5);
+            payload.append("imageUrl1", $scope.selected.imageUrl1);
+            payload.append("imageUrl2", $scope.selected.imageUrl2);
+            payload.append("imageUrl3", $scope.selected.imageUrl3);
+            payload.append("imageUrl4", $scope.selected.imageUrl4);
+            payload.append("imageUrl5", $scope.selected.imageUrl5);
             payload.append("videoUrl", $scope.selected.videoUrl);
             payload.append("soundUrl", $scope.selected.soundUrl);
             payload.append("institute", $rootScope.user.institute);

@@ -117,7 +117,7 @@ angular.module('sbAdminApp')
             $scope.selected.departmentId = $rootScope.user.department;
             $scope.selected.location = $scope.selected.location.id;
 
-            $http.post('https://shenkar-show.herokuapp.com/projects/update', $scope.selected).then(function (resp) {
+            $http.post('https://shenkar-show.herokuapp.com/department/updateProject', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('#edit').modal('hide');
@@ -148,7 +148,7 @@ angular.module('sbAdminApp')
 
 
             return $http({
-                url: 'https://shenkar-show.herokuapp.com/projects/create',
+                url: 'https://shenkar-show.herokuapp.com/department/createProject',
                 method: 'POST',
                 data: payload,
                 headers: {'Content-Type': undefined},

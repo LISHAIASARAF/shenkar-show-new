@@ -15,7 +15,7 @@ angular.module('sbAdminApp')
             $scope.me = $rootScope.user;
             if ($scope.me.role != 'institute manager') {
                 alert('אין לך הרשאה');
-                $state.go('home');
+                $state.go('dashboard.home');
             }
         }
         $scope.new = {
@@ -87,7 +87,7 @@ angular.module('sbAdminApp')
                 url: 'https://shenkar-show.herokuapp.com/institute/updateDepartment',
                 method: 'POST',
                 data: payload,
-                headers: { 'Content-Type': undefined},
+                headers: {'Content-Type': undefined},
                 transformRequest: angular.identity
             }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
@@ -109,7 +109,7 @@ angular.module('sbAdminApp')
                 url: 'https://shenkar-show.herokuapp.com/institute/createDepartment',
                 method: 'POST',
                 data: payload,
-                headers: { 'Content-Type': undefined},
+                headers: {'Content-Type': undefined},
                 transformRequest: angular.identity
             }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
@@ -137,8 +137,8 @@ angular.module('sbAdminApp')
             var model = $parse(attrs.fileModel);
             var modelSetter = model.assign;
 
-            element.bind('change', function(){
-                scope.$apply(function(){
+            element.bind('change', function () {
+                scope.$apply(function () {
                     modelSetter(scope, element[0].files[0]);
                 });
             });

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/departments.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/departments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/institutes.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/institutes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="departments.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="departments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
+            <state relative-caret-position="826">
               <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
               <folding />
             </state>
@@ -115,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="institutes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="institutes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/institutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="13" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="-408">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1495314355899" expanded="true" signature="4850:5175" ph="..." />
               </folding>
@@ -281,8 +279,8 @@
       <find>create</find>
       <find>מיקו</find>
       <find>var url</find>
-      <find>dele</find>
       <find>delete</find>
+      <find>dele</find>
     </findStrings>
     <replaceStrings>
       <replace>/app/scripts/plugins</replace>
@@ -927,12 +925,12 @@
       <workItem from="1494267525946" duration="6147000" />
       <workItem from="1494277365682" duration="20963000" />
       <workItem from="1494784080290" duration="20867000" />
-      <workItem from="1494999911436" duration="44774000" />
+      <workItem from="1494999911436" duration="44958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92907000" />
+    <option name="totallyTimeSpent" value="93091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1492,21 +1490,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/institutes.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <marker date="1495314355899" expanded="true" signature="4850:5175" ph="..." />
-          </folding>
+        <state relative-caret-position="826">
+          <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/institutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495314355899" expanded="true" signature="4850:5175" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

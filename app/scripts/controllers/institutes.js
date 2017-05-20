@@ -36,7 +36,7 @@ angular.module('sbAdminApp')
                 url = 'https://shenkar-show.herokuapp.com/admin/institutes';
             }
             else if ($scope.me.role == 'institute manager') {
-                url = 'https://shenkar-show.herokuapp.com/institutes';
+                url = 'https://shenkar-show.herokuapp.com/institute';
             }
 
 

@@ -27,7 +27,7 @@
                                 <th>מחלקה</th>
                                 <th>שם</th>
                                 <th>תאור</th>
-                                <th>תמונה</th>
+                                <th>תמונות</th>
                                 <th>וידאו</th>
                                 <th>מקום</th>
                                 <th>מוסד</th>
@@ -42,8 +42,16 @@
                                     <td>{{d.departmentId.name}}</td>
                                     <td>{{d.name}}</td>
                                     <td>{{d.description}}</td>
-                                    <td><img ng-src="{{d.imageUrl}}" alt=""></td>
-                                    <td></td>
+                                    <td>
+                                        <img ng-src="{{d.imageUrl1}}" style="width: 30px;height:30px ;" alt="">
+                                        <img ng-src="{{d.imageUrl2}}" alt="" style="width: 30px;height:30px ;">
+                                        <img ng-src="{{d.imageUrl3}}" alt="" style="width: 30px;height:30px ;">
+                                        <img ng-src="{{d.imageUrl4}}" alt="" style="width: 30px;height:30px ;">
+                                        <img ng-src="{{d.imageUrl5}}" alt="" style="width: 30px;height:30px ;">
+                                    </td>
+                                    <td>
+                                        {{d.videoUrl}}
+                                    </td>
                                     <td>{{d.location.description}}</td>
                                     <td>{{d.institute.name}}</td>
                                     <td>{{d.studentNames.join(',')}}</td>
@@ -90,11 +98,11 @@
                                             </div>
 
                                             <!--<div class="form-group">-->
-                                                <!--<label for=""> מחלקה</label>-->
-                                                <!--<select class="form-control"-->
-                                                        <!--ng-options="u.id as u.name for u in departments"-->
-                                                        <!--ng-model="selected.department.id">-->
-                                                <!--</select>-->
+                                            <!--<label for=""> מחלקה</label>-->
+                                            <!--<select class="form-control"-->
+                                            <!--ng-options="u.id as u.name for u in departments"-->
+                                            <!--ng-model="selected.department.id">-->
+                                            <!--</select>-->
                                             <!--</div>-->
                                             <div class="form-group">
                                                 <label for=""> תיאור</label>
@@ -110,52 +118,55 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for=""> אימיילים הסטודנטים</label>
-                                                <input type="text" class="form-control" ng-model="selected.studentEmails">
+                                                <input type="text" class="form-control"
+                                                       ng-model="selected.studentEmails">
                                             </div>
                                             <div class="form-group">
                                                 <label for=""> שמות הסטודנטים</label>
-                                                <input type="text" class="form-control" ng-model="selected.studentNames">
+                                                <input type="text" class="form-control"
+                                                       ng-model="selected.studentNames">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">תמונה1  </label>
+                                                <label for="">תמונה1 </label>
                                                 <input class="form-control" type="file" file-model="selected.imageUrl1">
 
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה2  </label>
+                                                <label for="">תמונה2 </label>
                                                 <input class="form-control" type="file" file-model="selected.imageUrl2">
 
                                             </div>
                                             <div class="form-group">
-                                                <label for="">תמונה3  </label>
+                                                <label for="">תמונה3 </label>
                                                 <input class="form-control" type="file" file-model="selected.imageUrl3">
 
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה4  </label>
+                                                <label for="">תמונה4 </label>
                                                 <input class="form-control" type="file" file-model="selected.imageUrl4">
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה5  </label>
+                                                <label for="">תמונה5 </label>
                                                 <input class="form-control" type="file" file-model="selected.imageUrl5">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">וידאו  </label>
+                                                <label for="">וידאו </label>
                                                 <input class="form-control" type="text" ng-model="selected.videoUrl">
 
                                             </div>
                                             <div class="form-group">
-                                                <label for="">קובץ קול  </label>
+                                                <label for="">קובץ קול </label>
                                                 <input class="form-control" type="file" file-model="selected.soundUrl">
 
                                             </div>
 
                                         </div>
                                         <div class="modal-footer ">
-                                            <button type="button" ng-click="update()" class="btn btn-warning btn-lg" style="width: 100%;">
+                                            <button type="button" ng-click="update()" class="btn btn-warning btn-lg"
+                                                    style="width: 100%;">
                                                 <span class="glyphicon glyphicon-ok-sign"></span> עדכון
                                             </button>
                                         </div>
@@ -204,39 +215,39 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה1  </label>
+                                                <label for="">תמונה1 </label>
                                                 <input class="form-control" type="file" file-model="new.imageUrl1">
 
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה2  </label>
+                                                <label for="">תמונה2 </label>
                                                 <input class="form-control" type="file" file-model="new.imageUrl2">
 
                                             </div>
                                             <div class="form-group">
-                                                <label for="">תמונה3  </label>
+                                                <label for="">תמונה3 </label>
                                                 <input class="form-control" type="file" file-model="new.imageUrl3">
 
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה4  </label>
+                                                <label for="">תמונה4 </label>
                                                 <input class="form-control" type="file" file-model="new.imageUrl4">
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">תמונה5  </label>
+                                                <label for="">תמונה5 </label>
                                                 <input class="form-control" type="file" file-model="new.imageUrl5">
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="">וידאו  </label>
+                                                <label for="">וידאו </label>
                                                 <input class="form-control" type="text" ng-model="new.videoUrl">
 
                                             </div>
                                             <div class="form-group">
-                                                <label for="">קובץ קול  </label>
+                                                <label for="">קובץ קול </label>
                                                 <input class="form-control" type="file" file-model="new.soundUrl">
 
                                             </div>

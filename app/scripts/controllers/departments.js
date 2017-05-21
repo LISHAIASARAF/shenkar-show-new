@@ -41,7 +41,7 @@ angular.module('sbAdminApp')
                     url = 'https://shenkar-show.herokuapp.com/department';
                 }
                 else if ($scope.me.role == 'institute manager') {
-                    url = 'https://shenkar-show.herokuapp.com/institute/updateDepartment';
+                    url = 'hhttps://shenkar-show.herokuapp.com/institute/departments';
                 }
                 $http.get(url).then(function (resp) {
                     $scope.departments = resp.data;

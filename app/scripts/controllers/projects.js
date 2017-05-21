@@ -93,7 +93,7 @@ angular.module('sbAdminApp')
             $scope.update = function () {
                 var url = '';
                 if ($rootScope.user.role == 'department manager') {
-                    url = 'https://shenkar-show.herokuapp.com/projects/create';
+                    url = 'https://shenkar-show.herokuapp.com/department/updateProject';
                 } else if ($rootScope.user.role == 'student') {
                     url = 'https://shenkar-show.herokuapp.com/student/updateProject';
                 }

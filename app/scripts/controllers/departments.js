@@ -140,11 +140,11 @@ angular.module('sbAdminApp')
             });
 
         };
-        $scope.delete = function () {
+        $scope.delete = function (id) {
             //'https://shenkar-show.herokuapp.com/department/users'
            // https://shenkar-show.herokuapp.com/institute/deleteDepartment {id: number, institute: number }
                 $http.post('https://shenkar-show.herokuapp.com/institute/deleteDepartment', {
-                    id: $scope.selected.id,
+                    id: id,
                     institute: $rootScope.user.institute
                 }).then(function (resp) {
                     toastr.info('נמחק בהצלחה');

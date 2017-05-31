@@ -10,9 +10,7 @@ angular.module('sbAdminApp')
     .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope, $state) {
             $scope.departments = []
 
-            $scope.new = {
-                department: $rootScope.user.department
-            };
+
 
             $scope.init = function () {
                 if (!$rootScope.user) {
@@ -26,6 +24,10 @@ angular.module('sbAdminApp')
                 }
                 getProjects();
                 getLocations();
+                $scope.new = {
+                    department: $rootScope.user.department
+                };
+
             };
 
 

@@ -160,20 +160,32 @@ angular.module('sbAdminApp')
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
             var url = '';
+            var paramaters;
 
             if ($scope.me.role == 'admin') {
                 url = 'https://shenkar-show.herokuapp.com/admin/deleteUser';
+                paramaters = {id: $scope.selected.id, institute: $scope.selected.institute};
             }
             else if ($scope.me.role == 'department manager') {
                 url = 'https://shenkar-show.herokuapp.com/department/deleteUser';
+                paramaters = {
+                    id: $scope.selected.id,
+                    department: $scope.selected.department,
+                    institute: $scope.selected.institute,
+                    project: $scope.selected.project.id
+                };
             } else if ($scope.me.role == 'institute manager') {
                 url = 'https://shenkar-show.herokuapp.com/institute/deleteUser';
+                paramaters = {id: $scope.selected.id, institute: $scope.selected.institute};
             }
-            $http.post(url, {id: $scope.selected._id, institue: $rootScope.user.institute}).then(function (resp) {
-                toastr.info('נמחק בהצלחה');
-                $scope.init();
 
-            });
+
+            $http.post(url, paramaters)
+                .then(function (resp) {
+                    toastr.info('נמחק בהצלחה');
+                    $scope.init();
+
+                });
         };
 
         $scope.create = function () {

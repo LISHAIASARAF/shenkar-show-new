@@ -68,7 +68,7 @@ angular.module('sbAdminApp')
             if (!$scope.selected) {
                 return false;
             }
-        }
+        };
 
         $scope.update = function () {
             var payload = new FormData();
@@ -148,11 +148,16 @@ angular.module('sbAdminApp')
 
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-            $http.post('http://shenkar-show.herokuapp.com/admin/deleteInstitute', {id: $scope.selected.id}).then(function (resp) {
-                toastr.info('נמחק בהצלחה');
-                $scope.init();
+            $http.post('https://shenkar-show.herokuapp.com/admin/deleteInstitute',
+                {
+                    id: $scope.selected.id
+                }
+            )
+                .then(function (resp) {
+                    toastr.info('נמחק בהצלחה');
+                    $scope.init();
 
-            });
+                });
         };
 
     });

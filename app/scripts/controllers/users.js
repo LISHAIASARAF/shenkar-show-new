@@ -176,7 +176,7 @@ angular.module('sbAdminApp')
                 };
             } else if ($scope.me.role == 'institute manager') {
                 url = 'https://shenkar-show.herokuapp.com/institute/deleteUser';
-                paramaters = {id: $scope.selected.id, institute: $scope.selected.institute};
+                paramaters = {id: $scope.selected.id, institute: $rootScope.user.institute};
             }
 
 

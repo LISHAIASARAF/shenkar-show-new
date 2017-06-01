@@ -7,14 +7,34 @@
     </div>
     <!-- /.row -->
     <div class="row">
-        
-        <stats number="6" comments="פרוייקטים" colour="primary" goto="dashboard.projects" type="comments"></stats>
-        <stats number="12" comments="משתמשים" colour="primary" type="user" goto="dashboard.users"></stats>
-        <stats number="18" comments="מחלקות" colour="yellow" type="sitemap" goto="dashboard.departments"></stats>
+
+        <!--Admin-->
+        <stats number="{{instituteManagers.length}}" ng-show="me.role=='admin'" comments="מנהלי מוסדות" colour="primary"
+               type="user" goto="dashboard.users"></stats>
+        <stats number="{{institutes.length}}" comments="מוסדות" colour="yellow" ng-show="me.role=='admin'"
+               type="sitemap" goto="dashboard.institutes"></stats>
+
+        <!--Institutes Manager-->
+        <stats number="{{departmentManagers.length}}" ng-show="me.role=='institute manager'" comments="מנהלי מחלקות"
+               colour="primary" type="user" goto="dashboard.users"></stats>
+
+        <stats number="{{departments.length}}" comments="מחלקות" colour="yellow" ng-show="me.role=='institute manager'"
+               type="sitemap" goto="dashboard.departments"></stats>
+
+        <!--Department Manager-->
+        <stats number="{{projects.length}}" ng-show="me.role=='department manager'" comments="פרוייקטים"
+               colour="primary" goto="dashboard.projects"
+               type="support"></stats>
+
+        <stats number="{{students.length}}" ng-show="me.role=='department manager'" comments="סטודנטים" colour="primary"
+               type="user" goto="dashboard.users"></stats>
+
+
+
         <!--<stats number="24" comments="Support tickets!" colour="red" type="support"></stats>-->
 
     </div>
-    
+
     <!-- /.panel -->
     <div class="row">
         <div class="col-lg-8">
@@ -35,13 +55,13 @@
                     <i class="fa fa-bell fa-fw"></i> הודעות חשובות מהמרצה
                 </div>
                 <!-- /.panel-heading -->
-                <notifications></notifications> 
+                <notifications></notifications>
                 <!-- /.panel-body -->
             </div>
             <!-- /.panel -->
 
             <chat></chat>
-             <!-- /.panel .chat-panel -->
+            <!-- /.panel .chat-panel -->
         </div>
         <!-- /.col-lg-4 -->
     </div>

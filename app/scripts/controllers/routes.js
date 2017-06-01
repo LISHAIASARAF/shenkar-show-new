@@ -110,8 +110,7 @@ angular.module('sbAdminApp')
             $http.post('https://shenkar-show.herokuapp.com/institute/updateRoute', $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#edit').modal('hide');
-
+                $('.modal').modal('hide');
             });
         };
 

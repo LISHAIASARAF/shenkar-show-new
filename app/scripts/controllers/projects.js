@@ -22,6 +22,7 @@ angular.module('sbAdminApp')
                         $state.go('dashboard.home');
                     }
                 }
+                $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
                 getProjects();
                 getLocations();
                 $scope.new = {

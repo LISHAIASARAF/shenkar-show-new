@@ -13,6 +13,7 @@ angular.module('sbAdminApp')
             if (!$rootScope.user) {
                 $state.go('login');
             } else {
+                $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
                 $scope.me = $rootScope.user;
 
                 if ($scope.me.role == 'admin') {

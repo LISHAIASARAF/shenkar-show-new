@@ -6,7 +6,7 @@
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
-    <div class="row">
+    <div class="row" ng-init="init()">
 
         <!--Admin-->
         <stats number="{{instituteManagers.length}}" ng-show="me.role=='admin'" comments="מנהלי מוסדות" colour="primary"
@@ -28,7 +28,6 @@
 
         <stats number="{{students.length}}" ng-show="me.role=='department manager'" comments="סטודנטים" colour="primary"
                type="user" goto="dashboard.users"></stats>
-
 
 
         <!--<stats number="24" comments="Support tickets!" colour="red" type="support"></stats>-->

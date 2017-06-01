@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope, $state) {
+    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope, $state,$cookies) {
             $scope.departments = []
 
 

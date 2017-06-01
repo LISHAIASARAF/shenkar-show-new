@@ -20,7 +20,7 @@ angular.module('sbAdminApp')
 
 
                 if ($scope.me.role == 'student') {
-                    $state.go('dashboard.profile');
+                    $state.go('dashboard.projects');
                 }
                 else {
                     if ($scope.me.role == 'admin') {

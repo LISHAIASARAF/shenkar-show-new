@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/timeline/timeline.html" afterPath="$PROJECT_DIR$/app/scripts/directives/timeline/timeline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/home.html" afterPath="$PROJECT_DIR$/app/views/dashboard/home.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +68,8 @@
       <file leaf-file-name="timeline.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/timeline/timeline.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="67" column="17" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="67" selection-end-column="17" />
+            <state relative-caret-position="34">
+              <caret line="2" column="83" lean-forward="false" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -1122,12 +1120,12 @@
       <workItem from="1494784080290" duration="20867000" />
       <workItem from="1494999911436" duration="50939000" />
       <workItem from="1496252809638" duration="13285000" />
-      <workItem from="1496336285824" duration="8899000" />
+      <workItem from="1496336285824" duration="9163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121256000" />
+    <option name="totallyTimeSpent" value="121520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -1697,8 +1695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/timeline/timeline.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="67" column="17" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="34">
+          <caret line="2" column="83" lean-forward="false" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
           <folding />
         </state>
       </provider>

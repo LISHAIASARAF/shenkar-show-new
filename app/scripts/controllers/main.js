@@ -7,26 +7,36 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('MainCtrl', function ($scope, $position, $http, $rootScope, $state,$cookies) {
+    .controller('MainCtrl', function ($scope, $position, $http, $rootScope, $state, $cookies) {
 
         $scope.init = function () {
             if (!$rootScope.user) {
                 $state.go('login');
             } else {
+
+
                 $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
                 $scope.me = $rootScope.user;
 
-                if ($scope.me.role == 'admin') {
-                    getInstituteManagers();
-                    getInstitutes();
-                } else if ($scope.me.role == 'institute manager') {
-                    getDepartments();
-                    getDepartmentManagers();
 
-                } else if ($scope.me.role == 'department manager') {
-                    getProjects();
-                    getStudents();
+                if ($scope.me.role == 'student') {
+                    $state.go('dashboard.profile');
+                }
+                else {
+                    if ($scope.me.role == 'admin') {
+                        getInstituteManagers();
+                        getInstitutes();
+                    }
+                    else if ($scope.me.role == 'institute manager') {
+                        getDepartments();
+                        getDepartmentManagers();
 
+                    }
+                    else if ($scope.me.role == 'department manager') {
+                        getProjects();
+                        getStudents();
+
+                    }
                 }
             }
         };

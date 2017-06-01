@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('MainCtrl', function ($scope, $position, $http, $rootScope, $state) {
+    .controller('MainCtrl', function ($scope, $position, $http, $rootScope, $state,$cookies) {
 
         $scope.init = function () {
             if (!$rootScope.user) {

@@ -149,6 +149,7 @@ angular.module('sbAdminApp')
                 }).then(function (resp) {
                     toastr.info('נמחק בהצלחה');
                     $scope.init();
+                    $('.modal').modal('hide');
 
                 });
 

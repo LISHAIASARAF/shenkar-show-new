@@ -101,7 +101,7 @@ angular.module('sbAdminApp')
             }).then(function (resp) {
                 toastr.info(' נתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#edit').modal('hide');
+                $('.modal').modal('hide');
             });
             // $http.post('https://shenkar-show.herokuapp.com/admin/updateInstitute', $scope.selected).then(function (resp) {
             //     toastr.info('המוסד עודכן בהצלחה');
@@ -132,18 +132,9 @@ angular.module('sbAdminApp')
             }).then(function (resp) {
                 toastr.info(' נתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#edit').modal('hide');
+                $('.modal').modal('hide');
             });
 
-
-            // $http.post('https://shenkar-show.herokuapp.com/admin/createInstitute', $scope.new).then(function (resp) {
-            //     toastr.info('המוסד עודכן בהצלחה');
-            //     $scope.init();
-            //     $('#new').modal('hide');
-            //
-            // }, function (err) {
-            //
-            // });
         };
 
         $scope.delete = function () {
@@ -157,7 +148,6 @@ angular.module('sbAdminApp')
                     toastr.info('נמחק בהצלחה');
                     $scope.init();
                     $('.modal').modal('hide');
-
                 });
         };
 

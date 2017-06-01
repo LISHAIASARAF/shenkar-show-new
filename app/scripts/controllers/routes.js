@@ -121,7 +121,7 @@ angular.module('sbAdminApp')
             $http.post('https://shenkar-show.herokuapp.com/institute/createRoute', $scope.new).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#new').modal('hide');
+                $('.modal').modal('hide');
 
             }, function (err) {
 
@@ -135,6 +135,7 @@ angular.module('sbAdminApp')
                 institute: $rootScope.user.institute
             }).then(function (resp) {
                 toastr.info('נמחק בהצלחה');
+                $('.modal').modal('hide');
                 $scope.init();
 
             });

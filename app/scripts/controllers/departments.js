@@ -111,7 +111,7 @@ angular.module('sbAdminApp')
             }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
-                $('#edit').modal('hide');
+                $('.modal').modal('hide');
             });
         };
 
@@ -133,7 +133,7 @@ angular.module('sbAdminApp')
             }).then(function (resp) {
                 toastr.info('המחלקה עודכנה בהצלחה');
                 $scope.init();
-                $('#new').modal('hide');
+                $('.modal').modal('hide');
 
             }, function (err) {
 

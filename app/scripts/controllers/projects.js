@@ -10,8 +10,6 @@ angular.module('sbAdminApp')
     .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope, $state,$cookies) {
             $scope.departments = []
 
-
-
             $scope.init = function () {
                 if (!$rootScope.user) {
                     $state.go('login');

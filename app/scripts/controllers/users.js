@@ -149,7 +149,7 @@ angular.module('sbAdminApp')
             $http.post(url, $scope.selected).then(function (resp) {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#edit').modal('hide');
+                $('.modal').modal('hide');
 
             }, function () {
                 toastr.error('בעיה בשמירת הנתונים');
@@ -222,7 +222,7 @@ angular.module('sbAdminApp')
                 }
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#new').modal('hide');
+                $('.modal').modal('hide');
 
             }, function () {
                 toastr.error('בעיה בשמירת הנתונים');
@@ -238,7 +238,7 @@ angular.module('sbAdminApp')
                 }
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
-                $('#new').modal('hide');
+                $('.modal').modal('hide');
 
             }, function () {
                 toastr.error('בעיה בשמירת הנתונים');

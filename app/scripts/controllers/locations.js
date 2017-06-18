@@ -50,7 +50,7 @@ angular.module('sbAdminApp')
                 id:$scope.selected.id,
                 institute:$rootScope.user.institute
             }
-            $http.post('http://shenkar-show.herokuapp.com/institute/deleteLocation',data).then(function(){
+            $http.post('https://shenkar-show.herokuapp.com/institute/deleteLocation',data).then(function(){
                 toastr.info('נמחק בהצלחה');
                 $scope.init();
             });

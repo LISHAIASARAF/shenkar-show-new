@@ -51,6 +51,7 @@
     .front {
         /*background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;*/
         z-index: 2;
+        background-size: cover;
     }
 
     .back {
@@ -133,7 +134,7 @@
                         </div>
                         <div class="back">
                             <div class="back-logo" style="background:url('{{p.imageUrl[0]}}') 0 0 no-repeat;"></div>
-                            <div class="back-title">@davidwalshblog</div>
+                            <div class="back-title">{{p.studentNames}}</div>
                             <p>
                                 {{p.description}}
                             </p>

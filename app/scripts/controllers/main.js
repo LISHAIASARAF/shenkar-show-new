@@ -16,6 +16,7 @@ angular.module('sbAdminApp')
 
 
                 $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
+                getProjects();
                 $scope.me = $rootScope.user;
 
 

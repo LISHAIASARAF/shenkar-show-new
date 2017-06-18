@@ -128,7 +128,7 @@
             <div class="col-sm-6 col-md-4" ng-repeat="p in projects">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                     <div class="flipper">
-                        <div class="front" style=" url({{p.imageUrl}}) 0 0 no-repeat;">
+                        <div class="front" style=" url({{p.imageUrl[0]}}) 0 0 no-repeat;">
                             <span class="name">{{p.name}}</span>
                         </div>
                         <div class="back">

@@ -167,11 +167,9 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="137" column="47" lean-forward="false" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="130" column="69" lean-forward="false" selection-start-line="130" selection-start-column="69" selection-end-line="130" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -820,12 +818,12 @@
       <workItem from="1497809041719" duration="1874000" />
       <workItem from="1497810954817" duration="1692000" />
       <workItem from="1497814606100" duration="2082000" />
-      <workItem from="1497816728662" duration="1111000" />
+      <workItem from="1497816728662" duration="1195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135592000" />
+    <option name="totallyTimeSpent" value="135676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -1321,11 +1319,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="137" column="47" lean-forward="false" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="130" column="69" lean-forward="false" selection-start-line="130" selection-start-column="69" selection-end-line="130" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

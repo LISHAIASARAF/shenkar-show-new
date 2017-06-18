@@ -87,7 +87,7 @@
         left: 90px;
         width: 160px;
         height: 117px;
-        background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;
+        /*background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;*/
     }
 
     .back-title {
@@ -128,11 +128,11 @@
             <div class="col-sm-6 col-md-4" ng-repeat="p in projects">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                     <div class="flipper">
-                        <div class="front" style=" url('{{p.imageUrl[0]}}') 0 0 no-repeat;">
+                        <div class="front" style="background:url('{{p.imageUrl[0]}}') 0 0 no-repeat;">
                             <span class="name">{{p.name}}</span>
                         </div>
                         <div class="back">
-                            <div class="back-logo"></div>
+                            <div class="back-logo" style="background:url('{{p.imageUrl[0]}}') 0 0 no-repeat;"></div>
                             <div class="back-title">@davidwalshblog</div>
                             <p>
                                 {{p.description}}

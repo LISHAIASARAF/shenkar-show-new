@@ -43,4 +43,16 @@ angular.module('sbAdminApp')
                 $('.modal').modal('hide');
             });
         }
+
+        $scope.delete=function(){
+
+            var data={
+                id:$scope.selected.id,
+                institute:$rootScope.user.institute
+            }
+            $http.post('http://shenkar-show.herokuapp.com/institute/deleteLocation',data).then(function(){
+                toastr.info('נמחק בהצלחה');
+                $scope.init();
+            });
+        }
     });

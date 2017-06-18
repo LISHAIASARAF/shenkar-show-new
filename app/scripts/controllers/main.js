@@ -73,7 +73,7 @@ angular.module('sbAdminApp')
         }
 
         function getProjects() {
-            return $http.get('https://shenkar-show.herokuapp.com/department/projects').then(function (res) {
+            return $http.get('https://shenkar-show.herokuapp.com/instituteProjects').then(function (res) {
                 $scope.projects = res.data;
             })
         }

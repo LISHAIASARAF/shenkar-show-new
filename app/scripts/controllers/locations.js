@@ -52,6 +52,7 @@ angular.module('sbAdminApp')
             }
             $http.post('https://shenkar-show.herokuapp.com/institute/deleteLocation',data).then(function(){
                 toastr.info('נמחק בהצלחה');
+                $('.modal').modal('hide');
                 $scope.init();
             });
         }

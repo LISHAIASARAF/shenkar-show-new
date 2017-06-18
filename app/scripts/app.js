@@ -92,6 +92,11 @@ angular
                     url: '/profile',
                     controller: 'AuthCtrl',
                 })
+                .state('dashboard.locations',{
+                    templateUrl:'views/dashboard/locations/list.html',
+                    url:'/locations',
+                    controller:'LocationsCtrl'
+                })
 
 
 

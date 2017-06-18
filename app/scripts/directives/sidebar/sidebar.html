@@ -13,11 +13,15 @@
                 ng-hide="!user|| (user.role != 'institute manager' && user.role != 'department manager')">
                 <a ui-sref="dashboard.departments"><i class="fa fa-sitemap fa-fw"></i> מחלקות</a>
             </li>
-            <li ui-sref-active="active" ng-hide="!user || (user.role != 'department manager' && user.role != 'student')">
+            <li ui-sref-active="active"
+                ng-hide="!user || (user.role != 'department manager' && user.role != 'student')">
                 <a ui-sref="dashboard.projects"><i class="fa fa-suitcase fa-fw"></i> פרוייקטים</a>
             </li>
             <li ui-sref-active="active" ng-hide="user.role != 'institute manager'">
                 <a ui-sref="dashboard.routes"><i class="fa fa-suitcase fa-fw"></i> מסלולים</a>
+            </li>
+            <li ui-sref-active="active" ng-hide="user.role != 'institute manager'">
+                <a ui-sref="dashboard.locations"><i class="fa fa-suitcase fa-fw"></i> מיקומים</a>
             </li>
             <li ui-sref-active="active" ng-show="user!=null">
                 <a ui-sref="dashboard.profile"><i class="fa fa-suitcase fa-fw"></i>עדכון סיסמא</a>

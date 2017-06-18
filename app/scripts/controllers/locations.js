@@ -20,7 +20,7 @@ angular.module('sbAdminApp')
         $scope.update = function () {
 
             $scope.selected.institute = $rootScope.user.institute;
-            $http.post('https://shenkar-show.herokuapp.com/institute/updateLocation').then(function () {
+            $http.post('https://shenkar-show.herokuapp.com/institute/updateLocation', $scope.selected).then(function () {
                 toastr.info('הנתונים נשמרו בהצלחה');
                 $scope.init();
                 $('.modal').modal('hide');
@@ -31,9 +31,15 @@ angular.module('sbAdminApp')
 
             $scope.new.institute = $rootScope.user.institute;
 
-            $http.post('https://shenkar-show.herokuapp.com/institute/createLocation').then(function () {
-                toastr.info('הנתונים נשמרו בהצלחה');
-                $scope.init();
+            $http.post('https://shenkar-show.herokuapp.com/institute/createLocation', $scope.new).then(function (res) {
+
+                if (res.error) {
+                    toastr.error('שגיאה בקבלת הנתונים');
+                } else {
+                    toastr.info('הנתונים נשמרו בהצלחה');
+                    $scope.init();
+                }
+
                 $('.modal').modal('hide');
             });
         }

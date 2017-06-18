@@ -1,36 +1,76 @@
 <style>
-    .thumbnail {
+    .flip-container {
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -o-perspective: 1000;
+        perspective: 1000;
+    }
+
+    .flip-container, .front, .back {
+        width: 320px;
+        height: 480px;
+    }
+
+    .flipper {
+        -moz-transform: perspective(1000px);
+        -moz-transform-style: preserve-3d;
+
         position: relative;
-        padding: 0px;
-        margin-bottom: 20px;
     }
 
-    .thumbnail > h4 {
-        padding: 7px 5px 0px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+    .front, .back {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
 
-    .thumbnail h4 .info {
+        -webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+
+        -moz-transition: 0.6s;
+        -moz-transform-style: preserve-3d;
+
+        -o-transition: 0.6s;
+        -o-transform-style: preserve-3d;
+
+        -ms-transition: 0.6s;
+        -ms-transform-style: preserve-3d;
+
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+
         position: absolute;
-        top: 0px;
-        right: 0px;
-        font-size: 0.6em;
-        padding-left: 15px;
-        border-top-right-radius: 3px;
-        border-bottom-left-radius: 4px;
-        border-radius: 0px;
-        border-bottom-left-radius: 5px;
-        cursor: pointer;
+        top: 0;
+        left: 0;
     }
 
-    .thumbnail h4 .info > span {
-        margin-right: 10px;
+    .back {
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
     }
 
-    .thumbnail img {
-        width: 100%;
+    .flip-container:hover .back, .flip-container.hover .back {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    .flip-container:hover .front, .flip-container.hover .front {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+
+    .front {
+        z-index: 2;
     }
 </style>
 <div>
@@ -45,20 +85,16 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-4" ng-repeat="p in projects">
-                <div class="thumbnail">
-                    <h4>
-
-                        <span class="label label-info info">
-                        <span data-toggle="tooltip" title="viewed">257 <b
-                                class="glyphicon glyphicon-eye-open"></b></span>
-                        <span data-toggle="tooltip" title="viewed">3 <b class="glyphicon glyphicon-star"></b></span>
-                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
-                    </span>
-                    </h4>
-                    <img ng-src="{{p.imageUrl}}" alt="...">
-                    <a href="http://bootsnipp.com/snippets/featured/post-thumbnail-list"
-                       class="btn btn-primary col-xs-12" role="button">View Snippet</a>
-                    <div class="clearfix"></div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <!-- front content -->
+                            <img ng-src="{{p.imageUrl}}" alt="">
+                        </div>
+                        <div class="back">
+                           <h4>p.name</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

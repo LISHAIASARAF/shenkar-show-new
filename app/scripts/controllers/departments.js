@@ -28,7 +28,7 @@ angular.module('sbAdminApp')
             getLocations();
         };
 function getLocations(){
-    $http.get('https://shenkar-show.herokuapp.com/department/locations').then(function (resp) {
+    $http.get('https://shenkar-show.herokuapp.com/institute/locations').then(function (resp) {
         $scope.locations = resp.data;
     });
 }

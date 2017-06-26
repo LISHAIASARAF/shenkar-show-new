@@ -25,8 +25,13 @@ angular.module('sbAdminApp')
 
         $scope.init = function () {
             getDepartmentsMangers();
+            getLocations();
         };
-
+function getLocations(){
+    $http.get('https://shenkar-show.herokuapp.com/department/locations').then(function (resp) {
+        $scope.locations = resp.data;
+    });
+}
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
@@ -94,6 +99,7 @@ angular.module('sbAdminApp')
             payload.append("largeImageUrl", $scope.selected.largeImageUrl);
             payload.append("institute", $rootScope.user.institute);
             payload.append("id", $scope.selected.id);
+            payload.append("location", $scope.selected.location.id);
             var url = '';
 
             if ($scope.me.role == 'department manager') {
@@ -122,6 +128,7 @@ angular.module('sbAdminApp')
             payload.append("locationDescription", $scope.new.locationDescription);
             payload.append("imageUrl", $scope.new.imageUrl);
             payload.append("largeImageUrl", $scope.new.largeImageUrl);
+            payload.append("location", $scope.new.location);
             payload.append("institute", $rootScope.user.institute);
 
             return $http({

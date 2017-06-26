@@ -83,6 +83,14 @@
                                                        ng-model="selected.locationDescription">
                                             </div>
                                             <div class="form-group">
+                                                <label for="">נקודות ציון
+                                                </label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.description for u in locations"
+                                                        ng-model="selected.location.id">
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="">תמונה רגילה</label>
                                                 <input class="form-control " type="file"
                                                        file-model="selected.imageUrl">
@@ -124,6 +132,14 @@
                                                 <label for="">מיקום</label>
                                                 <input class="form-control " type="text"
                                                        ng-model="new.locationDescription">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">נקודות ציון
+                                                </label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.description for u in locations"
+                                                        ng-model="new.location">
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="">תמונה רגילה</label>

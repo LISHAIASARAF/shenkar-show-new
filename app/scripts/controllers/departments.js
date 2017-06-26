@@ -99,7 +99,7 @@ function getLocations(){
             payload.append("largeImageUrl", $scope.selected.largeImageUrl);
             payload.append("institute", $rootScope.user.institute);
             payload.append("id", $scope.selected.id);
-            payload.append("location", $scope.selected.location.id);
+            payload.append("location", $scope.selected.location);
             var url = '';
 
             if ($scope.me.role == 'department manager') {

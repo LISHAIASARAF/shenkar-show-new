@@ -150,7 +150,7 @@ angular.module('sbAdminApp')
                 payload.append("name", $scope.new.name);
                 payload.append("description", $scope.new.description);
                 payload.append("location", $scope.new.location);
-                payload.append("studentEmails", $scope.new.studentEmails);
+              //  payload.append("studentEmails", $scope.new.studentEmails);
 
                 payload.append("imageUrl1", $scope.new.imageUrl1);
                 payload.append("imageUrl2", $scope.new.imageUrl2);

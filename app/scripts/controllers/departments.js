@@ -29,11 +29,10 @@ angular.module('sbAdminApp')
         };
         function getLocations() {
             var url = '';
-            if($rootScope.user.role== 'institute manager'){
-                url='https://shenkar-show.herokuapp.com/institute/locations';
-            }else if($rootScope.user.role== 'department manager')
-            {
-                url='https://shenkar-show.herokuapp.com/department/locations';
+            if ($rootScope.user.role == 'institute manager') {
+                url = 'https://shenkar-show.herokuapp.com/institute/locations';
+            } else if ($rootScope.user.role == 'department manager') {
+                url = 'https://shenkar-show.herokuapp.com/department/locations';
             }
             $http.get(url).then(function (resp) {
                 $scope.locations = resp.data;
@@ -73,6 +72,20 @@ angular.module('sbAdminApp')
 
         }
 
+        $scope.getLocationName = function (id) {
+            var location;
+            $scope.locations.forEach(function (l) {
+                if (l.id == id) {
+                    location = l;
+                }
+            });
+
+            if (location) {
+                return location.description;
+            }
+
+            return '';
+        };
 
         $scope.getManagerName = function (id) {
             var name = '';

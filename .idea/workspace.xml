@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/departments.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/departments.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/departments/list.html" afterPath="$PROJECT_DIR$/app/views/dashboard/departments/list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -85,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="departments.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="departments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
@@ -105,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/departments/list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="57" />
+              <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -225,8 +224,8 @@
         <option value="$PROJECT_DIR$/app/scripts/directives/sidebar/sidebar.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/projects.js" />
         <option value="$PROJECT_DIR$/app/views/dashboard/projects/list.html" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/departments/list.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/departments.js" />
+        <option value="$PROJECT_DIR$/app/views/dashboard/departments/list.html" />
       </list>
     </option>
   </component>
@@ -870,12 +869,12 @@
       <workItem from="1497818571857" duration="1383000" />
       <workItem from="1498496780742" duration="1690000" />
       <workItem from="1498498503663" duration="1397000" />
-      <workItem from="1498540023532" duration="1107000" />
+      <workItem from="1498540023532" duration="1338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141868000" />
+    <option name="totallyTimeSpent" value="142099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1292,14 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/departments/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1312,6 +1303,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/departments/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
           <folding />
         </state>
       </provider>

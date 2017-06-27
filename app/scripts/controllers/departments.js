@@ -27,11 +27,19 @@ angular.module('sbAdminApp')
             getDepartmentsMangers();
             getLocations();
         };
-function getLocations(){
-    $http.get('https://shenkar-show.herokuapp.com/institute/locations').then(function (resp) {
-        $scope.locations = resp.data;
-    });
-}
+        function getLocations() {
+            var url = '';
+            if($rootScope.user.role== 'institute manager'){
+                url='https://shenkar-show.herokuapp.com/institute/locations';
+            }else if($rootScope.user.role== 'department manager')
+            {
+                url='https://shenkar-show.herokuapp.com/department/locations';
+            }
+            $http.get(url).then(function (resp) {
+                $scope.locations = resp.data;
+            });
+        }
+
         function getDepartmentsMangers() {
             //'https://shenkar-show.herokuapp.com/department/users'
             $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
@@ -149,16 +157,16 @@ function getLocations(){
         };
         $scope.delete = function () {
             //'https://shenkar-show.herokuapp.com/department/users'
-           // https://shenkar-show.herokuapp.com/institute/deleteDepartment {id: number, institute: number }
-                $http.post('https://shenkar-show.herokuapp.com/institute/deleteDepartment', {
-                    id: $scope.selected.id,
-                    institute: $rootScope.user.institute
-                }).then(function (resp) {
-                    toastr.info('נמחק בהצלחה');
-                    $scope.init();
-                    $('.modal').modal('hide');
+            // https://shenkar-show.herokuapp.com/institute/deleteDepartment {id: number, institute: number }
+            $http.post('https://shenkar-show.herokuapp.com/institute/deleteDepartment', {
+                id: $scope.selected.id,
+                institute: $rootScope.user.institute
+            }).then(function (resp) {
+                toastr.info('נמחק בהצלחה');
+                $scope.init();
+                $('.modal').modal('hide');
 
-                });
+            });
 
         }
 

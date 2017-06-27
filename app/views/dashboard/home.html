@@ -120,13 +120,15 @@
 <div>
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">  דף ראשי</h1>
+            <h1 class="page-header"> דף ראשי</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
     <div class="row" ng-init="init()">
-<h3 class="page-header"> כלל הפרוייקטים ב{{me.instituteName}}</h3>
+        <div class="col-lg-12">
+            <h3 class="page-header"> כלל הפרוייקטים ב{{me.instituteName}}</h3>
+        </div>
         <div class="row">
             <div class="col-sm-6 col-md-4" ng-repeat="p in projects">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">

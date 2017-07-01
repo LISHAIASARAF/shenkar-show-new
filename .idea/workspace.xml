@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/buildings.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/buildings.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buildings.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="buildings.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/buildings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="135">
+              <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
               <folding>
                 <element signature="e#14#142#0" expanded="false" />
               </folding>
@@ -74,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -218,10 +219,10 @@
         <option value="$PROJECT_DIR$/app/views/dashboard/projects/list.html" />
         <option value="$PROJECT_DIR$/app/views/dashboard/home.html" />
         <option value="$PROJECT_DIR$/app/views/dashboard/buildings/list.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/buildings.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/sidebar/sidebar.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/buildings.js" />
       </list>
     </option>
   </component>
@@ -820,12 +821,12 @@
       <workItem from="1498931949687" duration="1715000" />
       <workItem from="1498933982355" duration="1831000" />
       <workItem from="1498935854513" duration="1884000" />
-      <workItem from="1498937772466" duration="72000" />
+      <workItem from="1498937772466" duration="216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151233000" />
+    <option name="totallyTimeSpent" value="151377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1243,21 +1244,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/buildings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#142#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="102" column="45" lean-forward="false" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/buildings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+          <folding>
+            <element signature="e#14#142#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

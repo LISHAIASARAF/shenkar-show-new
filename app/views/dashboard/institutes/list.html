@@ -27,11 +27,11 @@
                                 <th>שם</th>
                                 <th>תמונת אודות</th>
                                 <th>אודות</th>
-                                <th>צבע קו</th>
+                                <th>צבע רשימת שמות</th>
                                 <th>לוגו</th>
-                                <th>צבע ראשי</th>
-                                <th>צבע עיקרי</th>
-                                <th>צבע משני</th>
+                                <th>צבע טקסט</th>
+                                <th>צבע רקע כותרת</th>
+                                <th>צבע רקע</th>
                                 </thead>
                                 <tbody>
 
@@ -91,19 +91,19 @@
                                                 <input class="form-control " type="text" ng-model="selected.aboutText">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע קו</label>
+                                                <label for="">צבע רשימת שמות</label>
                                                 <input class="form-control " type="text" ng-model="selected.lineColor">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע ראשי</label>
+                                                <label for="">צבע טקסט</label>
                                                 <input class="form-control " type="text" ng-model="selected.mainTextColor">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע עיקרי</label>
+                                                <label for="">צבע רקע כותרת</label>
                                                 <input class="form-control " type="text" ng-model="selected.primaryColor">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע משני</label>
+                                                <label for="">צבע רקע</label>
                                                 <input class="form-control " type="text" ng-model="selected.secondaryColor">
                                             </div>
                                             <div class="form-group">
@@ -116,41 +116,6 @@
                                                 <input class="form-control " type="file" file-model="selected.aboutImageUrl">
 
                                             </div>
-
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">מנהל</label>-->
-                                                <!--<select class="form-control" ng-options="u._id as u.name for u in users"-->
-                                                        <!--ng-model="selected.manager">-->
-
-                                                <!--</select>-->
-                                            <!--</div>-->
-
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">לוגו</label>-->
-                                                <!--<input class="form-control" type="text" ng-model="selected.logo">-->
-                                            <!--</div>-->
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">צבע ראש עמוד</label>-->
-                                                <!--<input class="form-control " type="text" ng-model="selected.primaryColor">-->
-                                            <!--</div>-->
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">צבע פונט ראש עמוד</label>-->
-                                                <!--<input class="form-control " type="text" ng-model="selected.secondaryColor">-->
-                                            <!--</div>-->
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">צבע תחתית עמוד</label>-->
-                                                <!--<input class="form-control " type="text" ng-model="selected.lineColor">-->
-                                            <!--</div>-->
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">צבע פונט תחתית עמוד</label>-->
-                                                <!--<input class="form-control " type="text" ng-model="selected.mainTextColor">-->
-                                            <!--</div>-->
-                                            <!--<div class="form-group">-->
-                                                <!--<label for="">אודות</label>-->
-                                                <!--<input class="form-control " type="text" ng-model="selected.aboutText">-->
-                                            <!--</div>-->
-
-
                                         </div>
                                         <div class="modal-footer ">
                                             <button type="button" ng-click="update()" class="btn btn-warning btn-lg" style="width: 100%;">
@@ -183,19 +148,19 @@
                                                 <input class="form-control " type="text" ng-model="new.aboutText">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע קו</label>
+                                                <label for="">צבע רשימת שמות</label>
                                                 <input class="form-control " type="text" ng-model="new.lineColor">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע ראשי</label>
+                                                <label for="">צבע טקסט</label>
                                                 <input class="form-control " type="text" ng-model="new.mainTextColor">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע עיקרי</label>
+                                                <label for="">צבע רקע כותרת</label>
                                                 <input class="form-control " type="text" ng-model="new.primaryColor">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">צבע משני</label>
+                                                <label for="">צבע רקע</label>
                                                 <input class="form-control " type="text" ng-model="new.secondaryColor">
                                             </div>
                                             <div class="form-group">
@@ -205,11 +170,7 @@
                                             <div class="form-group">
                                                 <label for="">תמונת אודות </label>
                                                 <input class="form-control" type="file" file-model="new.aboutImageUrl">
-
                                             </div>
-
-
-
                                         </div>
                                         <div class="modal-footer ">
                                             <button type="button" class="btn btn-primary btn-lg" style="width: 100%;"

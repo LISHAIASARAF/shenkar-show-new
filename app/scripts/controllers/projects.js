@@ -29,21 +29,6 @@ angular.module('sbAdminApp')
 
             };
 
-
-            // {
-            //
-            //     _id : {type: Number, required:true, index:1, unique:true, autoIncrement:true},
-            //     departmentId: {type: Number, ref: 'department'},
-            //     name: String,
-            //         description: String,
-            //     imageUrl: [String],
-            //     videoUrl: String,
-            //     soundUrl: String,
-            //     location: {type: Number, ref: 'location'},
-            //     institute: {type: Number, ref: 'institute'},
-            //     studentNames: [String],
-            //         studentEmails: [String]
-            // },
             function getProjects() {
                 var url = '';
                 if ($rootScope.user.role == 'department manager') {
@@ -118,7 +103,6 @@ angular.module('sbAdminApp')
                 payload.append("department", $rootScope.user.department);
                 payload.append("id", $scope.selected.id);
 
-
                 return $http({
                     url: url,
                     method: 'POST',
@@ -128,8 +112,9 @@ angular.module('sbAdminApp')
                 }).then(function (resp) {
                     toastr.info(' נתונים נשמרו בהצלחה');
                     $scope.init();
-                    $('#edit').modal('hide');
+                    $('.modal').modal('hide');
                 });
+
                 $scope.selected.departmentId = $rootScope.user.department;
                 $scope.selected.location = $scope.selected.location.id;
 
@@ -173,7 +158,7 @@ angular.module('sbAdminApp')
                 }).then(function (resp) {
                     toastr.info(' נתונים נשמרו בהצלחה');
                     $scope.init();
-                    $('#edit').modal('hide');
+                    $('.modal').modal('hide');
                 });
 
 

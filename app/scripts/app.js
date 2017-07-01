@@ -97,6 +97,11 @@ angular
                     url:'/locations',
                     controller:'LocationsCtrl'
                 })
+                .state('dashboard.buildings',{
+                    templateUrl:'views/dashboard/buildings/list.html',
+                    url:'/buildings',
+                    controller:'buildingsCtrl'
+                })
 
 
 

@@ -23,6 +23,12 @@
             <li ui-sref-active="active" ng-hide="user.role != 'institute manager'">
                 <a ui-sref="dashboard.locations"><i class="fa fa-map-marker  fa-fw"></i> מיקומים</a>
             </li>
+
+            <li ui-sref-active="active" ng-hide="user.role != 'institute manager'">
+                <a ui-sref="dashboard.buildings"><i class="fa fa-building  fa-fw"></i>
+                    בניינים
+                </a>
+            </li>
             <li ui-sref-active="active" ng-show="user!=null">
                 <a ui-sref="dashboard.profile"><i class="fa fa-keyboard-o fa-fw"></i>עדכון סיסמא</a>
             </li>

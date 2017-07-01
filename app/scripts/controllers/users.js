@@ -119,6 +119,7 @@ angular.module('sbAdminApp')
             $scope.users.forEach(function (d) {
                 if (d.id == id) {
                     $scope.selected = angular.copy(d);
+                    $scope.selected.project = $scope.selected.project.id;
                 }
             });
 

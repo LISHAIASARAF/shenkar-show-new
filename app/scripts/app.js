@@ -100,7 +100,7 @@ angular
                 .state('dashboard.buildings',{
                     templateUrl:'views/dashboard/buildings/list.html',
                     url:'/buildings',
-                    controller:'buildingsCtrl'
+                    controller:'BuildingsCtrl'
                 })
 
 

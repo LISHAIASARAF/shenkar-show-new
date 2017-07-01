@@ -133,8 +133,6 @@ angular.module('sbAdminApp')
                 $scope.selected.department = $scope.selected.department.id;
             }
 
-            $scope.selected.institute = $scope.selected.institute.id;
-
             var url = '';
 
             if ($scope.me.role == 'admin') {

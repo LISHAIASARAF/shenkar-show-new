@@ -81,9 +81,10 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for=""> בניין</label>
+                                                <!--ng-options="b.id as b.name for b in buildings"-->
                                                 <select class="form-control"
-                                                        ng-options="b.id as b.name for b in buildings"
                                                         ng-model="selected.building">
+                                                    <option ng-repeat="b in buildings" value="{{b.id}}">{{b.name}}</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">

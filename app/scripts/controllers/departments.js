@@ -25,8 +25,17 @@ angular.module('sbAdminApp')
 
         $scope.init = function () {
             getDepartmentsMangers();
+            getBuildings();
             getLocations();
         };
+
+        function getBuildings() {
+            $http.get('https://shenkar-show.herokuapp.com/institute/buildings').then(function (resp) {
+                $scope.buildings = resp.data;
+            });
+        };
+
+
         function getLocations() {
             var url = '';
             if ($rootScope.user.role == 'institute manager') {

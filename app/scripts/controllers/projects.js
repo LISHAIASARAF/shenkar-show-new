@@ -23,7 +23,7 @@ angular.module('sbAdminApp')
                 $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
                 getProjects();
                 getLocations();
-                getBuildings();
+
                 $scope.new = {
                     department: $rootScope.user.department
                 };
@@ -41,12 +41,6 @@ angular.module('sbAdminApp')
                     $scope.projects = resp.data;
                 });
 
-            }
-
-            function getBuildings() {
-                $http.get('https://shenkar-show.herokuapp.com/institute/buildings').then(function (resp) {
-                    $scope.buildings = resp.data;
-                });
             }
 
             function getLocations() {

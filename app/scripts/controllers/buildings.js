@@ -59,7 +59,9 @@ angular.module('sbAdminApp')
             };
 
             $scope.update = function () {
-                $http.post('https://shenkar-show.herokuapp.com/institute/updateBuilding', $scope.selected).then(function () {
+                var b = angular.copy($scope.selected);
+                b.location = b.location.id;
+                $http.post('https://shenkar-show.herokuapp.com/institute/updateBuilding', b).then(function () {
                     toastr.info('הנתונים נשמרו בהצלחה');
                     $scope.init();
                     $('.modal').modal('hide');

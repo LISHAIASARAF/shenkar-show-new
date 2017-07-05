@@ -17,15 +17,16 @@ angular.module('sbAdminApp')
                         alert('אין לך הרשאה');
                         $state.go('dashboard.home');
                     }
+                    $scope.new = {
+                        institute: $rootScope.user.institute
+                    };
                 }
 
                 $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
                 getLocations();
                 getBuildings();
 
-                $scope.new = {
-                    //department: $rootScope.user.department
-                };
+
             };
 
             function getBuildings() {

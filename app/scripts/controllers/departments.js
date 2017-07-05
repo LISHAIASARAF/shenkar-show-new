@@ -172,6 +172,7 @@ angular.module('sbAdminApp')
             payload.append("largeImageUrl", $scope.new.largeImageUrl);
             payload.append("location", $scope.new.location);
             payload.append("institute", $rootScope.user.institute);
+            payload.append("building", $scope.new.building);
 
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/institute/createDepartment',

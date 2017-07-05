@@ -133,9 +133,12 @@ angular.module('sbAdminApp')
                     $scope.project = res.data;
                     var myVideo = document.getElementsByTagName('video')[0];
                     myVideo.src = 'https://www.youtube.com/watch?v=' + $scope.project.videoUrl;
-                    $scope.videoUrl=myVideo.src;
-                    myVideo.load();
-                    myVideo.play();
+                    $scope.$apply(function(){
+                        $scope.videoUrl=myVideo.src;
+                    });
+
+                    //myVideo.load();
+                    //myVideo.play();
                 });
             }
             $scope.create = function () {

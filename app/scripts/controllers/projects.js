@@ -132,13 +132,8 @@ angular.module('sbAdminApp')
                     $scope.project = res.data;
                   //  var myVideo = document.getElementsByTagName('video')[0];
                     //myVideo.src = 'https://www.youtube.com/watch?v=' + $scope.project.videoUrl;
-                    $scope.$apply(function(){
-                        $("iframe").attr("src",'https://www.youtube.com/watch?v=' + $scope.project.videoUrl)
-                        //$scope.videoUrl=;
-                    });
+                    $("iframe").attr("src",'https://www.youtube.com/watch?v=' + $scope.project.videoUrl);
 
-                    //myVideo.load();
-                    //myVideo.play();
                 });
             }
             $scope.create = function () {

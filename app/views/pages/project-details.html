@@ -1,0 +1,26 @@
+<style>
+    .title-head{
+        margin-bottom: 5px;
+        border-bottom: 1px dashed #eee;
+        padding-bottom: 5px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+</style>
+<div class="container" ng-init="getProject()">
+    <div class="row">
+        <div class="thumbnail">
+            <img ng-src="project.imageUrl[0]" alt="" class="" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+
+            <h4 class="title-head">שם</h4>
+            <p>{{project.name}}</p>
+
+        </div>
+    </div>
+</div>

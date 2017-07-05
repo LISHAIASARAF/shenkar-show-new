@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope, $state,$cookies) {
+    .controller('ProjectsCtrl', function ($scope, $position, $http, $rootScope, $state, $cookies, $stateParams) {
             $scope.departments = []
 
             $scope.init = function () {
@@ -126,6 +126,13 @@ angular.module('sbAdminApp')
                 });
             };
 
+
+            $scope.getProject = function () {
+                var id = $stateParams.id;
+                $http.get('https://shenkar-show.herokuapp.com/guest/project/id/' + id).then(function (res) {
+                    $scope.project = res.data;
+                });
+            }
             $scope.create = function () {
                 // imageUrl: [String],
                 //     videoUrl: String,
@@ -135,7 +142,7 @@ angular.module('sbAdminApp')
                 payload.append("name", $scope.new.name);
                 payload.append("description", $scope.new.description);
                 payload.append("location", $scope.new.location);
-               payload.append("studentEmails", $scope.new.studentEmails);
+                payload.append("studentEmails", $scope.new.studentEmails);
 
                 payload.append("imageUrl1", $scope.new.imageUrl1);
                 payload.append("imageUrl2", $scope.new.imageUrl2);

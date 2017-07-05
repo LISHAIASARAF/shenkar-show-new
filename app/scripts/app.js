@@ -51,8 +51,11 @@ angular
                     templateUrl: 'views/pages/login.html',
                     url: '/login',
                     controller: 'AuthCtrl',
-
-
+                })
+                .state('projectDetails', {
+                    templateUrl: 'views/pages/project-details.html',
+                    url: '/projectDetails/:id',
+                    controller: 'ProjectsCtrl',
                 })
                 .state('dashboard.users', {
                     templateUrl: 'views/dashboard/users/list.html',

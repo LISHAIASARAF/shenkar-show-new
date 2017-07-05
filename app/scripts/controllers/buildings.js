@@ -29,6 +29,7 @@ angular.module('sbAdminApp')
             };
 
             function getBuildings() {
+
                 var url = 'https://shenkar-show.herokuapp.com/institute/buildings';
 
                 $http.get(url).then(function (resp) {
@@ -71,11 +72,11 @@ angular.module('sbAdminApp')
                     $scope.init();
                     $('.modal').modal('hide');
                 });
-            }
+            };
 
             $scope.delete = function () {
                 //'https://shenkar-show.herokuapp.com/department/users'
-                $http.post('https://shenkar-show.herokuapp.com/department/deleteBuilding', {
+                $http.post('https://shenkar-show.herokuapp.com/institute/deleteBuilding', {
                     id: $scope.selected.id,
                     institute: $rootScope.user.institute
                 }).then(function (resp) {
@@ -84,6 +85,5 @@ angular.module('sbAdminApp')
 
                 });
             }
-
         }
     );

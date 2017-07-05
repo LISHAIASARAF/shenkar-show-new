@@ -132,7 +132,7 @@ angular.module('sbAdminApp')
                 $http.get('https://shenkar-show.herokuapp.com/guest/project/id/' + id).then(function (res) {
                     $scope.project = res.data;
                     var myVideo = document.getElementsByTagName('video')[0];
-                    myVideo.src = $scope.project.videoUrl;
+                    myVideo.src = 'https://www.youtube.com/watch?v=' + $scope.project.videoUrl;
                     myVideo.load();
                     myVideo.play();
                 });

@@ -132,6 +132,7 @@ angular.module('sbAdminApp')
             //'https://shenkar-show.herokuapp.com/department/users'
             if ($scope.selected.department) {
                 $scope.selected.department = $scope.selected.department.id;
+                $scope.selected.institute = $scope.selected.institute.id;
             }
 
             var url = '';

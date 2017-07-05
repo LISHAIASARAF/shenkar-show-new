@@ -35,6 +35,17 @@ angular.module('sbAdminApp')
             });
         };
 
+        function getBuldingName(id) {
+
+            var name = '';
+            $scope.buildings.forEach(function (b) {
+                if (b.id == id) {
+                    name = b.name;
+                }
+            });
+
+            return name;
+        }
 
         function getLocations() {
             var url = '';

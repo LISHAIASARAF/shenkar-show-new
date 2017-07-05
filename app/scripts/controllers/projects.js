@@ -133,7 +133,8 @@ angular.module('sbAdminApp')
                   //  var myVideo = document.getElementsByTagName('video')[0];
                     //myVideo.src = 'https://www.youtube.com/watch?v=' + $scope.project.videoUrl;
                     $scope.$apply(function(){
-                        $scope.videoUrl=myVideo.src;
+                        //$("iframe").attr("src",$scope.mp3)
+                        $scope.videoUrl='https://www.youtube.com/watch?v=' + $scope.project.videoUrl;
                     });
 
                     //myVideo.load();

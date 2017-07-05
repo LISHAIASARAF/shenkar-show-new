@@ -35,7 +35,7 @@ angular.module('sbAdminApp')
             });
         };
 
-        function getBuldingName(id) {
+        $scope. getBuldingName=function(id) {
 
             var name = '';
             $scope.buildings.forEach(function (b) {

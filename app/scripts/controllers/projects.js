@@ -23,6 +23,7 @@ angular.module('sbAdminApp')
                 $http.defaults.headers.common['X-Access-Token'] = $cookies.shenkarShowUserId;
                 getProjects();
                 getLocations();
+                getBuildings();
                 $scope.new = {
                     department: $rootScope.user.department
                 };
@@ -40,6 +41,12 @@ angular.module('sbAdminApp')
                     $scope.projects = resp.data;
                 });
 
+            }
+
+            function getBuildings() {
+                $http.get('https://shenkar-show.herokuapp.com/institute/buildings').then(function (resp) {
+                    $scope.buildings = resp.data;
+                });
             }
 
             function getLocations() {
@@ -131,9 +138,9 @@ angular.module('sbAdminApp')
                 $http.get('https://shenkar-show.herokuapp.com/guest/project/id/' + id).then(function (res) {
                     $scope.project = res.data;
 
-                    var url='https://www.youtube.com/embed/' + $scope.project.videoUrl;
+                    var url = 'https://www.youtube.com/embed/' + $scope.project.videoUrl;
 
-                    $("iframe").attr("src",url);
+                    $("iframe").attr("src", url);
 
                 });
             }

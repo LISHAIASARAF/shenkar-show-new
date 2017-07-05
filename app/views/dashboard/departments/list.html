@@ -80,6 +80,13 @@
                                                 <input class="form-control " type="text" ng-model="selected.name">
                                             </div>
                                             <div class="form-group">
+                                                <label for=""> בניין</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in buildings"
+                                                        ng-model="selected.building.id">
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="">מיקום</label>
                                                 <input class="form-control " type="text"
                                                        ng-model="selected.locationDescription">
@@ -129,6 +136,13 @@
                                             <div class="form-group">
                                                 <label for="">שם מחלקה</label>
                                                 <input class="form-control " type="text" ng-model="new.name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""> בניין</label>
+                                                <select class="form-control"
+                                                        ng-options="u.id as u.name for u in buildings"
+                                                        ng-model="new.building.id">
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="">מיקום</label>

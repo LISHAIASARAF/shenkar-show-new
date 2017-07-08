@@ -102,8 +102,8 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/departments/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="56" />
+            <state relative-caret-position="68">
+              <caret line="136" column="46" lean-forward="true" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -112,8 +112,8 @@
       <file leaf-file-name="departments.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="174" column="49" lean-forward="false" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="49" />
+            <state relative-caret-position="153">
+              <caret line="141" column="53" lean-forward="true" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -249,228 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dashboard">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dashboard">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="institutes">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dashboard">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="departments">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="views">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dashboard">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="buildings">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="scripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="scripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controllers">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="images">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -732,6 +510,228 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dashboard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dashboard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="institutes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dashboard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="departments">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dashboard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="buildings">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="js">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="shenkar-show-web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="images">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -891,12 +891,13 @@
       <workItem from="1499280831698" duration="2387000" />
       <workItem from="1499283755698" duration="2108000" />
       <workItem from="1499286963386" duration="1586000" />
-      <workItem from="1499288852878" duration="740000" />
+      <workItem from="1499288852878" duration="1121000" />
+      <workItem from="1499537356836" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169442000" />
+    <option name="totallyTimeSpent" value="170069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1310,16 +1311,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/departments/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="56" />
+        <state relative-caret-position="68">
+          <caret line="136" column="46" lean-forward="true" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/departments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="174" column="49" lean-forward="false" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="49" />
+        <state relative-caret-position="153">
+          <caret line="141" column="53" lean-forward="true" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
           <folding />
         </state>
       </provider>

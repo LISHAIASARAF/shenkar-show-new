@@ -141,7 +141,7 @@ angular.module('sbAdminApp')
             payload.append("institute", $rootScope.user.institute);
             payload.append("id", $scope.selected.id);
             payload.append("location", $scope.selected.location);
-            payload.append("building", $scope.selected.building);
+            payload.append("building", $scope.selected.building.id);
             var url = '';
 
             if ($scope.me.role == 'department manager') {

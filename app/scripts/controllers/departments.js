@@ -141,7 +141,7 @@ angular.module('sbAdminApp')
             payload.append("institute", $rootScope.user.institute);
             payload.append("id", $scope.selected.id);
             payload.append("location", $scope.selected.location);
-            payload.append("building", $scope.selected.building.id);
+            payload.append("building", $scope.selected.building);
             var url = '';
 
             if ($scope.me.role == 'department manager') {
@@ -172,7 +172,7 @@ angular.module('sbAdminApp')
             payload.append("largeImageUrl", $scope.new.largeImageUrl);
             payload.append("location", $scope.new.location);
             payload.append("institute", $rootScope.user.institute);
-            payload.append("building", $scope.new.building);
+            payload.append("building", $scope.new.building.id);
 
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/institute/createDepartment',

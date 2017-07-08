@@ -27,6 +27,7 @@
                                 <th>שם</th>
                                 <th>תמונת אודות</th>
                                 <th>אודות</th>
+                                <th>בניין</th>
                                 <th>צבע רשימת שמות</th>
                                 <th>לוגו</th>
                                 <th>צבע טקסט</th>
@@ -41,6 +42,7 @@
                                     <td>{{d.name}}</td>
                                     <td><img ng-src="{{d.aboutImageUrl}}" style="width:30px;height: 30px;" alt=""></td>
                                     <td>{{d.aboutText}}</td>
+                                    <td>{{getBuldingName(d.building)}}</td>
                                     <td>{{d.lineColor}}</td>
                                     <td><img ng-src="{{d.logoUrl}}" style="width:30px;height: 30px;"  alt=""></td>
                                     <td>{{d.mainTextColor}}</td>

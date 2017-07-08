@@ -30,6 +30,19 @@ angular.module('sbAdminApp')
                 $scope.buildings = resp.data;
             });
         };
+
+        $scope. getBuldingName=function(id) {
+
+            var name = '';
+            $scope.buildings.forEach(function (b) {
+                if (b.id == id) {
+                    name = b.name;
+                }
+            });
+
+            return name;
+        }
+
         function getInstitues() {
 
             //'https://shenkar-show.herokuapp.com/department/users'

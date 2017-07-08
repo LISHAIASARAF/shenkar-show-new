@@ -22,8 +22,14 @@ angular.module('sbAdminApp')
                 }
             }
             getInstitues();
+            getBuildings();
         };
 
+        function getBuildings() {
+            $http.get('https://shenkar-show.herokuapp.com/institute/buildings').then(function (resp) {
+                $scope.buildings = resp.data;
+            });
+        };
         function getInstitues() {
 
             //'https://shenkar-show.herokuapp.com/department/users'
@@ -80,6 +86,7 @@ angular.module('sbAdminApp')
             payload.append("secondaryColor", $scope.selected.secondaryColor || '');
             payload.append("logoUrl", $scope.selected.logoUrl || '');
             payload.append("aboutImageUrl", $scope.selected.aboutImageUrl || '');
+            payload.append("building", $scope.selected.building);
 
             payload.append("id", $scope.selected.id);
 
@@ -121,7 +128,7 @@ angular.module('sbAdminApp')
             payload.append("secondaryColor", $scope.new.secondaryColor);
             payload.append("logoUrl", $scope.new.logoUrl);
             payload.append("aboutImageUrl", $scope.new.aboutImageUrl);
-
+            payload.append("building", $scope.new.building.id);
 
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/admin/createInstitute',

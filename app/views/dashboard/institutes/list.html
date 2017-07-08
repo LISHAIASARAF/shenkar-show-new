@@ -87,6 +87,14 @@
                                                 <input class="form-control " type="text" ng-model="selected.name">
                                             </div>
                                             <div class="form-group">
+                                                <label for=""> בניין</label>
+                                                <!--ng-options="b.id as b.name for b in buildings"-->
+                                                <select class="form-control"
+                                                        ng-model="selected.building">
+                                                    <option ng-repeat="b in buildings" value="{{b.id}}">{{b.name}}</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="">אודות</label>
                                                 <input class="form-control " type="text" ng-model="selected.aboutText">
                                             </div>
@@ -142,6 +150,14 @@
                                             <div class="form-group">
                                                 <label for="">שם</label>
                                                 <input class="form-control " type="text" ng-model="new.name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for=""> בניין</label>
+                                                <!--ng-options="b.id as b.name for b in buildings"-->
+                                                <select class="form-control"
+                                                        ng-model="new.building">
+                                                    <option ng-repeat="b in buildings" value="{{b.id}}">{{b.name}}</option>
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="">אודות</label>

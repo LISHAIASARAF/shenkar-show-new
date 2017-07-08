@@ -14,6 +14,7 @@ angular.module('sbAdminApp')
             if (!$rootScope.user) {
                 $state.go('login');
             } else {
+
                 $scope.me = $rootScope.user;
 
                 if ($scope.me.role != 'admin' && $scope.me.role != 'institute manager') {
@@ -21,8 +22,11 @@ angular.module('sbAdminApp')
                     $state.go('dashboard.home');
                 }
             }
-            getInstitues();
-            getBuildings();
+            if($scope.me){
+                getInstitues();
+                getBuildings();
+            }
+
         };
 
         function getBuildings() {

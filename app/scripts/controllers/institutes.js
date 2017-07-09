@@ -145,7 +145,7 @@ angular.module('sbAdminApp')
             payload.append("secondaryColor", $scope.new.secondaryColor);
             payload.append("logoUrl", $scope.new.logoUrl);
             payload.append("aboutImageUrl", $scope.new.aboutImageUrl);
-            payload.append("building", $scope.new.building.id);
+            payload.append("building", $scope.new.building);
 
             return $http({
                 url: 'https://shenkar-show.herokuapp.com/admin/createInstitute',

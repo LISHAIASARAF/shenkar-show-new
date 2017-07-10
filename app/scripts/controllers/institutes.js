@@ -30,9 +30,16 @@ angular.module('sbAdminApp')
         };
 
         function getBuildings() {
-            $http.get('https://shenkar-show.herokuapp.com/institute/buildings').then(function (resp) {
-                $scope.buildings = resp.data;
-            });
+            if ($scope.me.role == 'admin'){
+                $http.get('https://shenkar-show.herokuapp.com/admin/buildings').then(function (resp) {
+                    $scope.buildings = resp.data;
+                });
+            }else if($scope.me.role == 'institute manager'){
+                $http.get('https://shenkar-show.herokuapp.com/institute/buildings').then(function (resp) {
+                    $scope.buildings = resp.data;
+                });
+            }
+
         };
 
         $scope. getBuldingName=function(id) {

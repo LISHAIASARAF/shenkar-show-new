@@ -7,7 +7,8 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-    .controller('BuildingsInstructionCtrl', function ($scope, $rootScope, $state) {
+    .controller('BuildingsInstructionsCtrl', function ($scope, $rootScope, $state) {
+
         $scope.init = function () {
             if (!$rootScope.user) {
                 $state.go('login');

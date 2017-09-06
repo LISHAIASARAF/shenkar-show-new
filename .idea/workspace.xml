@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba92e6d3-5364-45a9-ae89-43586986482c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard/buildingsInstructions/buildingsInstructions.html" afterPath="$PROJECT_DIR$/app/views/dashboard/buildingsInstructions/buildingsInstructions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
-              <caret line="107" column="55" lean-forward="false" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="55" />
+            <state relative-caret-position="85">
+              <caret line="110" column="57" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildingsInstructionsController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BuildingsInstructionsController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
                 <element signature="e#14#142#0" expanded="false" />
               </folding>
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buildingsInstructions.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="buildingsInstructions.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard/buildingsInstructions/buildingsInstructions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="34">
               <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
               <folding />
             </state>
@@ -116,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="47" column="68" lean-forward="false" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
+              <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -209,10 +209,10 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/institutes.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/sidebar/sidebar.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/sidebar/sidebar-search/sidebar-search.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/dashboard/buildingsInstructions/buildingsInstructions.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js" />
       </list>
     </option>
   </component>
@@ -892,12 +892,12 @@
       <workItem from="1499668032913" duration="597000" />
       <workItem from="1499670295368" duration="399000" />
       <workItem from="1504716886459" duration="1720000" />
-      <workItem from="1504718671805" duration="1383000" />
+      <workItem from="1504718671805" duration="1547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178479000" />
+    <option name="totallyTimeSpent" value="178643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1250,14 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" column="55" lean-forward="false" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/sidebar/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1289,16 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#142#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/sidebar/sidebar-search/sidebar-search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1307,19 +1289,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard/buildingsInstructions/buildingsInstructions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="47" column="68" lean-forward="false" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
+        <state relative-caret-position="34">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/buildingsInstructions/buildingsInstructions.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="85">
+          <caret line="110" column="57" lean-forward="false" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/BuildingsInstructionsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#14#142#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
